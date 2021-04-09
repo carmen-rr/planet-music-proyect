@@ -1,5 +1,43 @@
-footer{
-    background-color: RGB #4c2882;
-    width: auto;
+*{box-sizing: border-box;}
+
+/*resets*/
+ul, ol{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+}
+/*header*/
+header{
+    width:1140;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     height: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(102, 51, 153, 1); 
+}
+
+body{
+    background-color:black;
+}
+.options{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
