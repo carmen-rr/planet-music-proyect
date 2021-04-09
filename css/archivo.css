@@ -28,16 +28,3 @@ header{
 
 body{
     background-color:black;
-}
-.options{ 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-}
-
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
