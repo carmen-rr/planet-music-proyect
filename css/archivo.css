@@ -3,7 +3,6 @@
     font-family: 'Ubuntu', sans-serif;
     background-color: black;
     color: white;
-    list-style-type: none;
 }
 
 .body{
@@ -15,12 +14,21 @@
 padding: none;   
 flex-direction: row;
     display: flex;  
-    margin: 30px; 
+    size: 100%;
+    justify-content: center;
+    background-image: url(../img/albumes/album.3.jpeg);
+
+}
+
+.justice-title{
+    font-size: 50px ;
+    text-align: center;
+    line-height: 30px;
 
 }
 
 .fotoalbum{
-    height: 700px;
+    height: 650px;
     width: auto;
 }
 
@@ -29,17 +37,24 @@ flex-direction: row;
     background-color: turquoise;
     flex-direction: row;
     display: flex;
-    font-size: 50px;
+    font-size: 40px;
     margin: 30px;
-    justify-content: space-around;;
+    justify-content: space-around;
+    ;
 }
 
-
 .info2-album{
-    background-color: violet;
+  font-size: 20px;
+    line-height: 30px;
     flex-direction: row;
     display: flex;
-    justify-content:center;
-    margin: 30px;
-    line-height: 40px
+    justify-content: space-around;
+    background-color: chartreuse;
+
+}
+
+.canciones-album{
+    font-size: 40px;
+    text-decoration-line: underline;
+    list-style-type:none;
 }
