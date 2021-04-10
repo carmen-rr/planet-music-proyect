@@ -17,13 +17,14 @@ flex-direction: row;
     size: 100%;
     justify-content: center;
     background-image: url(../img/albumes/album.3.jpeg);
+    margin: 10px;
 
 }
 
 .justice-title{
     font-size: 50px ;
     text-align: center;
-    line-height: 30px;
+    line-height: 20px;
 
 }
 
@@ -32,19 +33,16 @@ flex-direction: row;
     width: auto;
 }
 
-
 .info1-album{
     background-color: turquoise;
     flex-direction: row;
     display: flex;
-    font-size: 40px;
-    margin: 30px;
     justify-content: space-around;
     ;
 }
 
 .info2-album{
-  font-size: 20px;
+  font-size: 40px;
     line-height: 30px;
     flex-direction: row;
     display: flex;
@@ -53,8 +51,16 @@ flex-direction: row;
 
 }
 
-.canciones-album{
+.info3-album{
+    background-color: coral;
+    font-size: 30px;
+
+}
+
+.detalles-album{
     font-size: 40px;
     text-decoration-line: underline;
-    list-style-type:none;
+    list-style-type: none;
+    text-align: center;
+   
 }
