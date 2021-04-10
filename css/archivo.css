@@ -5,9 +5,9 @@
     color: white;
 }
 
-.body{
+body{
     background-color: black;
-
+    margin: 50px;
 }
 
 .banner-album{
@@ -63,4 +63,54 @@ flex-direction: row;
     list-style-type: none;
     text-align: center;
    
+}
+
+
+.track-title{
+    font-size: 50px ;
+    text-align: center;
+    line-height: 20px;
+}
+
+.title-album{
+    font-size: 15px;
+}
+
+.foto-album-detail {
+
+}
+
+.container-track {
+    display: flex;
+}
+
+.track-info {
+    padding-left: 50px;
+    flex-grow: 1;
+}
+
+.title-and-playlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+audio {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.btn-playlist{
+    background-color: rgb(7, 182, 7);
+    color: white;
+    border: none;
+    height: 50px;
+    padding: 10px 5px;
+    border-radius: 30px;
+}
+
+@media (min-width: 998px) {
+    body {
+        width: 60%;
+    }
 }
