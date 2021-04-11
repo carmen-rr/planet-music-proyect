@@ -3,28 +3,35 @@
     font-family: 'Ubuntu', sans-serif;
     background-color: black;
     color: white;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.banner-album{
+    padding: none;   
+    flex-direction: row;
+        display: flex;  
+        size: 100%;
+        justify-content: center;
+        background-image: url(../img/albumes/album.3.jpeg);
+        margin: 10px;
+
 }
 
 body{
     background-color: black;
-    margin: 50px;
-}
 
-.banner-album{
-padding: none;   
-flex-direction: row;
-    display: flex;  
-    size: 100%;
-    justify-content: center;
-    background-image: url(../img/albumes/album.3.jpeg);
-    margin: 10px;
+    margin: 50px;}
 
-}
 
 .justice-title{
     font-size: 50px ;
     text-align: center;
     line-height: 20px;
+    background-color: black;
 
 }
 
@@ -33,15 +40,17 @@ flex-direction: row;
     width: auto;
 }
 
-.info1-album{
+.article-main-album{
     background-color: turquoise;
     flex-direction: row;
     display: flex;
-    justify-content: space-around;
     ;
+    margin: 30px;
+    justify-content:space-around;
+
 }
 
-.info2-album{
+.section1-album{
   font-size: 40px;
     line-height: 30px;
     flex-direction: row;
@@ -49,12 +58,12 @@ flex-direction: row;
     justify-content: space-around;
     background-color: chartreuse;
 
+
 }
 
-.info3-album{
+.section2-album{
     background-color: coral;
-    font-size: 30px;
-
+    font-size: 20px;
 }
 
 .detalles-album{
@@ -64,6 +73,11 @@ flex-direction: row;
     text-align: center;
    
 }
+
+
+
+
+
 
 
 .track-title{
@@ -114,3 +128,66 @@ audio {
         width: 60%;
     }
 }
+
+
+
+
+
+
+.genre-title{
+    font-size: 50px ;
+    text-align: center;
+    line-height: 20px;
+
+}
+
+.ul-genre{
+    list-style-type: none;
+    font-size: 30px;
+    flex-direction: column;
+    display: flex;
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+.detail-genres{
+    background-image: url(../img/generos-details/pop-2.jpeg);
+}
+
+.pop-title{
+
+    font-size: 50px ;
+    text-align: center;
+    line-height: 20px;
+    background-color: black;
+
+}
+
+.detalles-pop{
+
+    font-size: 40px;
+    text-decoration-line: underline;
+    list-style-type: none;
+    text-align: left;
+   
+}
+
+.ul-pop{
+    list-style-type: none;
+    background-color: red;
+    font-size: 30px;
+    flex-direction: row;
+    display: flex;
+    width: 40%;
+}
+
+
+
+
