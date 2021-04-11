@@ -1,37 +1,28 @@
-* {
+*{
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     background-color: black;
     color: white;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    
-}
-
-
-.banner-album{
-    padding: none;   
-    flex-direction: row;
-        display: flex;  
-        size: 100%;
-        justify-content: center;
-        background-image: url(../img/albumes/album.3.jpeg);
-        margin: 10px;
-
 }
 
 body{
-    background-color: black;
+    background-color: black;}
 
-    margin: 50px;}
-
+.banner-album{ 
+    flex-direction: row;
+        display: flex;  
+        width: 1300px;
+        height: auto;
+       justify-content: center;
+        background-image: url(../img/albumes/album.3.jpeg);
+       margin: 10px;
+}
 
 .justice-title{
+    width: 1300px;
     font-size: 50px ;
     text-align: center;
     line-height: 20px;
-    background-color: black;
 
 }
 
@@ -42,11 +33,13 @@ body{
 
 .article-main-album{
     background-color: turquoise;
+    justify-content: space-around;
     flex-direction: row;
     display: flex;
-    ;
-    margin: 30px;
-    justify-content:space-around;
+    width: 1300px;
+    margin: 55px;
+    padding: 25px;
+   
 
 }
 
@@ -57,13 +50,14 @@ body{
     display: flex;
     justify-content: space-around;
     background-color: chartreuse;
+  
 
 
 }
 
 .section2-album{
     background-color: coral;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .detalles-album{
