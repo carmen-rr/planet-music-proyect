@@ -1,11 +1,11 @@
 *{
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    background-color: black;
     color: white;
 }
-/* HEADER */
 
+/* HEADER */
+/* por Justi */
 header {
     background-color: rgba(255, 255, 255, 0.1);
     height: 150px;
@@ -26,7 +26,7 @@ header {
 	width: 10%;
 }
 .logo {
-    width: 30%;
+    width: 25%;
 }
 .buscador {
     display: flex;
@@ -38,12 +38,12 @@ li {
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
 }
-div.nav {
+div {
     width: 45%;
     margin-right: 5px;
 }
 /* FOOTER */
-
+/* por Justi */
 footer {
     background-color: rgba(255, 255, 255, 0.1);
     height: 150px;
@@ -64,8 +64,53 @@ footer {
 }
 
 /* INDEX.HTML */
-
-
+/* por Justi */
+.main-home {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    color: black;
+}
+.lista-songs, .lista-albums, .lista-artist {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 700px;
+    width: 25%;
+    border-radius: 10px;
+    padding: 0%;
+    margin: 0px 30px 0px 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.title-songs, .title-albums, .title-artist {
+    background-position: center;
+    background-size: 100%;
+    border-radius: 10px;
+    width: 100%;
+    height: 175px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 250%;
+    text-shadow: 4px 4px 7px black;
+    margin: 0px 0px 10px 0px;
+}
+.title-songs {
+    background-image: url(../img/home/songs.JPEG);
+}
+.title-albums {
+    background-image: url(../img/home/albums.JPEG);
+}
+.title-artist {
+    background-image: url(../img/home/artist.JPEG);
+}
+.li-de-songs, .li-de-albums, .li-de-artist {
+    width: 70%;
+    height: 60px;
+}
 
 
 
