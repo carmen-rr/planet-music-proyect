@@ -229,11 +229,6 @@ audio {
     border-radius: 30px;
 }
 
-@media (min-width: 998px) {
-    body {
-        width: 60%;
-    }
-}
 
 
 
