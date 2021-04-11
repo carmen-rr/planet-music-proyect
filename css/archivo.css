@@ -26,7 +26,7 @@ header {
 	width: 10%;
 }
 .logo {
-    width: 20%;
+    width: 30%;
 }
 .buscador {
     display: flex;
@@ -38,7 +38,7 @@ li {
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
 }
-div {
+div.nav {
     width: 45%;
     margin-right: 5px;
 }
