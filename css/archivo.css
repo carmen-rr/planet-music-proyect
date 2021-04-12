@@ -18,11 +18,32 @@ header {
     border-top: solid 3px rgba(255, 255, 255, 0.5);
     border-bottom: solid 3px rgba(255, 255, 255, 0.5);
 }
-.webdesigntuts-workshop {
-	background: #151515;
-	height: 100%;
-	text-align: center;
-	width: 10%;
+.search input {
+    padding: 10px;
+    font-size: 17px;
+    border: solid 1px gray;
+    float: left;
+    width: 80%;
+    background: whitesmoke;
+    color: black;
+}
+.search button {
+    float: left;
+  width: 20%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+.search button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.search::after {
+    content: "";
+    clear: both;
 }
 .logo {
     width: 25%;
