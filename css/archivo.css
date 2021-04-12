@@ -7,7 +7,7 @@
 /* HEADER */
 /* por Justi */
 header {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(24, 24, 24);
     height: 150px;
     color: whitesmoke;
     display: flex;
