@@ -77,7 +77,7 @@ footer {
     color: black;
 }
 .lista-songs, .lista-albums, .lista-artist {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
     height: 700px;
     width: 25%;
     border-radius: 10px;
@@ -94,7 +94,7 @@ footer {
     text-align: center;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
-    font-size: 250%;
+    font-size: 200%;
     text-shadow: 4px 4px 7px black;
     margin: 0px 0px 10px 0px;
 }
@@ -108,8 +108,24 @@ footer {
     background-image: url(../img/home/artist.JPEG);
 }
 .li-de-songs, .li-de-albums, .li-de-artist {
+    width: 100%;
+}
+.li-de-songs ul{
     width: 70%;
-    height: 60px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.li-de-songs img{
+    width: 25%;
+}
+.li-de-albums img {
+    width: 25%;
 }
 
 /* DETAIL-ARTIST.HTML */
@@ -130,7 +146,7 @@ footer {
     background-color: royalblue;
 }
 .banner-miley img {
-    width: 80%;
+    width: 100%;
     height: 30vh;
     justify-content: center;
 }
