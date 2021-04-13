@@ -215,34 +215,32 @@ footer {
 }
 
 
+/* DETAIL-ALBUM.HTML */
+/* por Carmen */
+
+
 body{
     background-color: black;}
 
-.banner-album{ 
-    flex-direction: row;
-        display: flex;  
-        width: 1300px;
-        height: auto;
-       justify-content: center;
-        background-image: url(../img/albumes/album.3.jpeg);
-       margin: 10px;
-}
 
 .justice-title{
     width: 1300px;
     font-size: 50px ;
     text-align: center;
     line-height: 20px;
+    color: white;
 
 }
 
 .fotoalbum{
     height: 650px;
     width: auto;
+    border-radius: 25px;
 }
 
 .article-main-album{
-    background-color: turquoise;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
     justify-content: space-around;
     flex-direction: row;
     display: flex;
@@ -250,7 +248,6 @@ body{
     margin: 55px;
     padding: 25px;
    
-
 }
 
 .section1-album{
@@ -259,15 +256,14 @@ body{
     flex-direction: row;
     display: flex;
     justify-content: space-around;
-    background-color: chartreuse;
   
 
 
 }
 
 .section2-album{
-    background-color: coral;
     font-size: 30px;
+    color: black;
 }
 
 .detalles-album{
@@ -278,7 +274,53 @@ body{
    
 }
 
+/* GENRES.HTML */
+/* por Carmen */
 
+
+
+.genre-title{
+    font-size: 50px ;
+    text-align: center;
+    line-height: 20px;
+
+}
+
+.ul-genre{
+    list-style-type: none;
+    font-size: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    color: black;
+    margin:55px;}
+
+/* DETAI-GENRES.HTML */
+/* por Carmen */
+
+.detail-genre-title{
+    font-size: 50px ;
+    text-align: center;
+    line-height: 20px;
+
+}
+
+.ul-detail-genre{
+    list-style-type: none;
+    font-size: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    color: black;
+    margin:55px;}
+
+
+
+    
 
 
 
@@ -333,59 +375,8 @@ audio {
 
 
 
-.genre-title{
-    font-size: 50px ;
-    text-align: center;
-    line-height: 20px;
-
-}
-
-.ul-genre{
-    list-style-type: none;
-    font-size: 30px;
-    flex-direction: column;
-    display: flex;
-    background-color: blueviolet;
-}
 
 
-
-
-
-
-
-
-
-.detail-genres{
-    background-image: url(../img/generos-details/pop-2.jpeg);
-}
-
-.pop-title{
-
-    font-size: 50px ;
-    text-align: center;
-    line-height: 20px;
-    background-color: black;
-
-}
-
-.detalles-pop{
-
-    font-size: 40px;
-    text-decoration-line: underline;
-    list-style-type: none;
-    text-align: left;
-   
-}
-
-.ul-pop{
-    list-style-type: none;
-    background-color: red;
-    font-size: 30px;
-    flex-direction: row;
-    display: flex;
-    width: 40%;
-}
 
 
 
