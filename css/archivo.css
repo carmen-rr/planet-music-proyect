@@ -23,7 +23,6 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: salmon;
 }
 .logo{
     width: 20%;
@@ -32,7 +31,6 @@ header {
 .logo img{
     width: 100%;
     margin-right: 20px;
-    background-color: royalblue;
 }
 .search{
     width: 70%;
@@ -42,43 +40,39 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-end;
-    background-color: seagreen;
 }
 .search input {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
     padding: 10px;
     font-size: 17px;
-    border: solid 1px gray;
-    float: left;
+    border: none;
+    /*border-bottom: solid 1px gray;*/
     width: 80%;
-    background: rgba(255, 255, 255, 0.1);
-    color: whitesmoke;
+    background-image: linear-gradient(rgb(24, 24, 24), black );
+    border-bottom: solid 3px rgb(16, 135, 233);
 }
 .search button {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    float: left;
-    width: 20%;
+    /* background: rgba(255, 255, 255, 0.1);*/
+    width: 10%;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient(rgb(24, 24, 24), black );
+    border: none;
     color: white;
     font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
+    /*border-bottom: 1px solid grey;*/
     cursor: pointer;
+    border-bottom: solid 3px rgb(16, 135, 233);
 }
 .search button:hover {
     background: rgba(255, 255, 255, 0.2);
+   border-bottom: solid 3px rgb(16, 135, 233);
 }
-.search::after {
+/*.search::after {
     content: "";
     clear: both;
-}
+}*/
 .navegador {
     width: 45%;
     height: 100%;
-    background-color: silver;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -93,17 +87,14 @@ header {
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
-    background-color: green;
 }
 
 .navegador li {
-    background-color: hotpink;
     text-align: center;
     padding: 5px 10px;
-    border-radius: 10px;
 }
 .navegador li:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: solid 5px rgb(16, 135, 233);
 }
 
 /* FOOTER */
