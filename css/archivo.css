@@ -8,34 +8,41 @@
 /* por Justi */
 header {
     background-color: rgb(24, 24, 24);
-    height: 120px;
+    height: 100px;
     color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo-buscador {
-    width: 50%;
-    height: 120px;
-    margin-right: 5px;
+    width: 55%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: salmon;
 }
-.logo {
+.logo{
     width: 20%;
-    height: 120px;
-    margin-right: 20px;
+    height: 100%;
 }
-.search {
-    width: 50%;
-    height: 120px;
+.logo img{
+    width: 100%;
+    margin-right: 20px;
+    background-color: royalblue;
+}
+.search{
+    width: 70%;
+    height: 100%;
+    margin: 0px 20px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: seagreen;
 }
 .search input {
     border-top-left-radius: 10px;
@@ -68,20 +75,35 @@ header {
     content: "";
     clear: both;
 }
-
+.navegador {
+    width: 45%;
+    height: 100%;
+    background-color: silver;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
 .navegador ul {
-    text-align: center;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-.navegador ul:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-.navegador li {
+    width: 100%;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    background-color: green;
+}
+
+.navegador li {
+    background-color: hotpink;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.navegador li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* FOOTER */
@@ -179,9 +201,13 @@ footer {
     padding-left: 5px;
     padding-right: 5px;
 }
-.ul-de-songs li img, .ul-de-albums li img, .ul-de-artist li img{
+.ul-de-songs li img, .ul-de-albums li img{
     width: 20%;
     border-radius: 10px;
+}
+.ul-de-artist li img{
+    width: 20%;
+    border-radius: 50%;
 }
 
 
