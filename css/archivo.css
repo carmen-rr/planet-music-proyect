@@ -232,6 +232,7 @@ body{
 
 }
 
+
 .fotoalbum{
     height: 650px;
     width: auto;
@@ -257,8 +258,6 @@ body{
     display: flex;
     justify-content: space-around;
   
-
-
 }
 
 .section2-album{
@@ -276,7 +275,6 @@ body{
 
 /* GENRES.HTML */
 /* por Carmen */
-
 
 
 .genre-title{
@@ -297,6 +295,28 @@ body{
     color: black;
     margin:55px;}
 
+.ul-genre-img{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin:10px;
+    align-items: center;}
+
+.image-genre{
+    display: flex;
+    width: auto;
+    height: 500px;
+
+}
+.image-techno{
+display: flex;
+width: auto;
+height: 410px;
+}
+
 /* DETAI-GENRES.HTML */
 /* por Carmen */
 
@@ -304,6 +324,10 @@ body{
     font-size: 50px ;
     text-align: center;
     line-height: 20px;
+
+}
+
+.detail-genre-info{
 
 }
 
@@ -318,12 +342,32 @@ body{
     color: black;
     margin:55px;}
 
+.ul-pop-img{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin:55px;
+    align-items: center;
+    padding: 12px;
+}
+
+.image-pop{
+display: flex;
+width: auto;
+height: 340px;
+border-radius: 15px;
+}
 
 
-    
 
 
 
+
+/* DETAI-TRACK.HTML */
+/*Valentino*/
 
 
 .track-title{
@@ -336,9 +380,6 @@ body{
     font-size: 15px;
 }
 
-.foto-album-detail {
-
-}
 
 .container-track {
     display: flex;
