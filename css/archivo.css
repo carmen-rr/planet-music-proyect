@@ -204,8 +204,11 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+.ul-de-songs li:hover, .ul-de-albums li:hover, .ul-de-artist li:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
-.ul-de-songs li .text, .ul-de-albums li .text, .ul-de-artist li .text {
+.text{
     width: 80%;
     height: 100%;
 
@@ -215,35 +218,46 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+/*.ul-de-songs li .text, .ul-de-albums li .text, .ul-de-artist li .text {
+    width: 80%;
+    height: 100%;
 
-.ul-de-songs li .text h5, .ul-de-albums li .text h5, .ul-de-artist li .text h5 {
-    font-size: 20px;
-
-    margin-left: 5px;
-    margin-right: 10px;
-}
-
-.ul-de-songs li .text p, .ul-de-albums li .text p, .ul-de-artist li .text p{
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.ul-de-songs li:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.ul-de-songs li p:hover{
-    text-decoration: underline;
-}
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}*/
 
 .ul-de-songs li img, .ul-de-albums li img{
     width: 20%;
     border-radius: 10px;
 }
-
 .ul-de-artist li img{
     width: 20%;
     border-radius: 50%;
 }
+.text h5{
+    font-size: 20px;
+
+    margin-left: 5px;
+}
+.text h5:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.text p{
+    color: rgba(255, 255, 255, 0.8);
+}
+.text p:hover{
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* hoverrsssssss*/
+
+
 
 
 /* DETAIL-ARTIST.HTML */
