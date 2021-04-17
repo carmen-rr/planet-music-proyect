@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -92,9 +92,11 @@ header {
 .navegador li {
     text-align: center;
     padding: 5px 10px;
+    border-bottom: solid 3px rgba(16, 135, 233, 0);
+    font-family: 'Montserrat', sans-serif
 }
 .navegador li:hover {
-    border-bottom: solid 5px rgb(16, 135, 233);
+    border-bottom: solid 3px rgb(16, 135, 233);
 }
 
 /* FOOTER */
@@ -139,7 +141,7 @@ footer {
     border-radius: 10px;
     padding: 0%;
     margin: 0px 30px 0px 30px;
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -152,7 +154,6 @@ footer {
     height: 175px;
     text-align: center;
     color: whitesmoke;
-    font-family: 'Montserrat', sans-serif;
     font-size: 200%;
     text-shadow: 4px 4px 7px black;
     margin: 0px 0px 10px 0px;
@@ -191,6 +192,31 @@ footer {
     list-style-type: none;
     padding-left: 5px;
     padding-right: 5px;
+}
+.ul-de-songs li .text {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ul-de-songs li .text h5 {
+    background-color: tomato;
+    margin-right: 10px;
+}
+.ul-de-songs li .text p{
+    background-color: violet;
+}
+.ul-de-songs li h5{
+    font-size: 20px;
+}
+.ul-de-songs li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.ul-de-songs li p:hover{
+    text-decoration: underline;
 }
 .ul-de-songs li img, .ul-de-albums li img{
     width: 20%;
