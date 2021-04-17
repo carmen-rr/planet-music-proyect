@@ -12,6 +12,7 @@ ul, ol{
 }
 li{
     list-style-type: none;
+    padding: 0;
 }
 a{
     color: white;
@@ -392,13 +393,29 @@ footer {
 /* GENRES.HTML */
 /* por Carmen */
 
+.banner-genres{
+    width: 100%;
+    display: block;
+    
+}
+.banner-genres-image{
+    width: 100%;
+    display: block;
+    height: 90%;}
 
 .genre-title{
-    font-size: 50px ;
+    display: flex;
     text-align: center;
-    line-height: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 50px ;
+    line-height: 0;
+    margin: 55px;
+    border-radius: 25px;
+    background-color: rgba(82, 75, 75, 0.5);
 
 }
+
 
 .ul-genre{
     list-style-type: none;
@@ -408,7 +425,6 @@ footer {
     display: flex;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 25px;
-    color: black;
     margin:55px;}
 
 .ul-genre-img{
@@ -418,32 +434,28 @@ footer {
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
-    margin:10px;
-    align-items: center;}
+    margin:55px;
+    align-items: center;
+    padding: 12px;}
 
-.image-genre{
-    display: flex;
+.image-genres{
     width: auto;
-    height: 500px;
-
-}
-.image-techno{
-display: flex;
-width: auto;
-height: 410px;
+height: 450px;
 }
 
 /* DETAI-GENRES.HTML */
 /* por Carmen */
 
 .detail-genre-title{
-    font-size: 50px ;
+    display: flex;
     text-align: center;
-    line-height: 20px;
-
-}
-
-.detail-genre-info{
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 50px ;
+    line-height: 0;
+    margin: 55px;
+    border-radius: 25px;
+    background-color: rgba(82, 75, 75, 0.5);
 
 }
 
@@ -455,26 +467,24 @@ height: 410px;
     display: flex;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 25px;
-    color: black;
     margin:55px;}
 
 .ul-pop-img{
     display: flex;
     list-style-type: none;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     margin:55px;
     align-items: center;
-    padding: 12px;
+    padding: 15px;
 }
 
 .image-pop{
-display: flex;
 width: auto;
-height: 340px;
-border-radius: 15px;
+height: 300px;
+border-radius: 50%;
 }
 
 
