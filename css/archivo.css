@@ -3,39 +3,63 @@
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
-
+ul, ol{
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
 /* HEADER */
 /* por Justi */
 header {
     background-color: rgb(24, 24, 24);
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.logo-buscador {
-    width: 55%;
-    height: 100%;
+.logo{
+    width: 100%;
+    height: 66%;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
 }
-.logo{
-    width: 20%;
-    height: 100%;
-}
+
 .logo img{
+    height: 70%;
+}
+.slogan{
+    height: 30%;
+    width: 10%;
+}
+
+.navegador {
+   position: sticky;
+   top: 0px;
     width: 100%;
-    margin-right: 20px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.navegador img{
+    width: 6%;
+    height: 100%;
 }
 .search{
-    width: 70%;
+    width: 50%;
     height: 100%;
-    margin: 0px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -50,6 +74,7 @@ header {
     background-image: linear-gradient(rgb(24, 24, 24), black );
     border-bottom: solid 3px rgb(16, 135, 233);
 }
+
 .search button {
     /* background: rgba(255, 255, 255, 0.1);*/
     width: 10%;
@@ -70,21 +95,15 @@ header {
     content: "";
     clear: both;
 }*/
-.navegador {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
 .navegador ul {
-    width: 100%;
+    width: 40%;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
 }
@@ -207,6 +226,14 @@ footer {
 .ul-de-songs li:hover, .ul-de-albums li:hover, .ul-de-artist li:hover{
     background-color: rgba(255, 255, 255, 0.2);
 }
+.ul-de-songs li img, .ul-de-albums li img{
+    width: 20%;
+    border-radius: 10px;
+}
+.ul-de-artist li img{
+    width: 20%;
+    border-radius: 50%;
+}
 
 .text{
     width: 80%;
@@ -218,25 +245,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-/*.ul-de-songs li .text, .ul-de-albums li .text, .ul-de-artist li .text {
-    width: 80%;
-    height: 100%;
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}*/
-
-.ul-de-songs li img, .ul-de-albums li img{
-    width: 20%;
-    border-radius: 10px;
-}
-.ul-de-artist li img{
-    width: 20%;
-    border-radius: 50%;
-}
 .text h5{
     font-size: 20px;
 
