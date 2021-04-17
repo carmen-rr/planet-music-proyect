@@ -9,7 +9,6 @@
 header {
     background-color: rgb(24, 24, 24);
     height: 100px;
-    color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -193,7 +192,7 @@ footer {
     padding-left: 5px;
     padding-right: 5px;
 }
-.ul-de-songs li .text {
+.ul-de-songs li .text, .ul-de-albums li .text, .ul-de-artist li .text {
     width: 80%;
     height: 100%;
     display: flex;
@@ -202,15 +201,13 @@ footer {
     flex-direction: row;
     justify-content: space-between;
 }
-.ul-de-songs li .text h5 {
-    background-color: tomato;
+.ul-de-songs li .text h5, .ul-de-albums li .text h5, .ul-de-artist li .text h5 {
+    margin-left: 5px;
     margin-right: 10px;
-}
-.ul-de-songs li .text p{
-    background-color: violet;
-}
-.ul-de-songs li h5{
     font-size: 20px;
+}
+.ul-de-songs li .text p, .ul-de-albums li .text p, .ul-de-artist li .text p{
+    color: rgba(255, 255, 255, 0.8);
 }
 .ul-de-songs li:hover {
     background-color: rgba(255, 255, 255, 0.2);
