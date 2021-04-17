@@ -8,6 +8,7 @@
 /* por Justi */
 header {
     background-color: rgb(24, 24, 24);
+    width: 100%;
     height: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -125,38 +126,28 @@ footer {
     height: 800px;
     margin-top: 20px;
     margin-bottom: 20px;
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    align-self: center;
     align-items: center;
-    color: black;
 }
+
 .lista-songs, .lista-albums, .lista-artist {
     background-color: rgba(255, 255, 255, 0.2);
+
     height: 700px;
     width: 25%;
-    border-radius: 10px;
     padding: 0%;
     margin: 0px 30px 0px 30px;
-    /*font-family: 'Montserrat', sans-serif;*/
+    border-radius: 10px;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
-.title-songs, .title-albums, .title-artist {
-    background-position: center;
-    background-size: 100%;
-    border-radius: 10px;
-    width: 100%;
-    height: 175px;
-    text-align: center;
-    color: whitesmoke;
-    font-size: 200%;
-    text-shadow: 4px 4px 7px black;
-    margin: 0px 0px 10px 0px;
-}
+
 .title-songs {
     background-image: url(../img/home/songs.JPEG);
 }
@@ -166,59 +157,89 @@ footer {
 .title-artist {
     background-image: url(../img/home/artist.JPEG);
 }
+
+.title-songs, .title-albums, .title-artist {
+    background-size: 100%;
+    background-position: center;
+
+    text-align: center;
+    font-size: 200%;
+    text-shadow: 4px 4px 7px black;
+
+    width: 100%;
+    height: 175px;
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+}
+
 .ul-de-songs, .ul-de-albums, .ul-de-artist {
+    list-style-type: none;
+
     width: 100%;
     height: 465px;
-    list-style-type: none;
     padding: 0px;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
+
 .ul-de-songs li, .ul-de-albums li, .ul-de-artist li{
+    background-color: rgba(255, 255, 255, 0.1);
+
+    list-style-type: none;
+
     width: 100%;
     height: 75px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
     padding-left: 5px;
     padding-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .ul-de-songs li .text, .ul-de-albums li .text, .ul-de-artist li .text {
     width: 80%;
     height: 100%;
+
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
+
 .ul-de-songs li .text h5, .ul-de-albums li .text h5, .ul-de-artist li .text h5 {
+    font-size: 20px;
+
     margin-left: 5px;
     margin-right: 10px;
-    font-size: 20px;
 }
+
 .ul-de-songs li .text p, .ul-de-albums li .text p, .ul-de-artist li .text p{
     color: rgba(255, 255, 255, 0.8);
 }
+
 .ul-de-songs li:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
 .ul-de-songs li p:hover{
     text-decoration: underline;
 }
+
 .ul-de-songs li img, .ul-de-albums li img{
     width: 20%;
     border-radius: 10px;
 }
+
 .ul-de-artist li img{
     width: 20%;
     border-radius: 50%;
