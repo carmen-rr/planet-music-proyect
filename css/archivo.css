@@ -409,36 +409,40 @@ footer {
     justify-content: space-around;
     flex-direction: row;
     font-size: 50px ;
-    line-height: 0;
-    margin: 55px;
     border-radius: 25px;
+    line-height: 0;
     background-color: rgba(82, 75, 75, 0.5);
+    margin: 30px;
+
+}
+
+.genres-article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.pop, .rock, .techno {
+    background-color: rgba(255, 255, 255, 0.2);
+
+    height: auto;
+    width: 31%;
+    padding: 0%;
+    margin: 15px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
 }
 
 
-.ul-genre{
-    list-style-type: none;
-    font-size: 30px;
-    flex-direction: row;
-    justify-content: space-around;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-    margin:55px;}
-
-.ul-genre-img{
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    margin:55px;
-    align-items: center;
-    padding: 12px;}
-
-.image-genres{
+.genre-image{
     width: auto;
 height: 450px;
 }
@@ -484,12 +488,8 @@ height: 450px;
 .image-pop{
 width: auto;
 height: 300px;
-border-radius: 50%;
+border-radius: 50%;;
 }
-
-
-
-
 
 
 /* DETAI-TRACK.HTML */
