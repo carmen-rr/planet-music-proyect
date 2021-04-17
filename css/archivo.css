@@ -432,8 +432,8 @@ footer {
     padding: 0%;
     margin: 15px;
     border-radius: 10px;
-    align-items: center;
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
 
     display: flex;
     flex-wrap: wrap;
@@ -456,22 +456,37 @@ height: 450px;
     justify-content: space-around;
     flex-direction: row;
     font-size: 50px ;
+    margin: 30px;
     line-height: 0;
-    margin: 55px;
     border-radius: 25px;
     background-color: rgba(82, 75, 75, 0.5);
 
 }
 
-.ul-detail-genre{
-    list-style-type: none;
-    font-size: 30px;
-    flex-direction: row;
-    justify-content: space-around;
+.detail-genres-article{
     display: flex;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-    margin:55px;}
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+}
+
+.dua-pop, .sam-pop, .justin-pop, .miley-pop{
+    background-color: rgba(255, 255, 255, 0.2);
+
+    height: auto;
+    width: 31%;
+    padding: 0%;
+    margin: 20px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
 
 .ul-pop-img{
     display: flex;
@@ -482,13 +497,13 @@ height: 450px;
     border-radius: 15px;
     margin:55px;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
 }
 
-.image-pop{
-width: auto;
+.pop-image{
+    width: auto;
 height: 300px;
-border-radius: 50%;;
+border-radius: 50%;
 }
 
 
