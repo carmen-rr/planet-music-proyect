@@ -425,7 +425,7 @@ footer {
 }
 
 .pop, .rock, .techno {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
 
     height: auto;
     width: 31%;
@@ -434,6 +434,7 @@ footer {
     border-radius: 10px;
     font-size: 40px;
     text-align: center;
+    text-decoration: underline;
 
     display: flex;
     flex-wrap: wrap;
@@ -471,7 +472,7 @@ height: 450px;
 }
 
 .dua-pop, .sam-pop, .justin-pop, .miley-pop{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
 
     height: auto;
     width: 31%;
@@ -481,6 +482,7 @@ height: 450px;
     align-items: center;
     font-size: 30px;
     text-align: center;
+    text-decoration: underline;
 
     display: flex;
     flex-wrap: wrap;
