@@ -1,13 +1,18 @@
 *{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    color: white;
-}
+    color: white;}
+
+    body{
+        background-color: black;}
+
+
 ul, ol{
     padding: 0px;
 }
 li{
     list-style-type: none;
+    padding: 0;
 }
 a{
     color: white;
@@ -329,152 +334,179 @@ footer {
 /* DETAIL-ALBUM.HTML */
 /* por Carmen */
 
+.banner-album{
+    width: 100%;
+    display: block;
+    
+}
 
-body{
-    background-color: black;}
-
+.banner-album-image{
+    width: 100%;
+    display: block;
+    height: 90%;
+}
 
 .justice-title{
-    width: 1300px;
-    font-size: 50px ;
+    display: flex;
     text-align: center;
-    line-height: 20px;
-    color: white;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 50px ;
+    line-height: 0;
+    margin: 55px;
+    border-radius: 25px;
+    background-color: rgba(82, 75, 75, 0.5);
 
 }
 
-
+.article-main-album{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    width: 1300px;
+    margin: 55px;
+    padding: 0;
+   
+}
+.section1-album{
+    font-size: 40px;
+  
+}
 .fotoalbum{
     height: 650px;
     width: auto;
     border-radius: 25px;
 }
-
-.article-main-album{
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-    justify-content: space-around;
-    flex-direction: row;
-    display: flex;
-    width: 1300px;
-    margin: 55px;
-    padding: 25px;
-   
-}
-
-.section1-album{
-  font-size: 40px;
-    line-height: 30px;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-around;
-  
-}
-
 .section2-album{
     font-size: 30px;
-    color: black;
 }
 
 .detalles-album{
     font-size: 40px;
     text-decoration-line: underline;
     list-style-type: none;
-    text-align: center;
+    text-align: center;}
    
-}
 
 /* GENRES.HTML */
 /* por Carmen */
 
+.banner-genres{
+    width: 100%;
+    display: block;
+    
+}
+.banner-genres-image{
+    width: 100%;
+    display: block;
+    height: 90%;}
 
 .genre-title{
-    font-size: 50px ;
+    display: flex;
     text-align: center;
-    line-height: 20px;
-
-}
-
-.ul-genre{
-    list-style-type: none;
-    font-size: 30px;
-    flex-direction: row;
     justify-content: space-around;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-    color: black;
-    margin:55px;}
-
-.ul-genre-img{
-    display: flex;
-    list-style-type: none;
     flex-direction: row;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    margin:10px;
-    align-items: center;}
-
-.image-genre{
-    display: flex;
-    width: auto;
-    height: 500px;
+    font-size: 50px ;
+    border-radius: 25px;
+    line-height: 0;
+    background-color: rgba(82, 75, 75, 0.5);
+    margin: 30px;
 
 }
-.image-techno{
-display: flex;
-width: auto;
-height: 410px;
+
+.genres-article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.pop, .rock, .techno {
+    background-color: rgba(255, 255, 255, 0.5);
+
+    height: auto;
+    width: 31%;
+    padding: 0%;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+
+.genre-image{
+    width: auto;
+height: 450px;
 }
 
 /* DETAI-GENRES.HTML */
 /* por Carmen */
 
 .detail-genre-title{
-    font-size: 50px ;
-    text-align: center;
-    line-height: 20px;
-
-}
-
-.detail-genre-info{
-
-}
-
-.ul-detail-genre{
-    list-style-type: none;
-    font-size: 30px;
-    flex-direction: row;
-    justify-content: space-around;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 50px ;
+    margin: 30px;
+    line-height: 0;
     border-radius: 25px;
-    color: black;
-    margin:55px;}
+    background-color: rgba(82, 75, 75, 0.5);
+
+}
+
+.detail-genres-article{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+}
+
+.dua-pop, .sam-pop, .justin-pop, .miley-pop{
+    background-color: rgba(255, 255, 255, 0.5);
+
+    height: auto;
+    width: 31%;
+    padding: 0%;
+    margin: 20px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
 
 .ul-pop-img{
     display: flex;
     list-style-type: none;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     margin:55px;
     align-items: center;
-    padding: 12px;
+    padding: 20px;
 }
 
-.image-pop{
-display: flex;
-width: auto;
-height: 340px;
-border-radius: 15px;
+.pop-image{
+    width: auto;
+height: 300px;
+border-radius: 50%;
 }
-
-
-
-
 
 
 /* DETAI-TRACK.HTML */

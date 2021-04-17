@@ -4,42 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/archivo.css">
     <title>Pop</title>
 </head>
 <body>
 
-    <header></header>
+            <header>
+                <section class="logo">
+                    <img src="./img/anytime-slogan.PNG" alt="Music Anytime" class="slogan">
+                    <img src="./img/logo3.PNG" alt="Logo Planet Music">
+                    <img src="./img/anywhere-slogan.PNG" alt="Music Anywhere" class="slogan">
+                </section>
+                <nav class="navegador">
+                    <img src="./img/logo3.PNG" alt="Logo Planet Music">
+                    <form action="./search-results.html" method="GET" class="search">
+                        <input type="text" name="search" placeholder="Search...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <ul>
+                        <li> <a href="./index.html" id="home">HOME</a></li>
+                        <li><a href="./genres.html" id="genres">GENRES</a></li>
+                        <li><a href="./playlist.html" id="my-playlist">My Playlist</a></li>
+                    </ul>
+                </nav>
+
+    </header>
 
     <div class="genre-container">
 
-    
-<article class="detail-genre-title">
-     <h2>POP</h2>
-
-    </article >
-
-<article class="detail-genre-info">
-
-    <section>
-        <ul class="ul-detail-genre">
-            <li>Dua Lipa</li>
-            <li>Sam Smith</li>
-            <li>Justin Biber</li>
-            <li>Miley Cyrus</li>
-        </ul>
-    </section>
-
-        <ul class="ul-pop-img">
-            <li><img class="image-pop" src="./img/generos-details/dua-pop.jpeg" alt=""></li>
-            <li><img class="image-pop" src="./img/generos-details/genres-samsmith.jpg" alt=""></li>
-            <li><img class="image-pop" src="./img/generos-details/genres-justin.jpeg" alt=""></li>
-            <li><img class="image-pop" src="img/generos-details/genres-miley.jpeg" alt=""></li>
-            </section>
         
+<article class="detail-genre-title">
+    <h1>POP</h1>
+</article>
 
+    <article class="detail-genres-article">
 
-      </article>
+        <section class="dua-pop">
+            <ul>
+                <li> <h2>Dua Lipa</h2></li>
+                <li> <img class="pop-image" src="./img/generos-details/dua-pop.jpeg" alt="Dua Lipa"></li>
+            </ul>
+        </section>
+    
+    <section class="sam-pop">
+        <ul>
+            <li> <h2>Sam Smith</h2></li>
+            <li> <img class="pop-image" src="./img/generos-details/genres-samsmith.jpg" alt="Sam Smith"></li>
+        </section>
+    
+    <section class="justin-pop">
+    <ul>
+        <li> <h2>Justin Bieber</h2></li>
+        <li> <img class="pop-image" src="./img/generos-details/genres-justin.jpeg" alt="Justin Bieber"></li>
+    </ul>
+    </section>
+    <section class="justin-pop">
+        <ul>
+            <li> <h2>Miley Cyrus</h2></li>
+            <li> <img class="pop-image" src="./img/generos-details/genres-miley.jpeg" alt="Miley Cyrus"></li>
+        </ul>
+        </section>
+    
+        </article>
+
 
     <footer>
         <p>All rights reserved to Carmen Rodriguez Reynoso, Valentino Gabay & Justina Kelly </p>
