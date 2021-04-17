@@ -33,6 +33,7 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    border-bottom: solid 0.5px rgba(255, 255, 255, 0.2);
 }
 
 .logo img{
@@ -54,6 +55,7 @@ header {
     align-items: flex-end;
 }
 .navegador img{
+    margin-right: 10px;
     width: 6%;
     height: 100%;
 }
@@ -111,8 +113,19 @@ header {
 .navegador li {
     text-align: center;
     padding: 5px 10px;
-    border-bottom: solid 3px rgba(16, 135, 233, 0);
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: solid 3px transparent;
+}
+#my-playlist{
+    background-color: rgb(16, 135, 233);
+    border-radius: 40px;
+    padding: 5px;
+    border-bottom: none;
+}
+#my-playlist li:hover{
+    background-color: rgb(75, 151, 212);
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: none;
 }
 .navegador li:hover {
     border-bottom: solid 3px rgb(16, 135, 233);
