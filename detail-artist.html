@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/archivo.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="buscador">
-            <img src="./img/logo3.PNG" alt="Logo Planet Music" class="logo">
-            <section class="webdesigntuts-workshop">
-                <form action="" method="">		    
-                    <input type="search" placeholder="Search...">		    	
-                    <button>Search</button>
-                </form>
-            </section>
-        </div>
-        <nav>
-            <li>
-                <ul>HOME</ul>
-                <ul>SONGS</ul>
-                <ul>ALBUMS</ul>
-                <ul>ARTISTS</ul>
-                <ul>GENRES</ul>
-                <ul>My Playlist</ul>
-            </li>
+        <section class="logo">
+            <img src="./img/anytime-slogan.PNG" alt="Music Anytime" class="slogan">
+            <img src="./img/logo3.PNG" alt="Logo Planet Music">
+            <img src="./img/anywhere-slogan.PNG" alt="Music Anywhere" class="slogan">
+        </section>
+        <nav class="navegador">
+            <img src="./img/logo3.PNG" alt="Logo Planet Music">
+            <form action="./search-results.html" method="GET" class="search">
+                <input type="text" name="search" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <ul>
+                <li> <a href="./index.html" id="home">HOME</a></li>
+                <li><a href="./genres.html" id="genres">GENRES</a></li>
+                <li><a href="./playlist.html" id="my-playlist">My Playlist</a></li>
+            </ul>
         </nav>
     </header>
     <main class="main-detail-artist">
@@ -37,7 +37,7 @@
             <img src="./img/artist/miley-detalle.JPG" alt="Imagen Miley Cyrus" class="img-miley">
             <article class="description-miley">
                 <h1>Miley Cyrus</h1>
-                <ul><p>Popular Songs</p>
+                <ul><h6>Popular Songs</h6>
                     <li>We Can't Stop</li>
                     <li>Midnight Sky</li>
                     <li>Prisoner (feat. Dua Lipa)</li>
