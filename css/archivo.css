@@ -595,6 +595,7 @@ body{
  }
  .section2-album{
     font-size: 30px;
+    
  }
   
  .detalles-album{
@@ -604,6 +605,19 @@ body{
     text-align: center;
  }
 
+.button-genre-pop{
+    background-color: royalblue;
+    font-size: 40px;
+    list-style-type: none;
+    text-shadow: 4px 4px 7px black;
+    border-color: black;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+
+
+}
 
 /* GENRES.HTML */
 /* por Carmen */
