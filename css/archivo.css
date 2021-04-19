@@ -650,8 +650,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
-  
  }
   
  .pop, .rock, .techno {
@@ -659,26 +657,17 @@ body{
   
     height: auto;
     width: 31%;
-    padding: 0%;
     margin: 15px;
     border-radius: 10px;
     font-size: 40px;
     text-align: center;
     text-shadow: 4px 4px 7px black;
-  
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  
  }
-  
   
  .genre-image{
-    width: auto;
+width: auto;
  height: 450px;
  }
-  
- 
 
 /* DETAI-GENRES.HTML */
 /* por Carmen */
@@ -716,18 +705,9 @@ body{
     font-size: 30px;
     text-align: center;
     text-shadow: 4px 4px 7px black;
-  
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  
  }
   
  .ul-pop-img{
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
-    justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     margin:55px;
@@ -736,9 +716,10 @@ body{
  }
   
  .pop-image{
-    width: auto;
+width: auto;
  height: 300px;
  border-radius: 50%;
+ border: 5px solid rgb(24, 130, 218);
  }
  
 
