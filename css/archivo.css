@@ -628,6 +628,7 @@ body{
     line-height: 0;
     background-color: rgba(82, 75, 75, 0.5);
     margin: 30px;
+    text-shadow: 4px 4px 7px black;
   
  }
   
@@ -649,7 +650,7 @@ body{
     border-radius: 10px;
     font-size: 40px;
     text-align: center;
-    text-decoration: underline;
+    text-shadow: 4px 4px 7px black;
   
     display: flex;
     flex-wrap: wrap;
@@ -669,50 +670,63 @@ body{
 /* por Carmen */
 
 .detail-genre-title{
-    font-size: 50px ;
+    display: flex;
     text-align: center;
-    line-height: 20px;
-
-}
-
-.detail-genre-info{
-
-}
-
-.ul-detail-genre{
-    list-style-type: none;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 50px ;
+    margin: 30px;
+    line-height: 0;
+    border-radius: 25px;
+    background-color: rgba(82, 75, 75, 0.5);
+    text-shadow: 4px 4px 7px black;
+  
+ }
+  
+ .detail-genres-article{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+ }
+  
+ .dua-pop, .sam-pop, .justin-pop, .miley-pop{
+    background-color: rgba(255, 255, 255, 0.5);
+  
+    height: auto;
+    width: 31%;
+    padding: 0%;
+    margin: 20px;
+    border-radius: 10px;
+    align-items: center;
     font-size: 30px;
+    text-align: center;
+    text-shadow: 4px 4px 7px black;
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+ }
+  
+ .ul-pop-img{
+    display: flex;
+    list-style-type: none;
     flex-direction: row;
     justify-content: space-around;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-    color: black;
-    margin:55px;}
-
-.ul-pop-img{
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
-    justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     margin:55px;
     align-items: center;
-    padding: 12px;
-}
-
-.image-pop{
-display: flex;
-width: auto;
-height: 340px;
-border-radius: 15px;
-}
-
-
-
-
-
+    padding: 20px;
+ }
+  
+ .pop-image{
+    width: auto;
+ height: 300px;
+ border-radius: 50%;
+ }
+ 
 
 /* DETAI-TRACK.HTML */
 /*Valentino*/
