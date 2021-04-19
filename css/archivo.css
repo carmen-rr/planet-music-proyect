@@ -544,60 +544,9 @@ footer {
 /* DETAIL-ALBUM.HTML */
 /* por Carmen */
 
-body{  background-color: black;}
-
-.justice-title{
-    width: 1300px;
-    font-size: 50px ;
-    text-align: center;
-    line-height: 20px;
-    color: white;
-
+body{
+    background-color: black;
 }
-
-
-.fotoalbum{
-    height: 650px;
-    width: auto;
-    border-radius: 25px;
-}
-
-.article-main-album{
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-    justify-content: space-around;
-    flex-direction: row;
-    display: flex;
-    width: 1300px;
-    margin: 55px;
-    padding: 25px;
-   
-}
-
-.section1-album{
-  font-size: 40px;
-    line-height: 30px;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-around;
-  
-}
-
-.section2-album{
-    font-size: 30px;
-    color: black;
-}
-
-.detalles-album{
-    font-size: 40px;
-    text-decoration-line: underline;
-    list-style-type: none;
-    text-align: center;
-   
-}
-
-/* GENRES.HTML */
-/* por Carmen */
 
 .banner-album{
     width: 100%;
@@ -621,6 +570,7 @@ body{  background-color: black;}
     margin: 55px;
     border-radius: 25px;
     background-color: rgba(82, 75, 75, 0.5);
+    text-shadow: 4px 4px 7px black;
   
  }
   
@@ -649,10 +599,16 @@ body{  background-color: black;}
   
  .detalles-album{
     font-size: 40px;
-    text-decoration-line: underline;
     list-style-type: none;
-    text-align: center;}
- 
+    text-shadow: 4px 4px 7px black;
+    text-align: center;
+ }
+
+
+/* GENRES.HTML */
+/* por Carmen */
+
+
 
 /* DETAI-GENRES.HTML */
 /* por Carmen */
