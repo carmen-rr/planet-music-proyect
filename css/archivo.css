@@ -608,7 +608,62 @@ body{
 /* GENRES.HTML */
 /* por Carmen */
 
-
+.banner-genres{
+    width: 100%;
+    display: block;
+   
+ }
+ .banner-genres-image{
+    width: 100%;
+    display: block;
+    height: 90%;}
+  
+ .genre-title{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 50px ;
+    border-radius: 25px;
+    line-height: 0;
+    background-color: rgba(82, 75, 75, 0.5);
+    margin: 30px;
+  
+ }
+  
+ .genres-article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+  
+ }
+  
+ .pop, .rock, .techno {
+    background-color: rgba(255, 255, 255, 0.5);
+  
+    height: auto;
+    width: 31%;
+    padding: 0%;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+ }
+  
+  
+ .genre-image{
+    width: auto;
+ height: 450px;
+ }
+  
+ 
 
 /* DETAI-GENRES.HTML */
 /* por Carmen */
