@@ -726,6 +726,18 @@ width: auto;
 /* DETAI-TRACK.HTML */
 /*Valentino*/
 
+.banner-dua{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+}
+
+.banner-dua img{
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+}
 
 .track-title{
     font-size: 50px ;
