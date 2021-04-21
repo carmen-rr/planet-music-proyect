@@ -599,13 +599,15 @@ body{
  }
   
  .detalles-album{
-    font-size: 40px;
+    font-size: 45px;
     list-style-type: none;
     text-shadow: 4px 4px 7px black;
     text-align: center;
  }
 
+
 .button-genre-pop{
+
     background-color: royalblue;
     font-size: 40px;
     list-style-type: none;
@@ -669,8 +671,25 @@ width: auto;
  height: 450px;
  }
 
+ .genre-image:hover{
+    background-color: rgba(20, 20, 20, 0.2);
+    cursor: pointer;
+    border-radius: 50%;
+    
+ }
+
 /* DETAI-GENRES.HTML */
 /* por Carmen */
+  
+.banner-gdetail{
+    width: 100%;
+    display: block;
+   
+ }
+ .banner-gdetail-image{
+    width: 100%;
+    display: block;
+    height: 90%;}
 
 .detail-genre-title{
     display: flex;
@@ -683,7 +702,6 @@ width: auto;
     border-radius: 25px;
     background-color: rgba(82, 75, 75, 0.5);
     text-shadow: 4px 4px 7px black;
-  
  }
   
  .detail-genres-article{
