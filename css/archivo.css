@@ -671,7 +671,7 @@ width: auto;
  height: 450px;
  }
 
- .genre-image li:hover{
+ .genre-image :hover{
     background-color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
     
@@ -679,6 +679,16 @@ width: auto;
 
 /* DETAI-GENRES.HTML */
 /* por Carmen */
+  
+.banner-gdetail{
+    width: 100%;
+    display: block;
+   
+ }
+ .banner-gdetail-image{
+    width: 100%;
+    display: block;
+    height: 90%;}
 
 .detail-genre-title{
     display: flex;
@@ -691,7 +701,6 @@ width: auto;
     border-radius: 25px;
     background-color: rgba(82, 75, 75, 0.5);
     text-shadow: 4px 4px 7px black;
-  
  }
   
  .detail-genres-article{
