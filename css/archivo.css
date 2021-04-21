@@ -371,6 +371,10 @@ footer {
     flex-direction: column;
 }
 .main-results h2{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 100%;
     color: rgba(255, 255, 255, 0.6);
     padding: 10px;
@@ -378,7 +382,6 @@ footer {
     text-align: start;
     align-items: center;
     justify-content: flex-start;
-    margin: 60px;
     font-size: 40px;
 }
 .main-results article{
@@ -432,6 +435,7 @@ footer {
 
 .result-songs{
     background-color: rgba(255, 255, 255, 0.1);
+    height: 45vh;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -455,29 +459,30 @@ footer {
 }
 .result-songs li div{
     width: 100%;
-    height: 30%;
+    height: 40%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: greenyellow;
     margin: 0px;
     padding: 0px;
     justify-content: flex-start;
     align-items: flex-start;
 }
 .result-songs li div h4{
-    background-color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     width: 100%;
     font-size: 20px;
     padding-top: 10px;
 }
 .result-songs li div p{
-    background-color: black;
+    margin: 0px;
     width: 100%;
 }
 .result-songs img{
     width: 100%;
-    height: 60%;
     border-radius: 10px;
 }
 .result-albums{
@@ -506,7 +511,6 @@ footer {
     justify-content: space-between;
 }
 .result-albums li div{
-    background-color: greenyellow;
     width: 45%;
     display: flex;
     flex-wrap: wrap;
