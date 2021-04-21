@@ -599,13 +599,15 @@ body{
  }
   
  .detalles-album{
-    font-size: 40px;
+    font-size: 45px;
     list-style-type: none;
     text-shadow: 4px 4px 7px black;
     text-align: center;
  }
 
+
 .button-genre-pop{
+
     background-color: royalblue;
     font-size: 40px;
     list-style-type: none;
