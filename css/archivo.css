@@ -1011,19 +1011,19 @@ height:auto
      
      .genre-image{
     width: auto;
-    height: 320px;
+    height: 300px;
      }
  
       /*detail-genres*/
 
     .main-detail-genre{
-        display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     }
     
     .detail-genre-title{
-        font-size: 30px;
+    font-size: 32px;
     width: initial;
     margin: 0%;
     margin-top: 20px;
@@ -1035,6 +1035,7 @@ height:auto
         display: flex;
         justify-content: center;
         flex-direction: column;
+        align-content: center;
      }
      .dua-pop, .sam-pop, .justin-pop, .miley-pop{
         width: 100%;
