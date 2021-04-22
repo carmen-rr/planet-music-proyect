@@ -42,10 +42,6 @@ header {
 .logo img{
     height: 70%;
 }
-.slogan{
-    width: 10%;
-    height: 30%;
-}
 
 .navegador {
     width: 100%;
@@ -56,17 +52,13 @@ header {
     align-items: flex-end;
 }
 .navegador img{
-    width: 6%;
     height: 100%;
     margin-right: 10px;
 }
 .search{
     width: 50%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-end;
 }
 .search input {
     font-size: 17px;
@@ -93,21 +85,15 @@ header {
 }
 
 .navegador ul {
-    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
-    list-style-type: none;
     width: 40%;
-    padding: 0px;
     margin: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
 }
 
 .navegador li {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
     padding: 5px 10px;
     border-bottom: solid 3px transparent;
 }
@@ -160,10 +146,8 @@ footer {
 /* INDEX.HTML */
 
 .main-home {
-    width: 100%;
-    height: 800px;
-    margin-top: 20px;
-    margin-bottom: 20px; 
+    margin-top: 70px;
+    margin-bottom: 70px; 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -173,9 +157,7 @@ footer {
 
 .lista-songs, .lista-albums, .lista-artist {
     background-color: rgba(255, 255, 255, 0.2);
-    height: 700px;
     width: 28%;
-    padding: 0%;
     margin: 0px 30px 0px 30px;
     border-radius: 10px;
     display: flex;
@@ -206,26 +188,22 @@ footer {
 
 
 .ul-de-songs, .ul-de-albums, .ul-de-artist {
-    list-style-type: none;
-    width: 100%;
-    height: 465px;
-    padding: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
 }
 
 .ul-de-songs li, .ul-de-albums li, .ul-de-artist li{
-    list-style-type: none;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 100%;
-    height: 75px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -250,13 +228,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 
 .text h5{
     font-size: 20px;
     margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .text h5:hover{
     text-decoration: underline;
@@ -264,6 +243,8 @@ footer {
 }
 .text p{
     color: rgba(255, 255, 255, 0.8);
+    margin: 0px;
+    padding-left: 5px;
 }
 .text p:hover{
     color: rgba(255, 255, 255, 0.9);
@@ -282,14 +263,12 @@ footer {
 }
 .banner-miley {
     width: 100%;
-    height: 30vh;
     display: flex;
     flex-wrap: wrap;
 }
 .banner-miley img {
     width: 100%;
     height: 30vh;
-    justify-content: center;
 }
 .artist-detail {
     background-color: rgba(255, 255, 255, 0.2);
@@ -300,7 +279,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
 }
 .img-miley {
     width: 40%;
@@ -309,7 +287,6 @@ footer {
 }
 .description-miley {
     width: 50%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -325,7 +302,6 @@ footer {
     margin-right: 0px;
 }
 .description-miley ul{
-    list-style: decimal;
     width: 100%;
     margin-bottom: 50px;
 }
@@ -339,7 +315,6 @@ footer {
 .description-miley li{
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 70%;
     padding: 10px;
     border-radius: 10px; 
     margin: 10px;
@@ -368,32 +343,22 @@ footer {
     font-size: 40px;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 200;
-    width: 100%;
     padding: 10px;
-    align-items: center;
-    margin-left: 0px;
-    margin-right: 0px;
     margin-top: 60px;
     margin-bottom: 60px;
-    justify-content: flex-start;
 }
 .main-results article{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 .main-results article h3{
     font-size: 30px;
     width: 100%;
-    font-size: 30px;
     border-bottom: solid 2px rgba(255, 255, 255, 0.2);
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
 }
 .result-artist{
     background-color: rgba(255, 255, 255, 0.1);
@@ -458,14 +423,9 @@ footer {
 .result-songs li div{
     width: 100%;
     height: 40%;
-    margin: 0px;
-    padding: 0px;
-    margin: 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 .result-songs li div h4{
     font-size: 20px;
@@ -497,13 +457,11 @@ footer {
 .result-albums li{
     background-color: rgba(255, 255, 255, 0.2);
     width: 33%;
-    height: 100%;
     padding: 10px;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 .result-albums img{
@@ -512,10 +470,6 @@ footer {
 }
 .result-albums li div{
     width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
 }
 .result-albums li div h4{
     font-size: 20px;
@@ -539,7 +493,6 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 .result-playlist img{
