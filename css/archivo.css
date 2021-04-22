@@ -803,12 +803,10 @@ width: auto;
     width: 70%;
     margin: 0px;
     font-size: 60px;
-    background-color: cadetblue;
 }
 .info-track .add-playlist{
     width: 30%;
-    background-color: blueviolet;
-    font-size: 20px;
+ font-size: 20px;
     border-radius: 10px;
     text-align: center;
     padding: 5px;
@@ -823,16 +821,13 @@ width: auto;
     margin-right: 20px;
     margin-left: 0px;
     align-items: center;
-    background-color: darkmagenta;
 }
 
 .info-track p{
     font-size: 30px;
-    background-color: yellow;
 }
 .info-track h3{
     font-size: 40px;
-    background-color: yellow;
     margin: 0px;
 }
 .player{
