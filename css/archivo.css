@@ -72,7 +72,6 @@ header {
     padding: 10px;
     font-size: 17px;
     border: none;
-    /*border-bottom: solid 1px gray;*/
     width: 80%;
     background-image: linear-gradient(rgb(24, 24, 24), black );
     border-bottom: solid 3px rgb(16, 135, 233);
