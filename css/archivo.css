@@ -892,6 +892,7 @@ audio {
     width: 100%;
     display: flex;
 }
+
 .title-artist-responsive{
     font-size: 40px;
     width: 100%;
@@ -921,6 +922,7 @@ audio {
 }
 
  /*detail-album*/
+
  .banner-album, .banner-album-image{
     display: none;
 }
@@ -929,33 +931,65 @@ audio {
     display: flex;
     width: 100%;
 }
-  
- .justice-title{
-    display: flex;
-    font-size: 20px;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: row; 
-    margin: 2%;
-        }
 
- .fotoalbum{
-            height: 350px
-               }
-           }
+.justice-title{
+    font-size: 20px;
+    width: initial;
+    margin: 0%;
+    margin-top: 20px;
+}
+
+.main-detail-album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}
+
+
+.fotoalbum{
+width: 290px;
+height:auto
+}
+
+.article-main-album{
+    width:85%;
+    flex-wrap: wrap;
+}
+
 
 .section1-album{
-    font-size: 40px;
-    }
-    
-    .section2-album{
+    margin: 20px;
+    margin-bottom: 20px;
     font-size: 30px;
-    }
-    
-    .detalles-album{
-    font-size: 45px;
-    text-shadow: 4px 4px 7px black;
-    text-align: center;
-    }
-    
-    
+}
+
+.detalles-album{
+    margin-top: 0px;
+    font-size: 40px;
+
+}
+
+.section2-album{
+    margin: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.section1-album ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section2-album li{
+    margin: 10px;
+    font-size: 20px;
+    width: 100%;
+
+}
+
+.section2-album ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+}
