@@ -131,7 +131,17 @@ header {
 #home:hover, #genres:hover{
     border-bottom: solid 3px rgb(16, 135, 233);
 }
-
+@media (max-width: 420px){
+    header{
+        background-color: yellowgreen;
+    }
+    .main-home{
+        flex-direction: column;
+    }
+    .lista-songs, .lista-albums, .lista-artist{
+        width: 80%;
+    }
+}
 /* FOOTER */
 /* por Justi */
 footer {
