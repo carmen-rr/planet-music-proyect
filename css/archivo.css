@@ -624,6 +624,26 @@ footer {
     cursor: pointer;
  }
 
+ @media (max-width: 420px){
+    
+    .justice-title{
+        flex-direction: row; 
+        font-size: 20px;
+        width: 100%;
+        margin: 2%;
+        
+    }
+
+    .article-main-album{
+        flex-direction: column;
+    }
+
+    .fotoalbum{
+        height: 350px
+    }
+}
+    
+
 /* GENRES.HTML */
 
 .banner-genres{
@@ -639,7 +659,6 @@ footer {
     justify-content: space-around;
     flex-direction: row;
     font-size: 50px ;
-    width: 96%;
     border-radius: 25px;
     line-height: 0;
     background-color: rgba(82, 75, 75, 0.5);
@@ -679,6 +698,24 @@ height: 450px;
     
  }
 
+ @media (max-width: 420px){
+    
+    .genre-title{
+        flex-direction: row; 
+        width: 100%;
+        margin: 2%;
+    }
+
+    .genres-article{
+        flex-direction: column;
+        width: 98%;
+    }
+
+    .genre-image{
+        height: 300px;
+    }
+}
+
 /* DETAI-GENRES.HTML */
 
   
@@ -695,7 +732,6 @@ height: 450px;
     justify-content: space-around;
     flex-direction: row;
     font-size: 50px;
-    width: 96%;
     margin: 30px;
     line-height: 0;
     border-radius: 25px;
@@ -743,6 +779,21 @@ width: auto;
     cursor: pointer;
     text-decoration: underline;
  }
+
+ @media (max-width: 420px){
+    
+    .detail-genre-title{
+        flex-direction: row; 
+        width: 100%;
+        margin: 2%;
+    }
+
+    .detail-genres-article{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+}
 
 /* DETAI-TRACK.HTML */
 /*Valentino*/
