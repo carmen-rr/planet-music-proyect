@@ -755,8 +755,95 @@ width: auto;
 
 /* DETAI-TRACK.HTML */
 /*Valentino*/
+.main-detail-track{
+    width: 100%;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
+}
 .banner-dua{
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    width: 100%;
+}
+.banner-dua img{
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+}
+.track-detail{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    align-items: flex-start;
+}
+.img-dua{
+    width: 40%;
+    margin: 20px;
+    border-radius: 20px;
+}
+.info-track{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.info-track h1 {
+    width: 70%;
+    margin: 0px;
+    font-size: 60px;
+    background-color: cadetblue;
+}
+.info-track .add-playlist{
+    width: 30%;
+    background-color: blueviolet;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+.description-track{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+    margin-left: 0px;
+    align-items: center;
+    background-color: darkmagenta;
+}
+
+.info-track p{
+    font-size: 30px;
+    background-color: yellow;
+}
+.info-track h3{
+    font-size: 40px;
+    background-color: yellow;
+    margin: 0px;
+}
+.player{
+    width: 100%;
+    background-color: darksalmon;
+}
+.player audio{
+    width: 100%;
+    font-weight: 600;
+}
+/*.banner-dua{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -808,7 +895,7 @@ audio {
     padding: 10px 5px;
     border-radius: 30px;
 }
-
+*/
 
 
 
