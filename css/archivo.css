@@ -252,12 +252,9 @@ footer {
 }
 .banner-miley {
     width: 100%;
+    height: 30vh;
     display: flex;
     flex-wrap: wrap;
-}
-.banner-miley img {
-    width: 100%;
-    height: 30vh;
 }
 .artist-detail {
     background-color: rgba(255, 255, 255, 0.2);
@@ -269,10 +266,13 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
 }
+.banner-responsive, .title-artist-responsive, .img-miley-responsive{
+    display: none;
+}
 .img-miley {
     width: 40%;
-    border-radius: 10px;
-    margin: 20px;
+    border-radius: 30px;
+    padding: 20px;
 }
 .description-miley {
     width: 50%;
@@ -915,7 +915,49 @@ audio {
         width: 15%;
     }
 
+
+    /*detail-artist*/
+.banner-miley, .img-miley, .description-miley h1{
+    display: none;
 }
+.banner-responsive, .title-artist-responsive, .img-miley-responsive{
+    display: flex;
+}
+
+.banner-responsive{
+    width: 100%;
+    display: flex;
+}
+.title-artist-responsive{
+    font-size: 40px;
+    width: 100%;
+    justify-content: center;
+}
+.artist-detail {
+    width: 85%;
+}
+.img-miley-responsive{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+}
+.description-miley{
+    width: 100%;
+}
+.description-miley ul{
+    margin-bottom: 30px;
+}
+.description-miley h6{
+    font-size: 25px;
+    padding-left: 10px;
+}
+.description-miley li{
+    font-size: 15px;
+}
+
+}
+
 
 
 
