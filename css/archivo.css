@@ -997,7 +997,7 @@ height:auto
      
 .genres-article{
   
-        width:85%;
+        width:93%;
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
@@ -1006,12 +1006,12 @@ height:auto
      
 
      .pop, .rock, .techno {
-        width: 85%;
+        width: 100%;
      }
      
      .genre-image{
     width: auto;
-    height: 290px;
+    height: 320px;
      }
  
       /*detail-genres*/
@@ -1030,16 +1030,14 @@ height:auto
      }
       
      .detail-genres-article{
-        width:85%;
+        width:90%;
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
         flex-direction: column;
      }
-      
      .dua-pop, .sam-pop, .justin-pop, .miley-pop{
-      
-        width: 85%;
+        width: 100%;
      }
       
      .ul-pop-img{
@@ -1050,8 +1048,8 @@ height:auto
      }
       
      .pop-image{
-    width: auto;
-     height: 300px;
+    width: 300px;
+     height: auto;
      }
     
      
