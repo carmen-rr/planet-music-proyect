@@ -4,8 +4,8 @@
     color: white;}
     
 body{
-        background-color: black;
-    }
+    background-color: black;
+}
 
 ul, ol{
     padding: 0px;
@@ -116,17 +116,18 @@ header {
 
 footer {
     background-color: rgba(255, 255, 255, 0.1);
-    height: 150px;
-    color: whitesmoke;
+    height: 100px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+}
+.integrantes{
+    margin: 10px;
 }
 .copyright {
     width: 20%;
-    color: whitesmoke;
 }
 .logo-copy {
     width: 5%;
@@ -175,7 +176,6 @@ footer {
     background-image: url(../img/home/artist.JPEG);
 }
 
-
 .ul-de-songs, .ul-de-albums, .ul-de-artist {
     display: flex;
     flex-wrap: wrap;
@@ -200,7 +200,7 @@ footer {
     align-items: center;
 }
 .ul-de-songs li:hover, .ul-de-albums li:hover, .ul-de-artist li:hover{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 .ul-de-songs li img, .ul-de-albums li img{
     width: 20%;
@@ -231,7 +231,7 @@ footer {
     cursor: pointer;
 }
 .text p{
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
     margin: 0px;
     padding-left: 5px;
 }
@@ -242,7 +242,6 @@ footer {
 }
 
 /* DETAIL-ARTIST.HTML */
-
 
 .main-detail-artist{
     width: 100%;
@@ -322,7 +321,6 @@ footer {
 
  /* SEARCH-RESULTS.HTML*/
 
-
  .main-results {
     display: flex;
     flex-wrap: wrap;
@@ -348,6 +346,21 @@ footer {
     border-bottom: solid 2px rgba(255, 255, 255, 0.2);
     display: flex;
     flex-wrap: wrap;
+}
+.main-results li:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.main-results h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.main-results p{
+    color: rgba(255, 255, 255, 0.7);
+}
+.main-results p:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
 }
 .result-artist{
     background-color: rgba(255, 255, 255, 0.1);
@@ -918,6 +931,101 @@ audio {
 }
 .description-miley li{
     font-size: 15px;
+}
+
+
+/*search-results*/
+
+.main-results h2{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.main-results article h3{
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.result-artist{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.result-artist img{
+    width: 20%;
+}
+.result-artist li{
+    width: 90%;
+}
+.result-artist h4{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.result-songs{
+    padding-left: 0px;
+    padding-right: 0px;
+    height: initial;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: initial;
+    justify-content: center;
+}
+.result-songs li{
+    height: initial;
+    flex-direction: row;
+    margin: 5px;
+    width: 85%;
+}
+.result-songs img{
+    width: 20%;
+}
+.result-songs li div {
+    width: 60%;
+    margin-left: 5px;
+}
+.result-songs li div h4{
+    font-size: 15px;
+    padding-top: 0px;
+}
+.result-songs li div p{
+    font-size: 15px;
+}
+
+.result-albums{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.result-albums img{
+    width: 100%;
+}
+.result-albums li{
+    height: 180px;
+}
+.result-albums li div{
+    width: 100%;
+}
+.result-albums li div h4{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+.result-albums li div p{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.result-playlist{
+    flex-direction: column;
+}
+.result-playlist li{
+    width: 70%;
+    margin-bottom: 10px;
+}
+.result-playlist li h4{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
  /*detail-album*/
