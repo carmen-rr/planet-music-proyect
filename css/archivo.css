@@ -578,6 +578,7 @@ footer {
 }
 .section2-album  li:hover{
     background-color: rgba(61, 59, 59, 0.15);
+    cursor: pointer;
 }
     
 
@@ -1100,7 +1101,7 @@ height:auto
 
 .detalles-album{
     margin-top: 0px;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 .section2-album{
