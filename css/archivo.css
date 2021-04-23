@@ -714,13 +714,10 @@ width: auto;
 .banner-dua{
     display: flex;
     flex-wrap: wrap;
-    height: 30vh;
     width: 100%;
 }
-.banner-dua img{
-    width: 100%;
-    height: 30vh;
-    justify-content: center;
+.banner-dua-responsive{
+    display: none;
 }
 .track-detail{
     margin-top: 40px;
@@ -1321,6 +1318,12 @@ height:auto
     .track-detail {
         width: 85%;
     }
+    .banner-dua{
+        display: none;
+    }
+    .banner-dua-responsive{
+        display: flex;
+    }
     .img-dua{
         width: 100%;
         padding: 20px;
@@ -1332,12 +1335,11 @@ height:auto
         margin: 0px;
     }
     .info-track .add-playlist{
-        width: initial;
+        width: 40%;
         width: 100%;
         font-size: 15px;
         margin: 0px;
         margin-bottom: 10px;
-
     }
     .info-track{
         padding: 10px;
