@@ -753,10 +753,11 @@ width: auto;
 }
 .info-track .add-playlist{
     width: 30%;
- font-size: 20px;
-    border-radius: 10px;
+     font-size: 20px;
+    border-radius: 50px;
     text-align: center;
     padding: 5px;
+    background-color: rgb(24, 130, 218);
 }
 .description-track{
     display: flex;
@@ -779,17 +780,22 @@ width: auto;
 }
 .player{
     width: 100%;
-    background-color: darksalmon;
+}
+.player p{
+    width: 20%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
 }
 .player audio{
     width: 100%;
     font-weight: 600;
 }
-* {
-    font-family:Arial, Helvetica, sans-serif;
-}
 
-img {
+
+/*img {
     width: 200px;
     height: 200px;
 }
@@ -922,7 +928,8 @@ section .playlist ul li .contenedorCanciones p {
     header .buscador input[type = 'text']{
         width: 40%;
     }
-}/*.banner-dua{
+}/*
+/*.banner-dua{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -1310,8 +1317,49 @@ height:auto
     width: 300px;
      height: auto;
      }
-    
-     
+    /*DETAIL-TRACK.HTML*/
+    .track-detail {
+        width: 85%;
+    }
+    .img-dua{
+        width: 100%;
+        padding: 20px;
+        margin: 0px;
+        border-radius: 30px;
+    }
+    .description-track{
+        width: 100%;
+        margin: 0px;
+    }
+    .info-track .add-playlist{
+        width: initial;
+        width: 100%;
+        font-size: 15px;
+        margin: 0px;
+        margin-bottom: 10px;
 
+    }
+    .info-track{
+        padding: 10px;
+    }
+    .info-track h1{
+        width: 100%;
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    .info-track h3{
+        font-size: 25px;
+    }
+    .player audio{
+        width: 97%;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    } 
+    .player p{
+        font-size: 15px;
+        width: 100%;
+    }
+    
     }
     
