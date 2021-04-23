@@ -1323,6 +1323,7 @@ height:auto
     }
     .banner-dua-responsive{
         display: flex;
+        width: 100%;
     }
     .img-dua{
         width: 100%;
