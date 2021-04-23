@@ -631,7 +631,7 @@ height: 450px;
  }
 
 
-/* DETAI-GENRES.HTML */
+/* DETAIL-GENRES.HTML */
 
 .banner-gdetail{
     width: 100%;
@@ -700,7 +700,7 @@ width: auto;
 
  
 
-/* DETAI-TRACK.HTML */
+/* DETAIL-TRACK.HTML */
 /*Valentino*/
 .main-detail-track{
     width: 100%;
@@ -789,7 +789,55 @@ width: auto;
     width: 100%;
     font-weight: 600;
 }
+/*PLAYLIST.HTML*/
 
+.main-playlist h1{
+    font-size: 40px;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.2);
+}
+.playlist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.playlist ul{
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.playlist li{
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.playlist li img{
+    width: 100%;
+    border-radius: 10px;
+}
+.playlist li h5{
+    font-size: 30px;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+.playlist li p{
+    font-size: 25px;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
 
 /*img {
     width: 200px;
