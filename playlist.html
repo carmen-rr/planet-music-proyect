@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/archivo.css">
     <title>My Playlist</title>
 
 </head>
 <body>
+    <header>
+        <section class="logo">
+            <img src="img/anytime-slogan.PNG" alt="Music Anytime" class="slogan">
+            <img src="img/logo3.PNG" alt="Logo Planet Music">
+            <img src="img/anywhere-slogan.PNG" alt="Music Anywhere" class="slogan">
+        </section>
+        <nav class="navegador">
+            <img src="img/logo3.PNG" alt="Logo Planet Music">
+            <form action="search-results.html" method="GET" class="search">
+                <input type="text" name="search" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <ul>
+                <li id="home"> <a href="index.html">HOME</a></li>
+                <li id="genres"><a href="genres.html">GENRES</a></li>
+                <li id="my-playlist"><a href="playlist.html">My Playlist</a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="main-playlist">
         <h1>My Playlist</h1>
         <section class="playlist">
@@ -79,5 +100,9 @@
             </ul>
         </section>
     </main>
+    <footer>
+        <p class="integrantes">All rights reserved to Carmen Rodriguez Reynoso, Valentino Gabay & Justina Kelly </p>
+        <p class="logo-copy"><img src="img/copyright.PNG" alt="copyright" class="copyright"> 2021.</p>
+    </footer>
 </body>
 </html>
