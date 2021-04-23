@@ -490,9 +490,6 @@ footer {
     width: 100%;
     display: flex;
  }
-.banner-album-responsive{
-     display: none;
- }
 .justice-title{
     display: flex;
     text-align: center;
@@ -512,7 +509,7 @@ footer {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 25px;
     margin: 55px;
-    padding: 5px;
+    padding: 15px;
  }
 .section1-album{
     font-size: 40px;
@@ -534,7 +531,18 @@ footer {
     background-color: rgba(20, 20, 20, 0.2);
     cursor: pointer;
  }
-    
+ .section2-album li{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 10px; 
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section2-album  li:hover{
+    background-color: rgba(61, 59, 59, 0.15);
+    cursor: pointer;
+}
 
 /* GENRES.HTML */
 .banner-genres{
@@ -545,10 +553,6 @@ footer {
  .banner-genres-image{
     width: 100%;
 display: flex;}
-
-.banner-genres-responsive{
-    display: none;
-}
   
  .genre-title{
     display: flex;
@@ -1031,7 +1035,7 @@ height:auto
 
 .detalles-album{
     margin-top: 0px;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 .section2-album{
@@ -1065,7 +1069,7 @@ height:auto
 
   
  .genre-title{
-    font-size: 20px;
+    font-size: 30px;
     width: initial;
     margin: 0%;
     margin-top: 20px;
@@ -1099,7 +1103,7 @@ height:auto
     }
     
     .detail-genre-title{
-    font-size: 32px;
+    font-size: 30px;
     width: initial;
     margin: 0%;
     margin-top: 20px;
