@@ -1136,8 +1136,7 @@ height:auto
 
   
  .genre-title{
-    font-size: 20px;
-    width: initial;
+    font-size: 30px;
     margin: 0%;
     margin-top: 20px;
      }
@@ -1171,7 +1170,7 @@ height:auto
     }
     
     .detail-genre-title{
-    font-size: 32px;
+    font-size: 30px;
     width: initial;
     margin: 0%;
     margin-top: 20px;
