@@ -840,6 +840,8 @@ audio {
 */
 
 @media (max-width: 420px){
+
+    /*HEADER*/
     header{
         height: 130px;
     }
@@ -863,6 +865,15 @@ audio {
         padding: 5px;
     }
 
+    /*FOOTER*/
+    .integrantes{
+        font-size: 12px;
+    }
+    .logo-copy{
+        width: 20%;
+    }
+
+    /*INDEX.HTML*/
     .main-home{
         flex-direction: column;
         margin-top: 40px;
@@ -892,7 +903,8 @@ audio {
     }
 
 
-    /*detail-artist*/
+    /*DETAIL-ARTIST.HTML*/
+
 .banner-miley, .img-miley, .description-miley h1{
     display: none;
 }
@@ -934,7 +946,7 @@ audio {
 }
 
 
-/*search-results*/
+/*SEARCH-RESULTS.HTML*/
 
 .main-results h2{
     font-size: 25px;
