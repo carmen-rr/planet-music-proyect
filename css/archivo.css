@@ -516,10 +516,6 @@ footer {
     width: 100%;
     display: flex;
  }
-
- .banner-album-responsive{
-     display: none;
- }
   
  .justice-title{
     display: flex;
@@ -542,7 +538,7 @@ footer {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 25px;
     margin: 55px;
-    padding: 5px;
+    padding: 15px;
   
  }
  .section1-album{
@@ -587,14 +583,11 @@ footer {
 .banner-genres{
     width: 100%;
     display: flex;
+   
  }
-
  .banner-genres-image{
     width: 100%;
-display: flex;}
-
-.banner-genres-responsive{
-    display: none;
+    display: flex;
 }
   
  .genre-title{
@@ -656,7 +649,6 @@ height: 450px;
     display: flex;
 }
 
-
 .detail-genre-title{
     display: flex;
     text-align: center;
@@ -714,7 +706,7 @@ width: auto;
  
 
 /* DETAIL-TRACK.HTML */
-/*Valentino*/
+
 .main-detail-track{
     width: 100%;
     display: flex;
@@ -1067,7 +1059,7 @@ width: auto;
     margin-bottom: 5px;
 }
 
- /*detail-album*/
+ /*DETAIL-ALBUM*/
 
 .justice-title{
     font-size: 20px;
@@ -1127,7 +1119,7 @@ height:auto
     flex-wrap: wrap;
 }
 
- /*genres*/
+ /*GENRES*/
 
  .main-genres{
     display: flex;
@@ -1161,7 +1153,7 @@ height:auto
     height: 300px;
      }
  
-      /*detail-genres*/
+      /*DETAIL-GENRES*/
 
     .main-detail-genre{
     display: flex;
