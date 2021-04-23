@@ -6,7 +6,6 @@
 body{
     background-color: black;
 }
-
 ul, ol{
     padding: 0px;
 }
@@ -17,8 +16,8 @@ a{
     color: white;
     text-decoration: none;
 }
-/* HEADER */
 
+/* HEADER */
 header {
     background-color: rgb(24, 24, 24);
     width: 100%;
@@ -28,7 +27,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
 }
-
 .logo{
     width: 100%;
     height: 66%;
@@ -38,11 +36,9 @@ header {
     flex-direction: row;
     justify-content: center;
 }
-
 .logo img{
     height: 70%;
 }
-
 .navegador {
     width: 100%;
     height: 50px;
@@ -68,7 +64,6 @@ header {
     border: none;
     border-bottom: solid 3px rgb(16, 135, 233);
 }
-
 .search button {
     font-size: 17px;
     background-image: linear-gradient(rgb(24, 24, 24), black );
@@ -83,7 +78,6 @@ header {
     background: rgba(255, 255, 255, 0.2);
     border-bottom: solid 3px rgb(16, 135, 233);
 }
-
 .navegador ul {
     font-size: 25px;
     width: 40%;
@@ -92,7 +86,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .navegador li {
     padding: 5px 10px;
     border-bottom: solid 3px transparent;
@@ -113,7 +106,6 @@ header {
 }
 
 /* FOOTER */
-
 footer {
     background-color: rgba(255, 255, 255, 0.1);
     height: 100px;
@@ -134,7 +126,6 @@ footer {
 }
 
 /* INDEX.HTML */
-
 .main-home {
     margin-top: 70px;
     margin-bottom: 70px; 
@@ -144,7 +135,6 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-
 .lista-songs, .lista-albums, .lista-artist {
     background-color: rgba(255, 255, 255, 0.2);
     width: 28%;
@@ -154,7 +144,6 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
 }
-
 .title-songs, .title-albums, .title-artist {
     text-align: center;
     font-size: 200%;
@@ -175,13 +164,11 @@ footer {
 .title-artist {
     background-image: url(../img/home/artist.JPEG);
 }
-
 .ul-de-songs, .ul-de-albums, .ul-de-artist {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-
 .ul-de-songs li, .ul-de-albums li, .ul-de-artist li{
     background-color: rgba(255, 255, 255, 0.1);
     padding-left: 5px;
@@ -210,7 +197,6 @@ footer {
     width: 20%;
     border-radius: 50%;
 }
-
 .text{
     width: 80%;
     height: 100%;
@@ -219,7 +205,6 @@ footer {
     flex-direction: row;
     align-items: center;
 }
-
 .text h5{
     font-size: 20px;
     margin-left: 5px;
@@ -228,7 +213,6 @@ footer {
 }
 .text h5:hover{
     text-decoration: underline;
-    cursor: pointer;
 }
 .text p{
     color: rgba(255, 255, 255, 0.7);
@@ -238,11 +222,9 @@ footer {
 .text p:hover{
     color: rgba(255, 255, 255, 0.9);
     text-decoration: underline;
-    cursor: pointer;
 }
 
 /* DETAIL-ARTIST.HTML */
-
 .main-detail-artist{
     width: 100%;
     display: flex;
@@ -299,7 +281,6 @@ footer {
     font-size: 35px;
     margin: 0px;
 }
-
 .description-miley li{
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -315,12 +296,9 @@ footer {
 .description-miley li a:hover{
     color: rgba(255, 255, 255, 0.9);
     text-decoration: underline;
-    cursor: pointer;
 }
 
-
  /* SEARCH-RESULTS.HTML*/
-
  .main-results {
     display: flex;
     flex-wrap: wrap;
@@ -352,7 +330,6 @@ footer {
 }
 .main-results h4:hover{
     text-decoration: underline;
-    cursor: pointer;
 }
 .main-results p{
     color: rgba(255, 255, 255, 0.7);
@@ -360,8 +337,8 @@ footer {
 .main-results p:hover{
     text-decoration: underline;
     color: rgba(255, 255, 255, 0.9);
-    cursor: pointer;
 }
+
 .result-artist{
     background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
@@ -496,7 +473,6 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
 .result-playlist img{
     width: 100%;
     border-radius: 10px;
@@ -506,18 +482,18 @@ footer {
 }
 
 /* DETAIL-ALBUM.HTML */
-
 .banner-album{
     width: 100%;
     display: flex;
  }
-  
- .banner-album-image{
+.banner-album-image{
     width: 100%;
     display: flex;
  }
-  
- .justice-title{
+.banner-album-responsive{
+     display: none;
+ }
+.justice-title{
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -528,66 +504,50 @@ footer {
     border-radius: 25px;
     background-color: rgba(82, 75, 75, 0.5);
     text-shadow: 4px 4px 7px black;
-  
  }
-  
- .article-main-album{
+.article-main-album{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 25px;
     margin: 55px;
-    padding: 15px;
-  
+    padding: 5px;
  }
- .section1-album{
+.section1-album{
     font-size: 40px;
   }
-
- .fotoalbum{
+.fotoalbum{
     height: 650px;
     width: auto;
     border-radius: 25px;
  }
- .section2-album{
+.section2-album{
     font-size: 30px;
  }
-  
- .detalles-album{
+.detalles-album{
     font-size: 45px;
     text-shadow: 4px 4px 7px black;
     text-align: center;
  }
- .detalles-album:hover{
+.detalles-album:hover{
     background-color: rgba(20, 20, 20, 0.2);
     cursor: pointer;
  }
-
- .section2-album li{
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 5px;
-    border-radius: 10px; 
-    margin: 5px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.section2-album  li:hover{
-    background-color: rgba(61, 59, 59, 0.15);
-    cursor: pointer;
-}
     
 
 /* GENRES.HTML */
-
 .banner-genres{
     width: 100%;
     display: flex;
-   
  }
+
  .banner-genres-image{
     width: 100%;
-    display: flex;
+display: flex;}
+
+.banner-genres-responsive{
+    display: none;
 }
   
  .genre-title{
@@ -633,12 +593,9 @@ height: 450px;
     background-color: rgba(20, 20, 20, 0.2);
     cursor: pointer;
     border-radius: 50%;
-    
  }
 
-
 /* DETAIL-GENRES.HTML */
-
 .banner-gdetail{
     width: 100%;
     display: flex;
@@ -648,7 +605,6 @@ height: 450px;
     width: 100%;
     display: flex;
 }
-
 .detail-genre-title{
     display: flex;
     text-align: center;
@@ -661,14 +617,12 @@ height: 450px;
     background-color: rgba(82, 75, 75, 0.5);
     text-shadow: 4px 4px 7px black;
  }
-  
  .detail-genres-article{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     text-align: center;
  }
-  
  .dua-pop, .sam-pop, .justin-pop, .miley-pop{
     background-color: rgba(255, 255, 255, 0.5);
   
@@ -682,7 +636,6 @@ height: 450px;
     text-align: center;
     text-shadow: 4px 4px 7px black;
  }
-  
  .ul-pop-img{
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
@@ -703,10 +656,7 @@ width: auto;
     text-decoration: underline;
  }
 
- 
-
 /* DETAIL-TRACK.HTML */
-
 .main-detail-track{
     width: 100%;
     display: flex;
@@ -714,7 +664,6 @@ width: auto;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
 }
 .banner-dua{
     display: flex;
@@ -771,7 +720,6 @@ width: auto;
     margin-left: 0px;
     align-items: center;
 }
-
 .info-track p{
     font-size: 30px;
 }
@@ -794,8 +742,8 @@ width: auto;
     width: 100%;
     font-weight: 600;
 }
-/*PLAYLIST.HTML*/
 
+/*PLAYLIST.HTML*/
 .main-playlist h1{
     margin-top: 40px;
     font-size: 40px;
@@ -900,12 +848,7 @@ width: auto;
     }
     .lista-songs, .lista-albums, .lista-artist{
         width: 85%;
-    }
-    .text h5{
-        font-size: 15px;
-    }
-    .text p{
-        font-size: 13px;
+        margin-bottom: 30px;
     }
     .title-songs, .title-albums, .title-artist{
         height: 100px;
@@ -914,150 +857,145 @@ width: auto;
     .ul-de-songs li, .ul-de-albums li, .ul-de-artist{
         margin-bottom: 0px;
     }
-    .lista-songs, .lista-albums, .lista-artist{
-        margin-bottom: 30px;
-    }
     .ul-de-songs li img, .ul-de-albums li img, .ul-de-artist li img{
         width: 15%;
     }
-
+    .text h5{
+        font-size: 15px;
+    }
+    .text p{
+        font-size: 13px;
+    }
 
     /*DETAIL-ARTIST.HTML*/
+     .banner-miley, .img-miley, .description-miley h1{
+        display: none;
+     }
+     .banner-responsive, .title-artist-responsive, .img-miley-responsive{
+        display: flex;
+    }
+    .banner-responsive{
+        width: 100%;
+        display: flex;
+    }
+    .artist-detail {
+        width: 85%;
+    }
+    .title-artist-responsive{
+        font-size: 40px;
+        width: 100%;
+        justify-content: center;
+    }
+    .img-miley-responsive{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        border-radius: 30px;
+    }
+    .description-miley{
+        width: 100%;
+    }
+    .description-miley ul{
+        margin-bottom: 30px;
+    }.description-miley h6{
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    .description-miley li{
+        font-size: 15px;
+    }
 
-.banner-miley, .img-miley, .description-miley h1{
-    display: none;
-}
-.banner-responsive, .title-artist-responsive, .img-miley-responsive{
-    display: flex;
-}
-
-.banner-responsive{
-    width: 100%;
-    display: flex;
-}
-
-.title-artist-responsive{
-    font-size: 40px;
-    width: 100%;
-    justify-content: center;
-}
-.artist-detail {
-    width: 85%;
-}
-.img-miley-responsive{
-    display: flex;
-    width: 100%;
-    padding: 10px;
-    border-radius: 30px;
-}
-.description-miley{
-    width: 100%;
-}
-.description-miley ul{
-    margin-bottom: 30px;
-}
-.description-miley h6{
-    font-size: 25px;
-    padding-left: 10px;
-}
-.description-miley li{
-    font-size: 15px;
-}
-
-
-/*SEARCH-RESULTS.HTML*/
-
-.main-results h2{
-    font-size: 25px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.main-results article h3{
-    font-size: 25px;
-    margin-bottom: 0px;
-}
-.result-artist{
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-.result-artist img{
-    width: 20%;
-}
-.result-artist li{
-    width: 90%;
-}
-.result-artist h4{
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.result-songs{
-    padding-left: 0px;
-    padding-right: 0px;
-    height: initial;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: initial;
-    justify-content: center;
-}
-.result-songs li{
-    height: initial;
-    flex-direction: row;
-    margin: 5px;
-    width: 85%;
-}
-.result-songs img{
-    width: 20%;
-}
-.result-songs li div {
-    width: 60%;
-    margin-left: 5px;
-}
-.result-songs li div h4{
-    font-size: 15px;
-    padding-top: 0px;
-}
-.result-songs li div p{
-    font-size: 15px;
-}
-
-.result-albums{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.result-albums img{
-    width: 100%;
-}
-.result-albums li{
-    height: 180px;
-}
-.result-albums li div{
-    width: 100%;
-}
-.result-albums li div h4{
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 15px;
-}
-.result-albums li div p{
-    font-size: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-
-.result-playlist{
-    flex-direction: column;
-}
-.result-playlist li{
-    width: 70%;
-    margin-bottom: 10px;
-}
-.result-playlist li h4{
-    font-size: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+    /*SEARCH-RESULTS.HTML*/
+    .main-results h2{
+       font-size: 25px;
+       margin-top: 30px;
+       margin-bottom: 30px;
+    }
+    .main-results article h3{
+       font-size: 25px;
+       margin-bottom: 0px;
+    }
+    .result-artist{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .result-artist li{
+        width: 90%;
+    }
+    .result-artist img{
+        width: 20%;
+    }
+    .result-artist h4{
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .result-songs{
+        padding-left: 0px;
+        padding-right: 0px;
+        height: initial;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: initial;
+        justify-content: center;
+    }
+    .result-songs li{
+        height: initial;
+        flex-direction: row;
+        margin: 5px;
+        width: 85%;
+    }
+    .result-songs img{
+        width: 20%;
+    }
+    .result-songs li div {
+        width: 60%;
+        margin-left: 5px;
+    }
+    .result-songs li div h4{
+        font-size: 15px;
+        padding-top: 0px;
+    }
+    .result-songs li div p{
+        font-size: 15px;
+    }
+    
+    .result-albums{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .result-albums li{
+        height: 180px;
+    }
+    .result-albums img{
+        width: 100%;
+    }
+    .result-albums li div{
+        width: 100%;
+    }
+    .result-albums li div h4{
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+    .result-albums li div p{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .result-playlist{
+        flex-direction: column;
+    }
+    .result-playlist li{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .result-playlist li h4{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 
  /*DETAIL-ALBUM*/
 
@@ -1093,7 +1031,7 @@ height:auto
 
 .detalles-album{
     margin-top: 0px;
-    font-size: 30px;
+    font-size: 40px;
 
 }
 .section2-album{
@@ -1120,7 +1058,6 @@ height:auto
 }
 
  /*GENRES*/
-
  .main-genres{
     display: flex;
     flex-wrap: wrap;
@@ -1128,7 +1065,8 @@ height:auto
 
   
  .genre-title{
-    font-size: 30px;
+    font-size: 20px;
+    width: initial;
     margin: 0%;
     margin-top: 20px;
      }
@@ -1154,7 +1092,6 @@ height:auto
      }
  
       /*DETAIL-GENRES*/
-
     .main-detail-genre{
     display: flex;
     flex-wrap: wrap;
@@ -1162,7 +1099,7 @@ height:auto
     }
     
     .detail-genre-title{
-    font-size: 30px;
+    font-size: 32px;
     width: initial;
     margin: 0%;
     margin-top: 20px;
@@ -1191,6 +1128,7 @@ height:auto
     width: 300px;
      height: auto;
      }
+
     /*DETAIL-TRACK.HTML*/
     .track-detail {
         width: 85%;
@@ -1240,6 +1178,7 @@ height:auto
         font-size: 15px;
         width: 100%;
     }
+
     /*PLAYLIST.HTML*/
     .playlist li{
         width: 100%;
@@ -1260,8 +1199,6 @@ height:auto
     width: 70%;
     align-items: flex-start;
     }
-
-
 
     }
     
