@@ -1,6 +1,6 @@
 alert ("hola")
 
-let urlTrack = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists'
+let urlTrack = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks'
 
 fetch(urlTrack)
     .then( function(response){
@@ -16,7 +16,7 @@ fetch(urlTrack)
        for(let i=0; i<arrayInfo.length; i++){
           contenidoLista += 
                  `<li>
-                <img src="${arrayInfo[i].album.picture_big}"> 
+                <img src="${arrayInfo[i].album.cover_big}"> 
                 <div class="text"> 
                     <h5><a href="detail-artist.html?id=${arrayInfo[i].id}"> ${arrayInfo[i].title}</a> </h5>
                     <p><a href="detail-artist.html?id=${arrayInfo[i].id}"> - ${arrayInfo[i].artist.name}</a></p>
@@ -82,9 +82,9 @@ fetch(urlTrack)
           contenidoLista += 
                   
                 `<li>
-                    <img src="${arrayInfo[i].artist.cover_big}">
+                    <img src="${arrayInfo[i].picture_big}">
                     <div class="text">
-                        <h5><a href="detail-artist.html">${arrayInfo[i].artist.name}</a></h5>
+                        <h5><a href="detail-artist.html">${arrayInfo[i].name}</a></h5>
                     </div>
                 </li>`
 
