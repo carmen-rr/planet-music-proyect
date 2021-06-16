@@ -18,7 +18,7 @@ fetch(urlTrack)
                  `<li>
                 <img src="${arrayInfo[i].album.cover_big}"> 
                 <div class="text"> 
-                    <h5><a href="detail-artist.html?id=${arrayInfo[i].id}"> ${arrayInfo[i].title}</a> </h5>
+                    <h5><a href="detail-track.html?id=${arrayInfo[i].id}"> ${arrayInfo[i].title}</a> </h5>
                     <p><a href="detail-artist.html?id=${arrayInfo[i].id}"> - ${arrayInfo[i].artist.name}</a></p>
                </div>
                </li>`
