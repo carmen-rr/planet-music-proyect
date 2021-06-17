@@ -3,6 +3,7 @@ let queryStringToObject = new URLSearchParams(queryString)
 let id = queryStringToObject.get ('id')
 
 let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`
+let urlAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`
 
 fetch(url)
     .then( function(response){
@@ -18,14 +19,26 @@ fetch(url)
 
         let imageResponsive = document.querySelector('.img-miley-responsive')
         imageResponsive.src = data.picture_big
-        /*let album = document.querySelector ('.album-detail-track')
-        album.innerHTML = `<a href="detail-album.html?id=${data.album.id}">${data.album.title} </a>`
-
-        let artist = document.querySelector ('h3')
-        artist.innerHTML = `<a href="detail-artist.html?id=${data.artist.id}">${data.artist.name}</a>`
         
-        let imagen = document.querySelector ('.img-dua')
-        imagen.src = data.album.cover_big*/
+        fetch (urlAlbum)
+        .then( function(response){
+            return response.json();
+        })
+        .then( function(data){
+            console.log(data)
+            let arrayInfo = data.data;
+            let lista = document.querySelector('popular-songs');
+            let contenidoLista =''; 
+     
+            for(let i=0; i<6; i++){
+               contenidoLista += 
+                      `<li><a href="detail-track.html?id=${arrayInfo[i].id}">${arrayInfo[i].title}</a></li>`
+            }
+            lista.innerHTML += contenidoLista;
+        })
+        .catch( function(error){
+            console.log(error);
+          })
 
 
     })
