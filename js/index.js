@@ -1,4 +1,3 @@
-alert ("hola")
 
 let urlTrack = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks'
 
@@ -19,7 +18,7 @@ fetch(urlTrack)
                 <img src="${arrayInfo[i].album.cover_big}"> 
                 <div class="text"> 
                     <h5><a href="detail-track.html?id=${arrayInfo[i].id}"> ${arrayInfo[i].title}</a> </h5>
-                    <p><a href="detail-artist.html?id=${arrayInfo[i].id}"> - ${arrayInfo[i].artist.name}</a></p>
+                    <p><a href="detail-artist.html?id=${arrayInfo[i].artist.id}"> - ${arrayInfo[i].artist.name}</a></p>
                </div>
                </li>`
        }
@@ -50,8 +49,8 @@ fetch(urlTrack)
                               `<li>
                     <img src="${arrayInfo[i].cover_big}">
                     <div class="text">
-                        <h5><a href="detail-album.html">${arrayInfo[i].title}</a></h5>
-                        <p><a href="detail-artist.html">- ${arrayInfo[i].artist.name}</a></p>
+                        <h5><a href="detail-album.html?id=${arrayInfo[i].id}">${arrayInfo[i].title}</a></h5>
+                        <p><a href="detail-artist.html?id=${arrayInfo[i].artist.id}">- ${arrayInfo[i].artist.name}</a></p>
                     </div>
                 </li>`
 
@@ -84,7 +83,7 @@ fetch(urlTrack)
                 `<li>
                     <img src="${arrayInfo[i].picture_big}">
                     <div class="text">
-                        <h5><a href="detail-artist.html">${arrayInfo[i].name}</a></h5>
+                        <h5><a href="detail-artist.html?id=${arrayInfo[i].id}">${arrayInfo[i].name}</a></h5>
                     </div>
                 </li>`
 
