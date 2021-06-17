@@ -14,7 +14,8 @@ fetch(url)
     console.log(data);
 
     let album = document.querySelector('h1')
-    album.innerText = data.title 
+    album.innerHTML =  `<a href="detail-artist.html?id=${data.artist.id}">${data.title} </a>`
+    //album.innerText = data.title 
 
     let artist = document.querySelector('.detalles-album')
     artist.innerHTML =  `<a href="detail-artist.html?id=${data.artist.id}">${data.artist.name} </a>`  
