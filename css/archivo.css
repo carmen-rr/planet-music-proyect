@@ -544,6 +544,15 @@ footer {
     cursor: pointer;
 }
 
+.genres-album{
+    font-size: 45px;
+    text-shadow: 4px 4px 7px black;
+    text-align: center;
+}
+.genres-album:hover{
+    background-color: rgba(20, 20, 20, 0.2);
+    cursor: pointer;}
+
 /* GENRES.HTML */
 .banner-genres{
     width: 100%;
