@@ -17,7 +17,7 @@ fetch(url)
     album.innerText = data.title 
 
     let artist = document.querySelector('.detalles-album')
-    artist.innerHTML = data.artist.name
+    artist.innerHTML =  `<a href="detail-artist.html?id=${data.artist.id}">${data.artist.name} </a>`  
 
     let img = document.querySelector('.fotoalbum')
     img.src = data.cover_big
