@@ -18,10 +18,12 @@ fetch(url)
 
         let artist = document.querySelector ('h3')
         artist.innerHTML = `<a href="detail-artist.html?id=${data.artist.id}">${data.artist.name}</a>`
-        
+
         let imagen = document.querySelector ('.img-dua')
         imagen.src = data.album.cover_big
 
+        let player = documen.querySelector('audio')
+        player.src = data.preview
 
     })
     .catch( function(error){
