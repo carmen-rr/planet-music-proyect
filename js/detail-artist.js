@@ -2,7 +2,7 @@ let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString)
 let id = queryStringToObject.get ('id')
 
-let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`
+let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`
 
 fetch(url)
     .then( function(response){

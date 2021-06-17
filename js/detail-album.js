@@ -31,15 +31,6 @@ fetch(url)
     let genres = document.querySelector('.genres-album')
     genres.innerText = data.genres.data.name
 
-    
-
-    
-    
-
-  
-  
-
-
 })
 .catch( function(error){
   console.log(error);
