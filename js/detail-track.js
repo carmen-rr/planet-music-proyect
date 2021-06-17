@@ -10,7 +10,17 @@ fetch(url)
     })
     .then( function(data){
         console.log(data)
-        let image = document.querySelector ()
+        let song = document.querySelector('h1')
+        song.innerText = data.title
+    
+        let album = document.querySelector ('.album-detail-track')
+        album.innerHTML = `<a href="detail-album.html?id=${data.album.id}">${data.album.title} </a>`
+
+        let artist = document.querySelector ('h3')
+        artist.innerHTML = `<a href="detail-artist.html?id=${data.artist.id}">${data.artist.name}</a>`
+        
+        let imagen = document.querySelector ('.img-dua')
+        imagen.src = data.album.cover_big
 
 
     })
