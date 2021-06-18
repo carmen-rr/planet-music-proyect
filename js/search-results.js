@@ -48,12 +48,38 @@ fetch (urlTrack)
         resultSongs += `<li>
         <img src="${arrayInfo[i].album.cover_big}" alt="Portada 'We're Good'">
         <div>
-          <h4><a href="detail-track.html?id=${arrayInfo[i].id}">We're Good</a></h4>
+          <h4><a href="detail-track.html?id=${arrayInfo[i].id}"> ${arrayInfo[i].title}</a></h4>
           <p><a href="detail-artist.html?id=${arrayInfo[i].artist.id}">${arrayInfo[i].artist.name}</a></p>
         </div>
      </li>`
     }
     searchSongs.innerHTML += resultSongs;
+})
+.catch( function(error){
+    console.log(error);
+  })
+
+  let urlAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=${search}`
+
+  fetch (urlAlbum)
+.then( function(response){
+    return response.json();
+})
+.then( function(data){
+    console.log(data)
+    let arrayInfo = data.data;
+    let searchAlbums = document.querySelector('.result-albums');
+    let resultAlbums = '';
+    for (let i=0; i<3; i++){
+        resultAlbums += `<li>
+                            <img src="${arrayInfo[i].cover_big}" alt="Portada 'Future Nostalgia'">
+                            <div>
+                              <h4><a href="detail-album.html?id=${arrayInfo[i].id}">${arrayInfo[i].title}</a></h4>
+                              <p><a href="detail-artist.html?id=${arrayInfo[i].artist.id}">${arrayInfo[i].artist.name}</a></p>
+                            </div>
+                        </li>`
+    }
+    searchAlbums.innerHTML += resultAlbums;
 })
 .catch( function(error){
     console.log(error);
