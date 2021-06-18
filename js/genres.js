@@ -22,7 +22,7 @@ fetch(url)
           `<li>
                   <a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="img/generos/pop.pic.png" alt="Genre'"></a>
                    <div>
-                    <h5><a href="detail-genres.html">${arrayInfo[i].name}</a></h5>
+                    <h5><a href="detail-genres.html?id=${arrayInfo[i].id}">${arrayInfo[i].name}</a></h5>
                    </div>
              </li>
              `
