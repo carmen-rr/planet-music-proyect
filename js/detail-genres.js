@@ -9,11 +9,9 @@ formulario.addEventListener('submit', function(event){
     event.preventDefault(); 
 
     if (campoBuscar.value == ""){
-       
         closeIcon.style.display = 'inline';
     }
     else if (campoBuscar.value.length < 3){
-        
         closeIcon.style.display = 'inline';
     }
     else {this.submit()}
