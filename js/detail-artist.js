@@ -11,9 +11,12 @@ fetch(url)
         return response.json();
     })
     .then( function(data){
-        console.log(data)
+        //console.log(data)
         let artist = document.querySelectorAll('h1')
-         artist.innerText = data.name
+         console.log(artist)
+        artist[1].innerText = data.name
+        artist[0].innerText = data.name
+        console.log(data.name)
 
         let image = document.querySelector('.img-miley')
         image.src = data.picture_big
@@ -26,7 +29,7 @@ fetch(url)
             return response.json();
         })
         .then( function(data){
-            console.log(data)
+            //console.log(data)
             let arrayInfo = data.data;
             let lista = document.querySelector('.popular-songs');
             let contenidoLista =''; 
