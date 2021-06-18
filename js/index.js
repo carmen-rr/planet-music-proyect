@@ -1,4 +1,7 @@
 
+/*INDEX*/
+
+
 let urlTrack = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks'
 
 fetch(urlTrack)
