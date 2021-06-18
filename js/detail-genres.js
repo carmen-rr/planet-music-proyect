@@ -49,6 +49,9 @@ fetch(urlGenres)
 
     let genre = document.querySelector('h1')
        genre.innerText =  data.name
+
+       let title = document.querySelector('title')
+        title.innerText = data.name
     })
      .catch( function(error){
             console.log(error);
@@ -73,8 +76,15 @@ fetch(urlGenres)
                       <li> <a href="detail-artist.html?id=${arrayInfo[i].id}"><img class="pop-image" src="${arrayInfo[i].picture_big}" alt="Genres Detail"> </a></li>
                   </ul>
               </section>`
+
+              
         }
         lista.innerHTML += contenidoLista;
+
+        
+    
+
+
 
     })
      .catch( function(error){

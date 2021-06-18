@@ -63,7 +63,7 @@ fetch(url)
    genres.innerHTML += contenidoLista;
 
 
-
+    let title = document.querySelector('title')
 
 })
 .catch( function(error){
