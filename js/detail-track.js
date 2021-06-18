@@ -22,8 +22,9 @@ fetch(url)
         let imagen = document.querySelector ('.img-dua')
         imagen.src = data.album.cover_big
 
-        let player = documen.querySelector('audio')
-        player.src = data.preview
+        let player = document.querySelector('iframe')
+       // player.src = `https://widget.deezer.com/widget/dark/playlist/${id}data.preview`
+       player.src = `https://www.deezer.com/us/track/${id}`
 
     })
     .catch( function(error){
