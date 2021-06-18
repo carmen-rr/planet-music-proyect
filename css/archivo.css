@@ -105,6 +105,19 @@ header {
     border-bottom: none;
 }
 
+/*JS*/
+ 
+.closeIcon{
+    display: none
+ }
+ .alert,
+ .closeIcon {
+    color:rgb(238, 96, 78);
+    font-size: 30px;
+    padding-top:7px;
+ }
+ 
+
 /* FOOTER */
 footer {
     background-color: rgba(255, 255, 255, 0.1);
