@@ -1,5 +1,5 @@
-let = querylString = location.search;
-let = queryStringToObject = new URLSearchParams(querylString);
+let = queryString = location.search;
+let = queryStringToObject = new URLSearchParams(queryString);
 let id = queryStringToObject.get('id');
 
  
@@ -29,8 +29,21 @@ fetch(url)
     let date = document.querySelector('h6')
     date.innerText = data.release_date
 
-    let genres = document.querySelector('.genres-album')
-    genres.innerText = data.genres.data.name
+    //let genres = document.querySelector('.genres-album')
+    //genres.innerText = data.genres.data.name
+    let arrayInfo = data.genres.data
+    let genres = document.querySelector('.genres-album');
+    let contenidoLista =''; 
+
+    for(let i=0; i<arrayInfo.length; i++){
+       contenidoLista += 
+              `<h3 class="genres-album?id=${arrayInfo[i].id}"> ${arrayInfo[i].name}</h3>`
+    }
+
+   genres.innerHTML += contenidoLista;
+
+
+
 
 })
 .catch( function(error){
