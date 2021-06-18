@@ -61,7 +61,7 @@ fetch (urlTrack)
 
   let urlAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=${search}`
 
-  fetch (urlAlbum)
+fetch (urlAlbum)
 .then( function(response){
     return response.json();
 })
@@ -80,6 +80,29 @@ fetch (urlTrack)
                         </li>`
     }
     searchAlbums.innerHTML += resultAlbums;
+})
+.catch( function(error){
+    console.log(error);
+  })
+
+let urlPlaylist = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/playlist?q=${search}`
+
+fetch (urlPlaylist)
+.then( function(response){
+    return response.json();
+})
+.then( function(data){
+    console.log(data)
+    let arrayInfo = data.data;
+    let searchPlaylist = document.querySelector('.result-playlist');
+    let resultPlaylist = '';
+    for (let i=0; i<3; i++){
+        resultPlaylist += `<li>
+                          <img src="${arrayInfo[i].picture_big}" alt="Portada playlist 'Top 5 Songs'">
+                          <h4><a href="index.html">${arrayInfo[i].title}</a></h4>
+                         </li>`
+    }
+    searchPlaylist.innerHTML += resultPlaylist;
 })
 .catch( function(error){
     console.log(error);
