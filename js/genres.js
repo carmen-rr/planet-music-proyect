@@ -24,7 +24,8 @@ fetch(url)
                    <div>
                     <h5><a href="detail-genres.html">${arrayInfo[i].name}</a></h5>
                    </div>
-             </li>`
+             </li>
+             `
        }
 
     lista.innerHTML += contenidoLista;
