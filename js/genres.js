@@ -25,11 +25,6 @@ campoBuscar.addEventListener('input', function(){
 /*GENRES*/
 
 
-
-
-
-
-
 let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre`; 
 
 
@@ -51,7 +46,7 @@ fetch(url)
         contenidoLista += 
       
           `<li>
-                  <a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="img/generos/pop.pic.png" alt="Genre'"></a>
+                  <a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="img/generos/rock.pic.png" alt="Genre'"></a>
                    <div>
                     <h5><a href="detail-genres.html?id=${arrayInfo[i].id}">${arrayInfo[i].name}</a></h5>
                    </div>
