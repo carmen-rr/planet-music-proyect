@@ -1,7 +1,7 @@
 /*FORMULARIO*/
 let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search')
-//let alert =document.querySelector('.alert')
+
 let closeIcon = document.querySelector('.closeIcon')
 
 formulario.addEventListener('submit', function(event){
@@ -23,3 +23,40 @@ campoBuscar.addEventListener('input', function(){
 })
 
 /*PLAYLIST*/
+
+let recuperoStorage = localStorage.getItem('favoritos')
+
+let favoritos = JSON.parse(recuperoStorage)
+
+let playlist = document.querySelector('.playlist'); 
+
+//recorriendo array de favoritos 
+for (let i=0; i<favoritos.length; i++){
+     
+}
+
+let url =  `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${favoritos[i]}`; 
+
+fetch(url)
+
+
+    .then( function(response){
+        return response.json();
+    })
+    .then( function(data){
+        let info = data.data; 
+        let resultados = ''; 
+        playlist.innerHTML +=
+                            `<li>
+                                    <img src="${info.images.original.url}" alt="Portada de 'Location'">
+                                    <div>
+                                    <h5><a href="detail-track.html"></a>${info[i].id}</h5>
+                                    <p><a href="detail-artist.html">- Khalid</a></p>
+                                    </div>
+                            </li>`
+
+    })
+    .catch( function(error){
+        console.log(error);
+    })
+
