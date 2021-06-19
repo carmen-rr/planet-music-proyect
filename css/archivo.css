@@ -508,12 +508,13 @@ footer {
     text-align: center;
     justify-content: space-around;
     flex-direction: row;
-    font-size: 50px ;
+    font-size: 35px ;
     line-height: 0;
     margin: 55px;
     border-radius: 25px;
     background-color: rgba(82, 75, 75, 0.5);
     text-shadow: 4px 4px 7px black;
+    padding: 30px
  }
 .article-main-album{
     display: flex;
@@ -1054,10 +1055,11 @@ width: auto;
  /*DETAIL-ALBUM*/
 
 .justice-title{
-    font-size: 20px;
+    font-size: 15px;
     width: initial;
     margin: 0%;
     margin-top: 20px;
+    padding: 20px
 }
 
 .main-detail-album{
@@ -1067,7 +1069,7 @@ width: auto;
 
 
 .fotoalbum{
-width: 290px;
+width: 230px;
 height:auto
 }
 
@@ -1083,9 +1085,15 @@ height:auto
     font-size: 30px;
 }
 
+.genres-album{
+    font-size: 25px;
+    margin-top: 5px;
+}
+
 .detalles-album{
     margin-top: 0px;
     font-size: 30px;
+    text-decoration: underline;
 
 }
 .section2-album{
