@@ -33,7 +33,6 @@ fetch(url)
         return response.json();
     })
     .then( function(data){
-
        console.log(data);
 
        let arrayInfo = data.data;
@@ -46,7 +45,8 @@ fetch(url)
         contenidoLista += 
       
           `<li>
-                  <a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="img/generos/rock.pic.png" alt="Genre'"></a>
+                  <a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="img/generos/pop.pic.png" alt="Genre'"></a>
+                  
                    <div>
                     <h5><a href="detail-genres.html?id=${arrayInfo[i].id}">${arrayInfo[i].name}</a></h5>
                    </div>

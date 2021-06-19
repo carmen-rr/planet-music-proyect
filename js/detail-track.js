@@ -59,3 +59,23 @@ fetch(url)
       console.log(error);
     })
 
+/*AGREGAR A PLAYLIST*/
+
+let favoritos = []; 
+
+let fav = document.querySelector('.add-playlist')
+console.log(fav)
+
+fav.addEventListener('click', function(event){
+  event.preventDefault();
+
+  //guardando id en array 
+  favoritos.push (id); 
+  console.log(favoritos)
+
+  let favParaStorage = JSON.stringify(favoritos)
+  localStorage.setItem('favoritos', favParaStorage); 
+  console.log(localStorage)
+
+
+})
