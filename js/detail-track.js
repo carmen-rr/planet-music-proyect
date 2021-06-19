@@ -72,9 +72,9 @@ if (recuperoStorage != null){
 
 }
 
-if (favoritos.includes(id)){
-document.querySelector('.add-playlist').innerText = "Remove from Playlist"
-}
+//if (favoritos.includes(id)){
+//document.querySelector('.add-playlist').innerText = "Remove from Playlist"
+//}
 
 let fav = document.querySelector('.add-playlist')
 console.log(fav)
