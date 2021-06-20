@@ -105,14 +105,14 @@ if (favoritos.includes(id)){
 let favoritos = [];
 
 //recupero datos storage
-let recuperoDatosStorage = localStorage.getItem(favoritos);
+let recuperoDatosStorage = localStorage.getItem('favoritos');
 
 if(recuperoDatosStorage != null){
     favoritos = JSON.parse(recuperoDatosStorage);
 }
 if(favoritos.includes(id)){
     let texto = document.querySelector('.add-playlist');
-    texto.innerText = 'Remove from Playlist'
+    texto.innerText = 'Remove from Playlist';
 }
 
 let fav = document.querySelector('.add-playlist')
@@ -135,3 +135,6 @@ fav.addEventListener ('click', function(){
     localStorage.setItem ('favoritos', favParaStorage);
     console.log(localStorage)
 })
+
+//con remove eliminamos una propiedad ej le pedimos al storage que elimine la propiedad favoritos
+//y con clear eliminamos todo los objetos literales (), le pedimos al storgae q borre todo el obj literal
