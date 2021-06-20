@@ -103,11 +103,34 @@ if (favoritos.includes(id)){
 
 //playlist
 let favoritos = [];
+
+//recupero datos storage
+let recuperoDatosStorage = localStorage.getItem(favoritos);
+
+if(recuperoDatosStorage != null){
+    favoritos = JSON.parse(recuperoDatosStorage);
+}
+if(favoritos.includes(id)){
+    let texto = document.querySelector('.add-playlist');
+    texto.innerText = 'Remove from Playlist'
+}
+
 let fav = document.querySelector('.add-playlist')
 
 fav.addEventListener ('click', function(){
-    favoritos.push(id)
+    if(favoritos.includes(id)){
+        let quitoId = favoritos.indexOf(id);
+        favoritos.splice(quitoId, 1);
+        let textoAgregar = document.querySelector('.add-playlist');
+        textoAgregar.innerText = 'Add to Playlist'
+    }else{
+        favoritos.push(id)
 
+        let textoSacar = document.querySelector('.add-playlist');
+        textoSacar.innerText = 'Remove from Playlist'
+    
+    }
+  
     let favParaStorage = JSON.stringify(favoritos)
     localStorage.setItem ('favoritos', favParaStorage);
     console.log(localStorage)
