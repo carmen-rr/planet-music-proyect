@@ -62,10 +62,10 @@ fetch(url)
 
 /*AGREGAR A PLAYLIST*/
 
-let favoritos = []; 
+//let favoritos = []; 
 
 //recuperar datos del storage 
-let recuperoStorage = localStorage.getItem('favoritos'); 
+/*let recuperoStorage = localStorage.getItem('favoritos'); 
 
 if (recuperoStorage != null){
   favoritos = JSON.parse(recuperoStorage); 
@@ -99,4 +99,16 @@ if (favoritos.includes(id)){
      console.log(localStorage)
 
 
+})*/
+
+//playlist
+let favoritos = [];
+let fav = document.querySelector('.add-playlist')
+
+fav.addEventListener ('click', function(){
+    favoritos.push(id)
+
+    let favParaStorage = JSON.stringify(favoritos)
+    localStorage.setItem ('favoritos', favParaStorage);
+    console.log(localStorage)
 })
