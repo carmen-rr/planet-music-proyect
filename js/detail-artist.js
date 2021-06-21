@@ -30,7 +30,7 @@ let queryStringToObject = new URLSearchParams(queryString)
 let id = queryStringToObject.get ('id')
 
 let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`
-let urlAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`
+
 let urlTopSongs = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/top`
 
 fetch(url)
@@ -59,37 +59,6 @@ fetch(url)
 
   
 
-  /* fetch(urlAlbum)
-    .then( function(response){
-        return response.json();
-    })
-    .then( function(data){
-
-       console.log(data); 
-
-       let arrayInfo = data.data;
-       let lista = document.querySelector('.artist-albums');
-       let contenidoLista =''; 
-
-       for(let i=0; i<5; i++){
-          contenidoLista += 
-                 `<li>
-                   <img src="${arrayInfo[i].cover_big}" alt="">
-                   <h4><a href="${arrayInfo[i].id}>${arrayInfo[i].title}</a></h4>
-                 </li>`
-       }
-       lista.innerHTML += contenidoLista;
-       /*let image = document.querySelector('.img-album')
-       image.src = data.picture_big
-
-       let album = document.querySelector('h4')
-       album.innerText = data.picture_big
-
-    })
-    .catch( function(error){
-      console.log(error);
-    })*/
-
     fetch (urlTopSongs)
         .then( function(response){
             return response.json();
@@ -111,8 +80,9 @@ fetch(url)
           })
 
 
-
-          fetch(urlAlbum)
+/*let urlAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`
+        
+fetch(urlAlbum)
           .then( function(response){
               return response.json();
           })
@@ -124,7 +94,7 @@ fetch(url)
              let lista = document.querySelector('.artist-albums');
              let contenidoLista =''; 
       
-             for(let i=0; i<arrayInfo.length; i++){
+             for(let i=0; i<5; i++){
                 contenidoLista += 
                        `<li>
                          <img src="${arrayInfo[i].cover_big}" alt="">
@@ -137,4 +107,4 @@ fetch(url)
           })
           .catch( function(error){
             console.log(error);
-          })
+          })*/
