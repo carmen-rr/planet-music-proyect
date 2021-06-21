@@ -2,7 +2,6 @@
 /*FORMULARIO*/
 let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search')
-//let alert =document.querySelector('.alert')
 let closeIcon = document.querySelector('.closeIcon')
 
 formulario.addEventListener('submit', function(event){
@@ -19,7 +18,6 @@ formulario.addEventListener('submit', function(event){
 })
 
 campoBuscar.addEventListener('input', function(){
-    alert.innerText = ''
     closeIcon.style.display = 'none';
 })
 
