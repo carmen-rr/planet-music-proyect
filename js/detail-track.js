@@ -48,9 +48,10 @@ fetch(url)
         let imagen = document.querySelector ('.img-dua')
         imagen.src = data.album.cover_big
 
-        let player = document.querySelector('iframe')
-       // player.src = `https://widget.deezer.com/widget/dark/playlist/${id}data.preview`
-       player.src = `https://www.deezer.com/us/track/${id}`
+        let player = document.querySelector('.player-deezer')
+       // player.src = `https://widget.deezer.com/widget/dark/track/${id}data.preview`
+       player.innerHTML = `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
+       //player.innerHTML = `https://www.deezer.com/us/track/${id}`
 
     })
     .catch( function(error){
