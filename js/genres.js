@@ -53,6 +53,8 @@ fetch(url)
        }
 
     lista.innerHTML += contenidoLista;
+    
+//<img src="img/generos/pop.pic.png" alt="Genre'"></a>
 
 
     })
