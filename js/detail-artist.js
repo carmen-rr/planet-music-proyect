@@ -51,7 +51,46 @@ fetch(url)
         let imageResponsive = document.querySelector('.img-miley-responsive')
         imageResponsive.src = data.picture_big
         
-        fetch (urlTopSongs)
+
+    })
+    .catch( function(error){
+      console.log(error);
+    })
+
+  
+
+  /* fetch(urlAlbum)
+    .then( function(response){
+        return response.json();
+    })
+    .then( function(data){
+
+       console.log(data); 
+
+       let arrayInfo = data.data;
+       let lista = document.querySelector('.artist-albums');
+       let contenidoLista =''; 
+
+       for(let i=0; i<5; i++){
+          contenidoLista += 
+                 `<li>
+                   <img src="${arrayInfo[i].cover_big}" alt="">
+                   <h4><a href="${arrayInfo[i].id}>${arrayInfo[i].title}</a></h4>
+                 </li>`
+       }
+       lista.innerHTML += contenidoLista;
+       /*let image = document.querySelector('.img-album')
+       image.src = data.picture_big
+
+       let album = document.querySelector('h4')
+       album.innerText = data.picture_big
+
+    })
+    .catch( function(error){
+      console.log(error);
+    })*/
+
+    fetch (urlTopSongs)
         .then( function(response){
             return response.json();
         })
@@ -72,40 +111,30 @@ fetch(url)
           })
 
 
-    })
-    .catch( function(error){
-      console.log(error);
-    })
 
-  
-
-   fetch(urlAlbum)
-    .then( function(response){
-        return response.json();
-    })
-    .then( function(data){
-
-       console.log(data); 
-
-       let arrayInfo = data.data;
-       let lista = document.querySelector('.artist-albums');
-       let contenidoLista =''; 
-
-       for(let i=0; i<arrayInfo.length; i++){
-          contenidoLista += 
-                 `<li>
-                   <img src="${arrayInfo[i].cover_big}" alt="">
-                   <h4>${arrayInfo[i].title}</h4>
-                 </li>`
-       }
-       lista.innerHTML += contenidoLista;
-       let image = document.querySelector('.img-album')
-       image.src = data.picture_big
-
-       let album = document.querySelector('h4')
-       album.innerText = data.picture_big
-
-    })
-    .catch( function(error){
-      console.log(error);
-    })
+          fetch(urlAlbum)
+          .then( function(response){
+              return response.json();
+          })
+          .then( function(data){
+      
+             console.log(data); 
+      
+             let arrayInfo = data.data;
+             let lista = document.querySelector('.artist-albums');
+             let contenidoLista =''; 
+      
+             for(let i=0; i<arrayInfo.length; i++){
+                contenidoLista += 
+                       `<li>
+                         <img src="${arrayInfo[i].cover_big}" alt="">
+                         <h4><a href="${arrayInfo[i].id}>${arrayInfo[i].title}</a></h4>
+                       </li>`
+             }
+            // console.log(contenidoLista)
+             lista.innerHTML += contenidoLista;
+            
+          })
+          .catch( function(error){
+            console.log(error);
+          })

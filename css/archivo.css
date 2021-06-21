@@ -264,7 +264,8 @@ footer {
     display: none;
 }
 .img-miley {
-    width: 40%;
+    width: 50%;
+    height: 50%;
     border-radius: 30px;
     padding: 20px;
 }
@@ -309,6 +310,17 @@ footer {
 .description-miley li a:hover{
     color: rgba(255, 255, 255, 0.9);
     text-decoration: underline;
+}
+.artist-albums{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.artist-albums img{
+    width: 10%;
 }
 
  /* SEARCH-RESULTS.HTML*/
