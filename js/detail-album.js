@@ -24,8 +24,8 @@ campoBuscar.addEventListener('input', function(){
 
 /*ALBUM*/
 
-let = queryString = location.search;
-let = queryStringToObject = new URLSearchParams(queryString);
+let queryString = location.search;
+let queryStringToObject = new URLSearchParams(queryString);
 let id = queryStringToObject.get('id');
 
  
