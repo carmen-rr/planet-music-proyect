@@ -104,7 +104,7 @@ let playlist = document.querySelector('.lista-playlist');
     
 }*/
 
-if (playlist != ''){
+if (playlist != null){
     for (let i=0; i<favoritos.length; i++){
         buscarYMostrarFavoritos(favoritos[i]);
        

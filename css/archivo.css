@@ -19,9 +19,7 @@ a{
 abbr{
     text-decoration: none;
 }
-abbr[title] {
-background-color: black;
-}
+
 
 .gif {
     width: 100%;
