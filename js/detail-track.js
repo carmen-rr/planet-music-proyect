@@ -62,45 +62,6 @@ fetch(url)
 
 /*AGREGAR A PLAYLIST*/
 
-//let favoritos = []; 
-
-//recuperar datos del storage 
-/*let recuperoStorage = localStorage.getItem('favoritos'); 
-
-if (recuperoStorage != null){
-  favoritos = JSON.parse(recuperoStorage); 
-
-}
-
-//if (favoritos.includes(id)){
-//document.querySelector('.add-playlist').innerText = "Remove from Playlist"
-//}
-
-let fav = document.querySelector('.add-playlist')
-console.log(fav)
-
-fav.addEventListener('click', function(event){
-  event.preventDefault();
-
-//preguntando si el id esta en el array 
-if (favoritos.includes(id)){
-    let idSacar = favoritos.indexOf(id); 
-    favoritos.splice(idSacar, 1); 
-    document.querySelector('.add-playlist').innerText = "Add to Playlist"
-}else {
-  //guardando id en array 
-     favoritos.push (id); 
-     console.log(favoritos)
-     document.querySelector('.add-playlist').innerText = "Remove from Playlist"
-}
-
-     let favParaStorage = JSON.stringify(favoritos)
-    localStorage.setItem('favoritos', favParaStorage); 
-     console.log(localStorage)
-
-
-})*/
-
 //playlist
 let favoritos = [];
 
