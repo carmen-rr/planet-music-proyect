@@ -85,7 +85,25 @@ fetch(url)
     })
     .then( function(data){
 
-       console.log(data);  
+       console.log(data); 
+
+       let arrayInfo = data.data;
+       let lista = document.querySelector('.artist-albums');
+       let contenidoLista =''; 
+
+       for(let i=0; i<arrayInfo.length; i++){
+          contenidoLista += 
+                 `<li>
+                   <img src="${arrayInfo[i].cover_big}" alt="">
+                   <h4>${arrayInfo[i].title}</h4>
+                 </li>`
+       }
+       lista.innerHTML += contenidoLista;
+       let image = document.querySelector('.img-album')
+       image.src = data.picture_big
+
+       let album = document.querySelector('h4')
+       album.innerText = data.picture_big
 
     })
     .catch( function(error){

@@ -84,7 +84,7 @@ fetch(url)
     .then( function(data){
         console.log(data)
        //let info = data.data;
-       let resultados = '';
+       //let resultados = '';
        playlist.innerHTML +=   ` <li>
                                    <img src="${data.album.cover_big}" alt="Portada de 'Location'">
                                    <div>
