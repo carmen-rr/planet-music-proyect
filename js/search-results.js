@@ -90,7 +90,7 @@ fetch (urlAlbum)
   })
 
 let playlistBuscada = document.querySelector('.playlist')
-let hola = playlistBuscada.innerText += ` '${search}'...`;
+let hola1 = playlistBuscada.innerText += ` '${search}'...`;
 
 let urlPlaylist = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/playlist?q=${search}`
 
