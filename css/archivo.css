@@ -17,6 +17,9 @@ a{
     text-decoration: none;
 }
 
+.gif {
+    width: 100%;
+}
 /* HEADER */
 header {
     background-color: rgb(24, 24, 24);
@@ -264,8 +267,7 @@ footer {
     display: none;
 }
 .img-miley {
-    width: 50%;
-    height: 50%;
+    width: 40%;
     border-radius: 30px;
     padding: 20px;
 }

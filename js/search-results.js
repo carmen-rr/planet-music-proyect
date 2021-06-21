@@ -1,7 +1,9 @@
 
 
 window.addEventListener('load', function(){
-      let loader = document.querySelector('iframe');
+      //let loader = document.querySelector('iframe');
+      //loader.style.display = 'none';
+      let loader = document.querySelector('.gif')
       loader.style.display = 'none';
     
 })
