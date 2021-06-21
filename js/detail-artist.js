@@ -31,7 +31,7 @@ let id = queryStringToObject.get ('id')
 
 let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`
 
-let urlTopSongs = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/top`
+
 
 fetch(url)
     .then( function(response){
@@ -57,7 +57,9 @@ fetch(url)
       console.log(error);
     })
 
-  
+
+//Popular Songs:
+let urlTopSongs = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/top` 
 
     fetch (urlTopSongs)
         .then( function(response){
@@ -79,8 +81,9 @@ fetch(url)
             console.log(error);
           })
 
-
-/*let urlAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`
+//Artist Albums:
+//NO ME FUNCIONA ESTE ALBUM
+let urlAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`
         
 fetch(urlAlbum)
           .then( function(response){
@@ -107,4 +110,4 @@ fetch(urlAlbum)
           })
           .catch( function(error){
             console.log(error);
-          })*/
+          })
