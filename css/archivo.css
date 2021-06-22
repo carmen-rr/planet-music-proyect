@@ -777,7 +777,7 @@ width: auto;
     justify-content: center;
 }
 .prueba{
-    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url(`${data.album.cover_xl}`);
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
 }
 .banner-dua{
     display: flex;
