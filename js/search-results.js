@@ -13,6 +13,8 @@ let queryStringToObject = new URLSearchParams(queryString);
 let search = queryStringToObject.get('search')
 
 let palabraBuscada = document.querySelector('h2')
+
+if(queryStringToObject.length>0){
 let hola = palabraBuscada.innerText += ` '${search}'`;
 
 let urlArtist = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${search}`
@@ -115,3 +117,12 @@ fetch (urlPlaylist)
 .catch( function(error){
     console.log(error);
   })
+
+
+}else{
+    palabraBuscada.innerText = `There aren't results for '${search}'`;
+    
+    let noHayResultados = document.querySelector('.search-result')
+    noHayResultados.style.display = "none";
+
+}
