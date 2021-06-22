@@ -99,8 +99,10 @@ fetch(urlAlbum)
              for(let i=0; i<5; i++){
                 contenidoLista += 
                        `<li>
-                         <img src="${arrayInfo[i].cover_big}" alt="">
-                         <h4><a href="detail-album.html?id=${arrayInfo[i].id}">${arrayInfo[i].title}</a></h4>
+                         <a href="detail-album.html?id=${arrayInfo[i].id}"><img src="${arrayInfo[i].cover_big}" alt=""></a>
+                         <div class="contenedor-albumes-da">
+                            <h4><a href="detail-album.html?id=${arrayInfo[i].id}">${arrayInfo[i].title}</a></h4>
+                         </div>
                        </li>`
              }
             // console.log(contenidoLista)

@@ -168,7 +168,8 @@ footer {
 .title-songs, .title-albums, .title-artist {
     text-align: center;
     font-size: 200%;
-    text-shadow: 4px 4px 7px black;
+    /*text-shadow: 4px 4px 7px black;*/
+    color: rgba(0, 0, 0, 0);
     background-size: 100%;
     background-position: center;
     width: 100%;
@@ -177,13 +178,13 @@ footer {
     margin: 0px 0px 10px 0px;
 }
 .title-songs {
-    background-image: url(../img/home/songs.JPEG);
+    background-image: url(../img/home/portada-tracks.JPEG);
 }
 .title-albums {
-    background-image: url(../img/home/albums.JPEG);
+    background-image: url(../img/home/portada-album.JPEG);
 }
 .title-artist {
-    background-image: url(../img/home/artist.JPEG);
+    background-image: url(../img/home/portada-artist.JPEG);
 }
 .ul-de-songs, .ul-de-albums, .ul-de-artist {
     display: flex;
@@ -338,6 +339,16 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
 }
+
+.artist-albums h6{
+    font-size: 35px;
+    width: 100%;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.1);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 .artist-albums li{
     width: 18%;
     flex-direction: row;
@@ -349,19 +360,29 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-.artist-albums h6{
-    font-size: 35px;
-    width: 100%;
-    border-bottom: solid 2px rgba(255, 255, 255, 0.1);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 0px;
-    margin-bottom: 20px;
+.artist-albums li:hover{
+    background-color: rgba(255, 255, 255, 0.15);
 }
+.contenedor-albumes-da{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 70px;
+}
+
 .artist-albums li h4{
     justify-content: center;
-
+    margin: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
    
+}
+.artist-albums li h4:hover{
+    text-decoration: underline;
 }
 .artist-albums li img{
     width: 100%;
@@ -784,6 +805,15 @@ width: auto;
     overflow: hidden;
     
 }
+.prueba::before{
+    position: absolute;
+    height: 250px;
+    background: linear-gradient(to top, rgb(3, 3, 3, 0.99), rgba(0, 0, 0, 0.18));
+    content: "";
+    position: absolute;
+    width: 100%;
+}
+
 .banner-dua{
     display: flex;
     flex-wrap: wrap;
@@ -793,7 +823,7 @@ width: auto;
     display: none;
 }
 .track-detail{
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -820,7 +850,7 @@ width: auto;
     width: 70%;
     padding-top: 30px;
     margin: 0px;
-    font-size: 70px;
+    font-size: 65px;
 }
 .info-track .add-playlist{
     font-size: 20px;
@@ -833,7 +863,7 @@ width: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
     margin-top: 20px;
     margin-bottom: 0px;
     margin-right: 20px;
@@ -841,11 +871,19 @@ width: auto;
 }
 .info-track p{
     font-size: 30px;
+    margin: 10px 0px 0px 0px;
+    color: rgb(175, 175, 175);;
+}
+.info-track p:hover{
+    text-decoration: underline;
 }
 .info-track h3{
     font-size: 40px;
     padding-top: 35px;
     margin: 0px;
+}
+.info-track h3:hover{
+    text-decoration: underline;
 }
 .player{
     width: 100%;
