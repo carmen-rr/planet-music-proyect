@@ -260,9 +260,25 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 }
-.banner-miley {
+.banner-detail-artist{
+    height: 250px;
     width: 100%;
-    height: 30vh;
+    overflow: hidden;
+    
+}
+.banner-detail-artist::before{
+    position: absolute;
+    height: 250px;
+    background: linear-gradient(to top, rgb(3, 3, 3, 0.99), rgba(0, 0, 0, 0.18));
+    content: "";
+    width: 100%;
+}
+
+.banner-artist-responsive{
+    display: none;
+}
+.banner-artist {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -270,13 +286,13 @@ footer {
     background-color: rgba(255, 255, 255, 0.2);
     width: 75%;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-.banner-responsive, .title-artist-responsive, .img-miley-responsive{
+.banner-track-responsive, .title-artist-responsive, .img-miley-responsive{
     display: none;
 }
 .img-miley {
@@ -799,14 +815,14 @@ width: auto;
     align-items: center;
     justify-content: center;
 }
-.prueba{
+.banner-detail-track{
     background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
     height: 250px;
     width: 100%;
     overflow: hidden;
     
 }
-.prueba::before{
+.banner-detail-track::before{
     position: absolute;
     height: 250px;
     background: linear-gradient(to top, rgb(3, 3, 3, 0.99), rgba(0, 0, 0, 0.18));
@@ -815,12 +831,12 @@ width: auto;
     width: 100%;
 }
 
-.banner-dua{
+.banner-track{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-.banner-dua-responsive{
+.banner-track-responsive{
     display: none;
 }
 .track-detail{
@@ -1016,7 +1032,7 @@ width: auto;
         margin-bottom: 30px;
     }
     .title-songs, .title-albums, .title-artist{
-        height: 100px;
+        height: 150px;
         font-size: 150%;
     }
     .ul-de-songs li, .ul-de-albums li, .ul-de-artist{
@@ -1033,14 +1049,23 @@ width: auto;
     }
 
     /*DETAIL-ARTIST.HTML*/
-     .banner-miley, .img-miley, .description-miley h1{
+    .img-miley, .description-miley h1{
         display: none;
-     }
-     .banner-responsive, .title-artist-responsive, .img-miley-responsive{
-        display: flex;
     }
-    .banner-responsive{
+    .banner-detail-artist{
+        height: 150px;
+    }
+    .banner-detail-artist::before{
+        height: 150px;
+    }
+    .banner-artist{
+        display: none;
+    }
+    .banner-artist-responsive{
+        display: flex;
         width: 100%;
+    }
+    .title-artist-responsive, .img-miley-responsive{
         display: flex;
     }
     .artist-detail {
@@ -1068,6 +1093,35 @@ width: auto;
     }
     .description-miley li{
         font-size: 15px;
+    }
+    .popular-songs li a{
+        width: 100%;
+    }
+    .description-album{
+        padding-top: 0px;
+    }
+    .artist-albums{
+        flex-direction: column;
+    }
+    .artist-albums h6{
+        margin-top: 0px;
+    }
+    .artist-albums li{
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 5px;
+    }
+    .artist-albums li a{
+        width: 30%;
+    }
+    .artist-albums li img{
+        width: 100%;
+        padding: 5px;
+    }
+    .contenedor-albumes-da{
+        width: 65%;
+        justify-content: flex-start;
     }
 
     /*SEARCH-RESULTS.HTML*/
@@ -1308,18 +1362,25 @@ height:auto
     .track-detail {
         width: 85%;
     }
-    .banner-dua{
+    .banner-detail-track{
+        height: 150px;
+    }
+    .banner-detail-track::before{
+        height: 150px;
+    }
+    .banner-track{
         display: none;
     }
-    .banner-dua-responsive{
+    .banner-track-responsive{
         display: flex;
         width: 100%;
     }
     .img-dua{
-        width: 100%;
         padding: 20px;
         margin: 0px;
         border-radius: 30px;
+        width: 335px;
+        height: 335px;
     }
     .description-track{
         width: 100%;
@@ -1352,6 +1413,13 @@ height:auto
     .player p{
         font-size: 15px;
         width: 100%;
+    }
+    .player-deezer{
+        width: 100%;
+    }
+    .player-deezer iframe{
+        width: 100%;
+        height: 80px;
     }
 
     /*PLAYLIST.HTML*/

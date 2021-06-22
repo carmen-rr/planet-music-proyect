@@ -20,8 +20,7 @@ campoBuscar.addEventListener('input', function(){
     closeIcon.style.display = 'none';
 })
 
-/*ARTIST*/
-
+//ARTIST
 
 let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString)
@@ -29,14 +28,17 @@ let id = queryStringToObject.get ('id')
 
 let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`
 
-
-
 fetch(url)
     .then( function(response){
         return response.json();
     })
     .then( function(data){
-        //console.log(data)
+        console.log(data)
+
+        let banner = document.querySelector('.banner-detail-artist')
+        banner.innerHTML = `<img class="banner-artist" src="${data.picture_xl}" >
+                            <img class="banner-artist-responsive" src="${data.picture_xl}" >`
+
         let artist = document.querySelectorAll('h1')
          console.log(artist)
         artist[1].innerText = data.name
@@ -80,7 +82,6 @@ let urlTopSongs = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/ar
           })
 
 //Artist Albums:
-//NO ME FUNCIONA ESTE ALBUM
 let urlAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`
         
 fetch(urlAlbum)
