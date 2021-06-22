@@ -51,15 +51,52 @@ fetch(urlTrack)
                </div>
                <i class="fas fa-plus-circle"></i>
                </li>`
+         let idParaFavoritos = arrayInfo[i].id
        }
 
       lista.innerHTML += contenidoLista;
+
+      //no se que va a ser de esto
+let favoritos = [];
+
+let recuperoDatosStorage = localStorage.getItem('favoritos');
+
+if(recuperoDatosStorage != null){
+    favoritos = JSON.parse(recuperoDatosStorage);
+}
+if(favoritos.includes(idParaFavoritos)){
+    let texto = document.querySelector('.fa-plus-circle');
+    texto.innerHTML = '<i class="fas fa-times-circle"></i>';
+}
+
+let fav = document.querySelector('.fa-plus-circle')
+
+fav.addEventListener ('click', function(){
+    if(favoritos.includes(id)){
+        let quitoId = favoritos.indexOf(id);
+        favoritos.splice(quitoId, 1);
+        let textoAgregar = document.querySelector('.fa-plus-circle');
+        textoAgregar.innerHTML = '<i class="fas fa-plus-circle"></i>'
+    }else{
+        favoritos.push(id)
+
+        let textoSacar = document.querySelector('.fa-plus-circle');
+        textoSacar.innerHTML = '<i class="fas fa-times-circle"></i>'
+    
+    }
+  
+    let favParaStorage = JSON.stringify(favoritos)
+    localStorage.setItem ('favoritos', favParaStorage);
+    console.log(localStorage)
+})
 
 
     })
     .catch( function(error){
       console.log(error);
     })
+
+     
 
     let urlAlbum = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums'
 
