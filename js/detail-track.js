@@ -50,7 +50,7 @@ fetch(url)
 
         let player = document.querySelector('.player-deezer')
        // player.src = `https://widget.deezer.com/widget/dark/track/${id}data.preview`
-       player.innerHTML = `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
+       player.innerHTML = `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="1050" height="120" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
        //player.innerHTML = `https://www.deezer.com/us/track/${id}`
 
     })
