@@ -4,7 +4,7 @@ window.addEventListener('load', function(){
       let loader = document.querySelector('.gif')
       loader.style.display = 'none';
       let main = document.querySelector('.main-results')
-      main.style.display = 'flex'
+      main.style.display = 'flex';
     
 })
 
@@ -16,7 +16,7 @@ let search = queryStringToObject.get('search')
 
 let palabraBuscada = document.querySelector('h2')
 
-if(queryStringToObject.length>0){
+//if(queryStringToObject.length>0){
 let hola = palabraBuscada.innerText += ` '${search}'`;
 
 let urlArtist = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${search}`
@@ -26,8 +26,11 @@ fetch (urlArtist)
     return response.json();
 })
 .then( function(data){
-    console.log(data)
+
+    console.log(data.length)
     let arrayInfo = data.data;
+    if(arrayInfo.length>0){
+
     let searchArtist = document.querySelector('.result-artist');
     let resultArtist = '';
     for (let i=0; i<3; i++){
@@ -37,6 +40,9 @@ fetch (urlArtist)
                          </li>`
     }
     searchArtist.innerHTML += resultArtist;
+    }else{
+
+    }
 })
 .catch( function(error){
     console.log(error);
@@ -121,10 +127,10 @@ fetch (urlPlaylist)
   })
 
 
-}else{
-    palabraBuscada.innerText = `There aren't results for '${search}'`;
+//}else{
+    //palabraBuscada.innerText = `There aren't results for '${search}'`;
     
-    let noHayResultados = document.querySelector('.search-result')
-    noHayResultados.style.display = "none";
+    //let noHayResultados = document.querySelector('.search-result')
+    //noHayResultados.style.display = "none";
 
-}
+//}

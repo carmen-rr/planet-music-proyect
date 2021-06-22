@@ -370,7 +370,7 @@ footer {
 
  /* SEARCH-RESULTS.HTML*/
  .main-results {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     flex-direction: column;
 }
