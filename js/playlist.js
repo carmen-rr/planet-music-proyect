@@ -103,17 +103,16 @@ let playlist = document.querySelector('.lista-playlist');
 }*/
 
 
-if (favoritos.length>0 || recuperoDatosStorage.favoritos!= undefined){
+if (favoritos.length>0 || recuperoDatosStorage.favoritos != undefined){
     for (let i=0; i<favoritos.length; i++){
         buscarYMostrarFavoritos(favoritos[i]);
        
     }
-    console.log('hola')
+   
     
 }else{
     playlist.innerHTML = '<p>Your Playlist is Empty</p><p> <a href="index.html">Explore Songs</a></p>'
-  
-  console.log(playlist)
+    
 }
 
 
