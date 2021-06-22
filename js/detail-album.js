@@ -82,7 +82,7 @@ fetch(url)
 
     for(let i=0; i<arrayInfo.length; i++){
        contenidoLista += 
-              `<h3 class="genres-album?id=${arrayInfo[i].id}"> ${arrayInfo[i].name} </h3>`
+       `<h3 class="genres-album" ><a href="detail-genres.html?id=${arrayInfo[i].id}"> ${arrayInfo[i].name} </a></h3>`
                 }
 
    genres.innerHTML += contenidoLista;
