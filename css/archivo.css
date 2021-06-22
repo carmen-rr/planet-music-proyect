@@ -776,6 +776,9 @@ width: auto;
     align-items: center;
     justify-content: center;
 }
+.prueba{
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url(`${data.album.cover_xl}`);
+}
 .banner-dua{
     display: flex;
     flex-wrap: wrap;
@@ -796,7 +799,8 @@ width: auto;
     align-items: flex-start;
 }
 .img-dua{
-    width: 40%;
+    width: 500px;
+    height: 500px;
     margin: 20px;
     border-radius: 20px;
 }
@@ -824,7 +828,7 @@ width: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     margin-top: 20px;
     margin-bottom: 0px;
     margin-right: 20px;

@@ -36,6 +36,11 @@ fetch(url)
     })
     .then( function(data){
         console.log(data)
+        //let banner = document.querySelector('.banner-dua')
+        //banner.src = `${data.album.cover_xl}`
+
+        let banner = document.querySelector('.prueba')
+        banner.innerHTML = `<img src="${data.album.cover_xl}" >`
         let song = document.querySelector('h1')
         song.innerText = data.title
     
@@ -50,7 +55,7 @@ fetch(url)
 
         let player = document.querySelector('.player-deezer')
        // player.src = `https://widget.deezer.com/widget/dark/track/${id}data.preview`
-       player.innerHTML = `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="1050" height="120" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
+       player.innerHTML = `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="1050" height="125" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
        //player.innerHTML = `https://www.deezer.com/us/track/${id}`
 
     })

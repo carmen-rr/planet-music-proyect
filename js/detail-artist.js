@@ -100,7 +100,7 @@ fetch(urlAlbum)
                 contenidoLista += 
                        `<li>
                          <img src="${arrayInfo[i].cover_big}" alt="">
-                         <h4><a href="${arrayInfo[i].id}">${arrayInfo[i].title}</a></h4>
+                         <h4><a href="detail-album.html?id=${arrayInfo[i].id}">${arrayInfo[i].title}</a></h4>
                        </li>`
              }
             // console.log(contenidoLista)
