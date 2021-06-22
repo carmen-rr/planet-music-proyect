@@ -102,38 +102,43 @@ let playlist = document.querySelector('.lista-playlist');
     
 }*/
 
-if (playlist != null){
+
+if (favoritos.length>0 || recuperoDatosStorage.favoritos!= undefined){
     for (let i=0; i<favoritos.length; i++){
         buscarYMostrarFavoritos(favoritos[i]);
        
     }
-    function buscarYMostrarFavoritos(id){
-        let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`
+    console.log('hola')
     
-    fetch(url)
-        .then( function(response){
-            return response.json();
-        })
-        .then( function(data){
-            console.log(data)
-           //let info = data.data;
-           //let resultados = '';
-           playlist.innerHTML +=   ` <li>
-                                       <img src="${data.album.cover_big}" alt="Portada de 'Location'">
-                                       <div>
-                                         <h5><a href="detail-track.html?id=${data.id}">${data.title}</a></h5>
-                                         <p><a href="detail-artist.html?id=${data.artist.id}">- ${data.artist.name}</a></p>
-                                       </div>
-                                     </li> `
-                                     
-        })
-        .catch( function(error){
-          console.log(error);
-        })
-    
-    }
 }else{
     playlist.innerHTML = '<p>Your Playlist is Empty</p><p> <a href="index.html">Explore Songs</a></p>'
-  //NO ME FUNCIONA ESTE IF
+  
   console.log(playlist)
+}
+
+
+function buscarYMostrarFavoritos(id){
+    let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`
+
+fetch(url)
+    .then( function(response){
+        return response.json();
+    })
+    .then( function(data){
+        console.log(data)
+       //let info = data.data;
+       //let resultados = '';
+       playlist.innerHTML +=   ` <li>
+                                   <img src="${data.album.cover_big}" alt="Portada de 'Location'">
+                                   <div>
+                                     <h5><a href="detail-track.html?id=${data.id}">${data.title}</a></h5>
+                                     <p><a href="detail-artist.html?id=${data.artist.id}">- ${data.artist.name}</a></p>
+                                   </div>
+                                 </li> `
+                                 
+    })
+    .catch( function(error){
+      console.log(error);
+    })
+
 }
