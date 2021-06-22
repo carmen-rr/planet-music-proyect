@@ -42,9 +42,9 @@ fetch(url)
          
         contenidoLista += 
       
-          `<li>
-                  <a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="${arrayInfo[i].picture_big}" alt="Genre'"></a>
-                  
+          `<li>          
+
+                  <a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="img/generos/img${i}.png" alt="Genre'"></a>
                    <div>
                     <h5><a href="detail-genres.html?id=${arrayInfo[i].id}">${arrayInfo[i].name}</a></h5>
                    </div>
@@ -55,6 +55,7 @@ fetch(url)
     lista.innerHTML += contenidoLista;
     
 //<img src="img/generos/pop.pic.png" alt="Genre'"></a>
+//<a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="${arrayInfo[i].picture_big}" alt="Genre'"></a>
 
 
     })

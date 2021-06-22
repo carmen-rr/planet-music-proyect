@@ -24,6 +24,7 @@ fetch (urlArtist)
 })
 .then( function(data){
 
+
         console.log(data)
         let arrayInfo = data.data;
 
