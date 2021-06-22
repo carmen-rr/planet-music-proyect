@@ -40,7 +40,9 @@ fetch(url)
         //banner.src = `${data.album.cover_xl}`
 
         let banner = document.querySelector('.prueba')
-        banner.innerHTML = `<img src="${data.album.cover_xl}" >`
+        banner.innerHTML = `<img class="banner-dua" src="${data.album.cover_xl}" >
+                            <img class="banner-dua-responsive" src="${data.album.cover_xl}" >`
+
         let song = document.querySelector('h1')
         song.innerText = data.title
     

@@ -146,11 +146,7 @@ footer {
 }
 
 /* INDEX.HTML */
-.prueba{
-    height: 150px;
-    width: 100%;
-    overflow: hidden;
-}
+
 .main-home {
     margin-top: 70px;
     margin-bottom: 70px; 
@@ -783,6 +779,10 @@ width: auto;
 }
 .prueba{
     background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    
 }
 .banner-dua{
     display: flex;

@@ -3,6 +3,8 @@ window.addEventListener('load', function(){
       //loader.style.display = 'none';
       let loader = document.querySelector('.gif')
       loader.style.display = 'none';
+      let main = document.querySelector('.main-results')
+      main.style.display = 'flex'
     
 })
 
