@@ -1,3 +1,4 @@
+
 /*FORMULARIO*/
 let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search')
@@ -16,15 +17,13 @@ formulario.addEventListener('submit', function(event){
 
 })
 
-campoBuscar.addEventListener('input', function(){
-    closeIcon.style.display = 'none';
+   campoBuscar.addEventListener('input', function(){
+   closeIcon.style.display = 'none';
 })
 
 /*GENRES*/
 
-
 let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre`; 
-
 
 fetch(url)
     .then( function(response){
@@ -41,12 +40,12 @@ fetch(url)
        for(let i=1; i<10; i++){
          
         contenidoLista += 
-      
+      /*IMAGENES DE CARPETA IMG + TITULO DE CADA GENERO QUE LLEVA A SU DETAIL GENRES */
           `<li>          
 
                   <a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="img/generos/img${i}.png" alt="Genre'"></a>
                    <div>
-                    <h5><a href="detail-genres.html?id=${arrayInfo[i].id}">${arrayInfo[i].name}</a></h5>
+                    <h5><a href="detail-genres.html?id=${arrayInfo[i].id}">${arrayInfo[i].name}</a></h5> 
                    </div>
              </li>
              `
@@ -54,9 +53,7 @@ fetch(url)
 
     lista.innerHTML += contenidoLista;
     
-//<img src="img/generos/pop.pic.png" alt="Genre'"></a>
 //<a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="${arrayInfo[i].picture_big}" alt="Genre'"></a>
-
 
     })
     .catch( function(error){
