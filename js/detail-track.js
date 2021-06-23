@@ -22,7 +22,7 @@ campoBuscar.addEventListener('input', function(){
 })
 
 
-/*TRACK*/
+//DETAIL-TRACK
 
 let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString)
@@ -37,26 +37,32 @@ fetch(url)
     .then( function(data){
         console.log(data)
 
+        //banner
         let banner = document.querySelector('.banner-detail-track')
-        banner.innerHTML = `<img class="banner-track" src="${data.album.cover_xl}" >
+        banner.innerHTML = `<img class="banner-track" src="${data.album.cover_xl}">
                             <img class="banner-track-responsive" src="${data.album.cover_xl}" >`
 
+        //nombre cancion
         let song = document.querySelector('h1')
         song.innerText = data.title
     
+        //nombre album
         let album = document.querySelector ('.album-detail-track')
         album.innerHTML = `<a href="detail-album.html?id=${data.album.id}">${data.album.title} </a>`
 
+        //nombre artista
         let artist = document.querySelector ('h3')
         artist.innerHTML = `<a href="detail-artist.html?id=${data.artist.id}">${data.artist.name}</a>`
 
+        //portada cancion
         let imagen = document.querySelector ('.img-dua')
-        imagen.src = data.album.cover_big
+        imagen.src = data.album.cover_bi
+        imagen.alt = `Image of ${data.title} Song`
 
+        //player 
         let player = document.querySelector('.player-deezer')
-       // player.src = `https://widget.deezer.com/widget/dark/track/${id}data.preview`
-       player.innerHTML = `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="1050" height="125" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
-       //player.innerHTML = `https://www.deezer.com/us/track/${id}`
+        player.innerHTML = `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="1050" height="125" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
+       
 
     })
     .catch( function(error){
@@ -64,30 +70,33 @@ fetch(url)
     })
 
 
-/*AGREGAR A PLAYLIST*/
+//AGREGAR A PLAYLIST
 
-//playlist
 let favoritos = [];
 
-//recupero datos storage
 let recuperoDatosStorage = localStorage.getItem('favoritos');
 
 if(recuperoDatosStorage != null){
     favoritos = JSON.parse(recuperoDatosStorage);
 }
+
 if(favoritos.includes(id)){
     let texto = document.querySelector('.add-playlist');
     texto.innerText = 'Remove from Playlist';
 }
 
+
 let fav = document.querySelector('.add-playlist')
 
 fav.addEventListener ('click', function(){
     if(favoritos.includes(id)){
+
         let quitoId = favoritos.indexOf(id);
         favoritos.splice(quitoId, 1);
+
         let textoAgregar = document.querySelector('.add-playlist');
         textoAgregar.innerText = 'Add to Playlist'
+
     }else{
         favoritos.push(id)
 
@@ -96,10 +105,7 @@ fav.addEventListener ('click', function(){
     
     }
   
-    let favParaStorage = JSON.stringify(favoritos)
-    localStorage.setItem ('favoritos', favParaStorage);
-    console.log(localStorage)
+  let favParaStorage = JSON.stringify(favoritos)
+  localStorage.setItem ('favoritos', favParaStorage);
+  console.log(localStorage)
 })
-
-//con remove eliminamos una propiedad ej le pedimos al storage que elimine la propiedad favoritos
-//y con clear eliminamos todo los objetos literales (), le pedimos al storgae q borre todo el obj literal

@@ -26,6 +26,7 @@ let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString)
 let id = queryStringToObject.get ('id')
 
+
 let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`
 
 fetch(url)
@@ -35,21 +36,27 @@ fetch(url)
     .then( function(data){
         console.log(data)
 
+        //banner
         let banner = document.querySelector('.banner-detail-artist')
         banner.innerHTML = `<img class="banner-artist" src="${data.picture_xl}" >
                             <img class="banner-artist-responsive" src="${data.picture_xl}" >`
 
+        //nombre artista
         let artist = document.querySelectorAll('h1')
-         console.log(artist)
+           //console.log(artist)
         artist[1].innerText = data.name
         artist[0].innerText = data.name
-        console.log(data.name)
+           //console.log(data.name)
 
+        //portada artista
         let image = document.querySelector('.img-miley')
         image.src = data.picture_big
+        image.alt = alt=`Image of ${data.name}`
 
+        //portada artista responsive
         let imageResponsive = document.querySelector('.img-miley-responsive')
         imageResponsive.src = data.picture_big
+        imageResponsive.alt = `Image of ${data.name}`
         
 
     })
@@ -66,7 +73,8 @@ let urlTopSongs = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/ar
             return response.json();
         })
         .then( function(data){
-            //console.log(data)
+            console.log(data)
+
             let arrayInfo = data.data;
             let lista = document.querySelector('.popular-songs');
             let contenidoLista =''; 
@@ -100,13 +108,13 @@ fetch(urlAlbum)
              for(let i=0; i<5; i++){
                 contenidoLista += 
                        `<li>
-                         <a href="detail-album.html?id=${arrayInfo[i].id}"><img src="${arrayInfo[i].cover_big}" alt=""></a>
+                         <a href="detail-album.html?id=${arrayInfo[i].id}"><img src="${arrayInfo[i].cover_big}" alt="Image of ${arrayInfo[i].title} Album"></a>
                          <div class="contenedor-albumes-da">
                             <h4><a href="detail-album.html?id=${arrayInfo[i].id}">${arrayInfo[i].title}</a></h4>
                          </div>
                        </li>`
              }
-            // console.log(contenidoLista)
+             
              lista.innerHTML += contenidoLista;
             
           })

@@ -25,12 +25,14 @@ campoBuscar.addEventListener('input', function(){
 
 
 
-/*INDEX*/
+//INDEX
 
+//Playlist Track:
 
 let urlTrack = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks'
 
 fetch(urlTrack)
+
     .then( function(response){
         return response.json();
     })
@@ -44,7 +46,7 @@ fetch(urlTrack)
        for(let i=0; i<arrayInfo.length; i++){
           contenidoLista += 
                  `<li>
-                <img src="${arrayInfo[i].album.cover_big}"> 
+                <img src="${arrayInfo[i].album.cover_big}" alt="Image of ${arrayInfo[i].title} Song"> 
                 <div class="text"> 
                     <h5><a href="detail-track.html?id=${arrayInfo[i].id}"> ${arrayInfo[i].title}</a> </h5>
                     <p><a href="detail-artist.html?id=${arrayInfo[i].artist.id}"> - ${arrayInfo[i].artist.name}</a></p>
@@ -53,12 +55,11 @@ fetch(urlTrack)
                </li>`
          
        }
-       //<i class="fas fa-plus-circle"><a href="detail-track?id=${arrayInfo[i].id}></a></i>
 
       lista.innerHTML += contenidoLista;
 
-      //no se que va a ser de esto
-let favoritos = [];
+//no se que va a ser de esto
+/*let favoritos = [];
 
 let recuperoDatosStorage = localStorage.getItem('favoritos');
 
@@ -89,7 +90,7 @@ fav.addEventListener ('click', function(){
     let favParaStorage = JSON.stringify(favoritos)
     localStorage.setItem ('favoritos', favParaStorage);
     console.log(localStorage)
-})
+})*/
 
 
     })
@@ -97,31 +98,30 @@ fav.addEventListener ('click', function(){
       console.log(error);
     })
 
-     
+//Playlist Album:
 
-    let urlAlbum = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums'
+let urlAlbum = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums'
 
-    fetch(urlAlbum)
+fetch(urlAlbum)
     .then( function(response){
         return response.json();
     })
     .then( function(data){
         
         console.log(data);
-       let arrayInfo = data.data;
-       let lista = document.querySelector('.ul-de-albums');
-       let contenidoLista =''; 
+        let arrayInfo = data.data;
+        let lista = document.querySelector('.ul-de-albums');
+        let contenidoLista =''; 
 
-       for(let i=0; i<arrayInfo.length; i++){
-          contenidoLista += 
+        for(let i=0; i<arrayInfo.length; i++){
+           contenidoLista += 
                               `<li>
-                    <img src="${arrayInfo[i].cover_big}">
-                    <div class="text">
-                        <h5><a href="detail-album.html?id=${arrayInfo[i].id}">${arrayInfo[i].title}</a></h5>
-                        <p><a href="detail-artist.html?id=${arrayInfo[i].artist.id}">- ${arrayInfo[i].artist.name}</a></p>
-                    </div>
-                </li>`
-
+                                  <img src="${arrayInfo[i].cover_big}" alt="Image of ${arrayInfo[i].title} Album">
+                                  <div class="text">
+                                    <h5><a href="detail-album.html?id=${arrayInfo[i].id}">${arrayInfo[i].title}</a></h5>
+                                    <p><a href="detail-artist.html?id=${arrayInfo[i].artist.id}">- ${arrayInfo[i].artist.name}</a></p>
+                                  </div>
+                               </li>`
        }
       lista.innerHTML += contenidoLista;
 
@@ -131,10 +131,11 @@ fav.addEventListener ('click', function(){
       console.log(error);
     })
 
+//Playlist Artist:
 
-    let urlArtist = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists'
+let urlArtist = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists'
 
-    fetch(urlArtist)
+fetch(urlArtist)
     .then( function(response){
         return response.json();
     })
@@ -142,14 +143,13 @@ fav.addEventListener ('click', function(){
 
         console.log(data);
         let arrayInfo = data.data;
-       let lista = document.querySelector('.ul-de-artist');
-       let contenidoLista =''; 
+        let lista = document.querySelector('.ul-de-artist');
+        let contenidoLista =''; 
 
       for(let i=0; i<arrayInfo.length; i++){
-          contenidoLista += 
-                  
+          contenidoLista +=       
                 `<li>
-                    <img src="${arrayInfo[i].picture_big}">
+                    <img src="${arrayInfo[i].picture_big}" alt="Image of ${arrayInfo[i].name}">
                     <div class="text">
                         <h5><a href="detail-artist.html?id=${arrayInfo[i].id}">${arrayInfo[i].name}</a></h5>
                     </div>
@@ -157,11 +157,7 @@ fav.addEventListener ('click', function(){
 
        }
    lista.innerHTML += contenidoLista;
-
-
     })
     .catch( function(error){
       console.log(error);
     })
-
-  
