@@ -130,7 +130,7 @@ fetch(url)
        playlist.innerHTML +=   ` <li>
                                    <img src="${data.album.cover_big}" alt="Portada de 'Location'">
                                    <div>
-                                     <h5><a href="detail-track.html?id=${data.id}">${data.title}</a></h5>
+                                     <h5><a class= "link-playlist" href="detail-track.html?id=${data.id}">${data.title}</a><a href="detail-track.html?id=${data.id}"><i class="fas fa-trash"></i></a></h5>
                                      <p><a href="detail-artist.html?id=${data.artist.id}">- ${data.artist.name}</a></p>
                                    </div>
                                  </li> `

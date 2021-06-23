@@ -37,6 +37,10 @@ fetch(url)
 })
 .then( function(data){
     console.log(data);
+   
+    let banner = document.querySelector('.banner-detail-album')
+        banner.innerHTML = `<img class="banner-album" src="${data.cover_xl}" >
+                            <img class="banner-album-responsive" src="${data.cover_xl}" >`
 
     /*ALBUM TITLE*/
     let album = document.querySelector('h1')
