@@ -1352,15 +1352,18 @@ height:auto
     .info-track h3{
         font-size: 25px;
     }
-    .player audio{
-        width: 97%;
-        margin-bottom: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
-    } 
+   
     .player p{
-        font-size: 15px;
-        width: 100%;
+        width: 90%;
+        
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-content: center;
+        box-sizing: initial;
+        
+        
     }
 
     /*PLAYLIST.HTML*/
