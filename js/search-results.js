@@ -67,8 +67,13 @@ fetch (urlArtist)
     }else{
         let noHayResultadosArtist = document.querySelector('.result-artist')
         noHayResultadosArtist.innerHTML= `<h4 class="no-results">There isn't any artist for '${search}'</h4>`;
-        //noHayResultadosArtist.style.fontSize = '20px' 
-        //document.noHayResultadosArtist.style.color = 'red'
+        
+        let noResults1 = document.querySelector('.no-results')
+        noResults1.style.fontSize = '25px';
+        noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
+        noResults1.style.fontWeight = '200';
+        noResults1.style.padding = '10px';
+        
     }
 })
 .catch( function(error){
@@ -103,6 +108,12 @@ fetch (urlTrack)
     }else{
         let noHayResultadosSong = document.querySelector('.result-songs')
         noHayResultadosSong.innerHTML= `<h4 class="no-results">There isn't any song for '${search}'</h4>`;
+
+        let noResults1 = document.querySelector('.no-results')
+        noResults1.style.fontSize = '25px';
+        noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
+        noResults1.style.fontWeight = '200';
+        noResults1.style.padding = '10px';
     }
 })
 .catch( function(error){
@@ -137,6 +148,12 @@ fetch (urlAlbum)
     }else{
         let noHayResultadosAlbum = document.querySelector('.result-albums')
         noHayResultadosAlbum.innerHTML= `<h4 class="no-results">There isn't any album for '${search}'</h4>`;
+
+        let noResults1 = document.querySelector('.no-results')
+        noResults1.style.fontSize = '25px';
+        noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
+        noResults1.style.fontWeight = '200';
+        noResults1.style.padding = '10px';
     }
 })
 .catch( function(error){
@@ -170,11 +187,13 @@ fetch (urlPlaylist)
     }else{
         let noHayResultadosPlaylist = document.querySelector('.result-playlist')
         noHayResultadosPlaylist.innerHTML= `<h4 class="no-results">There isn't any playlist for '${search}'</h4>`;
-        let textoNoResults = document.querySelector('.no-results')
-        textoNoResults.style.fontSize = '50px';
-        //textoNoResults.style.width = '100%';
-        //textoNoResults.style.display = 'flex';
-       // textoNoResults.style.justifyContent = 'center';
+
+        let noResults1 = document.querySelector('.no-results')
+        noResults1.style.fontSize = '25px';
+        noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
+        noResults1.style.fontWeight = '200';
+        noResults1.style.padding = '10px';
+        
     
     }
 })
