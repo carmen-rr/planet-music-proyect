@@ -425,6 +425,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5px;
 }
 .main-results article h3{
     font-size: 30px;
