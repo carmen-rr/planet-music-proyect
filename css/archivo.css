@@ -1243,12 +1243,7 @@ height:auto
     margin-top: 20px;
      }
 
-     .genres li{
-        width: 100%;
-        align-items: center;     
-        padding: 10px;
-    }
-    .genres li img{
+    .genres img{
         width: 200px;
     }
     .genres li h5, .genres li p{
@@ -1264,13 +1259,18 @@ height:auto
     justify-content: center;
     }
 
-  
-.lista-genres{
+    .lista-genres{
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
         align-content: center;
      }
+
+     .lista-genres li{
+        width: 100%;
+        align-items: center;     
+        padding: 10px;
+    }
      
      
       /*DETAIL-GENRES*/
