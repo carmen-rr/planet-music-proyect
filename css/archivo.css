@@ -1186,6 +1186,7 @@ height:auto
 .article-main-album{
     width:85%;
     flex-wrap: wrap;
+    
 }
 
 
@@ -1197,7 +1198,7 @@ height:auto
 
 .genres-album{
     font-size: 25px;
-    margin-top: 5px;
+    align-items: center;
 }
 
 .detalles-album{
@@ -1274,9 +1275,10 @@ height:auto
     }
     
     .detail-genre-title{
-    font-size: 30px;
+    font-size: 20px;
     width: initial;
     margin: 0%;
+    padding: 10px;
     margin-top: 20px;
      }
       
@@ -1300,7 +1302,7 @@ height:auto
      }
       
      .pop-image{
-    width: 300px;
+    width: 200px;
      height: auto;
      }
 
@@ -1335,6 +1337,7 @@ height:auto
     .info-track{
         padding: 10px;
     }
+
     .info-track h1{
         width: 100%;
         font-size: 35px;
