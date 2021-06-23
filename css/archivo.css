@@ -1070,6 +1070,11 @@ width: auto;
         font-size: 15px;
     }
 
+    .artist-albums{
+        font-size: 10px;
+        
+    }
+
     /*SEARCH-RESULTS.HTML*/
     .main-results h2{
        font-size: 25px;
@@ -1231,42 +1236,43 @@ height:auto
 }
 
  /*GENRES*/
-
-
-
- .main-genres{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;}
-
-  
  .genre-title{
     font-size: 30px;
     width: initial;
     margin: 0%;
     margin-top: 20px;
      }
-     
-.genres-article{
+
+     .genres li{
+        width: 100%;
+        align-items: center;     
+        padding: 10px;
+    }
+    .genres li img{
+        width: 200px;
+    }
+    .genres li h5, .genres li p{
+        width: initial;
+        font-size: 20px;
+    }
+    .genres li {
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    }
+
   
-        width:93%;
+.lista-genres{
         flex-wrap: wrap;
         display: flex;
-        justify-content: center;
         flex-direction: column;
         align-content: center;
      }
      
-
-     .pop, .rock, .techno {
-        width: 100%;
-     }
      
-     .genre-image{
-    width: auto;
-    height: 300px;
-     }
- 
       /*DETAIL-GENRES*/
     .main-detail-genre{
     display: flex;
