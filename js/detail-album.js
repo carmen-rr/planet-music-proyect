@@ -1,7 +1,7 @@
 
 /*FORMULARIO*/
 let formulario = document.querySelector('form')
-let campoBuscar = document.querySelector('[name=search')
+let campoBuscar = document.querySelector('[name=search]')
 let closeIcon = document.querySelector('.closeIcon')
 
 formulario.addEventListener('submit', function(event){
@@ -9,9 +9,11 @@ formulario.addEventListener('submit', function(event){
 
     if (campoBuscar.value == ""){
         closeIcon.style.display = 'inline';
+        document.querySelector('.probando').innerText = "The field can't be empty"
     }
     else if (campoBuscar.value.length < 3){
         closeIcon.style.display = 'inline';
+        document.querySelector('.probando').innerText = "You should enter at least three characters"
     }
     else {this.submit()}
 

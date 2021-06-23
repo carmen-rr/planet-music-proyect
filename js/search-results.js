@@ -2,17 +2,35 @@
 window.addEventListener('load', function(){
       let loader = document.querySelector('.gif')
       loader.style.display = 'none';
-      let main = document.querySelector('.main-results')
-      main.style.display = 'flex';
+      let body = document.querySelector('.main-results')
+      body.style.display = 'flex';
     
 })
+//FORMULARIO 
+let formulario = document.querySelector('form')
+let campoBuscar = document.querySelector('[name=search')
+let closeIcon = document.querySelector('.closeIcon')
 
-<<<<<<< HEAD
+formulario.addEventListener('submit', function(event){
+    event.preventDefault(); 
+
+    if (campoBuscar.value == ""){
+        closeIcon.style.display = 'inline';
+        document.querySelector('.probando').innerText = "The field can't be empty"
+    }
+    else if (campoBuscar.value.length < 3){
+        closeIcon.style.display = 'inline';
+        document.querySelector('.probando').innerText = "You should enter at least three characters"
+    }
+    else {this.submit()}
+
+})
+
+    campoBuscar.addEventListener('input', function(){
+    closeIcon.style.display = 'none';
+})
 
 //SEARCH-RESULTS
-=======
-/*SEARCH*/
->>>>>>> 8a44289f168c13d6b3ce192481595bb8693888a4
 
 let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString);
