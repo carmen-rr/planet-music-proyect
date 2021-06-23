@@ -1,3 +1,4 @@
+
 /*FORMULARIO*/
 let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search')
@@ -18,15 +19,11 @@ formulario.addEventListener('submit', function(event){
 
 })
 
-campoBuscar.addEventListener('input', function(){
+    campoBuscar.addEventListener('input', function(){
     closeIcon.style.display = 'none';
 })
 
-
-
-
 /*INDEX*/
-
 
 let urlTrack = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks'
 
