@@ -1175,6 +1175,11 @@ width: auto;
         justify-content: flex-start;
     }
 
+    .artist-albums{
+        font-size: 10px;
+        
+    }
+
     /*SEARCH-RESULTS.HTML*/
     .main-results h2{
        font-size: 25px;
@@ -1303,6 +1308,7 @@ height:auto
 .article-main-album{
     width:85%;
     flex-wrap: wrap;
+    
 }
 
 
@@ -1314,7 +1320,7 @@ height:auto
 
 .genres-album{
     font-size: 25px;
-    margin-top: 5px;
+    align-items: center;
 }
 
 .detalles-album{
@@ -1347,42 +1353,43 @@ height:auto
 }
 
  /*GENRES*/
-
-
-
- .main-genres{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;}
-
-  
  .genre-title{
     font-size: 30px;
     width: initial;
     margin: 0%;
     margin-top: 20px;
      }
-     
-.genres-article{
-  
-        width:93%;
+
+    .genres img{
+        width: 200px;
+    }
+    .genres li h5, .genres li p{
+        width: initial;
+        font-size: 20px;
+    }
+    .genres li {
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .lista-genres{
         flex-wrap: wrap;
         display: flex;
-        justify-content: center;
         flex-direction: column;
         align-content: center;
      }
-     
 
-     .pop, .rock, .techno {
+     .lista-genres li{
         width: 100%;
-     }
+        align-items: center;     
+        padding: 10px;
+    }
      
-     .genre-image{
-    width: auto;
-    height: 300px;
-     }
- 
+     
       /*DETAIL-GENRES*/
     .main-detail-genre{
     display: flex;
@@ -1391,9 +1398,10 @@ height:auto
     }
     
     .detail-genre-title{
-    font-size: 30px;
+    font-size: 20px;
     width: initial;
     margin: 0%;
+    padding: 10px;
     margin-top: 20px;
      }
       
@@ -1417,7 +1425,7 @@ height:auto
      }
       
      .pop-image{
-    width: 300px;
+    width: 200px;
      height: auto;
      }
 
@@ -1459,6 +1467,7 @@ height:auto
     .info-track{
         padding: 10px;
     }
+
     .info-track h1{
         width: 100%;
         font-size: 35px;
@@ -1467,15 +1476,18 @@ height:auto
     .info-track h3{
         font-size: 25px;
     }
-    .player audio{
-        width: 97%;
-        margin-bottom: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
-    } 
+   
     .player p{
-        font-size: 15px;
-        width: 100%;
+        width: 90%;
+        
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-content: center;
+        box-sizing: initial;
+        
+        
     }
     .player-deezer{
         width: 100%;

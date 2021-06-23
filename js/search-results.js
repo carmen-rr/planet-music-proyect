@@ -7,8 +7,12 @@ window.addEventListener('load', function(){
     
 })
 
+<<<<<<< HEAD
 
 //SEARCH-RESULTS
+=======
+/*SEARCH*/
+>>>>>>> 8a44289f168c13d6b3ce192481595bb8693888a4
 
 let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString);

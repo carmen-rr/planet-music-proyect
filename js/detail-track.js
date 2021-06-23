@@ -18,7 +18,7 @@ formulario.addEventListener('submit', function(event){
 })
 
 campoBuscar.addEventListener('input', function(){
-    closeIcon.style.display = 'none';
+closeIcon.style.display = 'none';
 })
 
 
@@ -45,6 +45,10 @@ fetch(url)
         //nombre cancion
         let song = document.querySelector('h1')
         song.innerText = data.title
+
+        /*TITLE DE PESTAÑA*/
+        let title = document.querySelector('title')
+        title.innerText = data.title
     
         //nombre album
         let album = document.querySelector ('.album-detail-track')

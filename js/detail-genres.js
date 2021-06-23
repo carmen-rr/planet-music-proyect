@@ -17,19 +17,18 @@ formulario.addEventListener('submit', function(event){
 
 })
 
-campoBuscar.addEventListener('input', function(){
-    closeIcon.style.display = 'none';
+ campoBuscar.addEventListener('input', function(){
+ closeIcon.style.display = 'none';
 })
 
 /*DETAIL-GENRES*/
 
-let = queryString = location.search;
-let = queryStringToObject = new URLSearchParams(queryString);
+let queryString = location.search;
+let queryStringToObject = new URLSearchParams(queryString);
 let id = queryStringToObject.get('id');
 
 
 let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/artists`;
-
 let urlGenres = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`; 
 
 fetch(urlGenres)
@@ -39,17 +38,19 @@ fetch(urlGenres)
     .then( function(data){
         console.log(data)
 
-    let genre = document.querySelector('h1')
+        /*GENRE NAME*/
+       let genre = document.querySelector('h1')
        genre.innerText =  data.name
 
+        /*GENRE TITLE EN PESTAÑA*/
        let title = document.querySelector('title')
-        title.innerText = data.name
+       title.innerText = data.name
     })
      .catch( function(error){
             console.log(error);
     })
 
-    fetch(url)
+    fetch(url) /*ARTISTAS*/
     .then( function(response){
         return response.json();
     })
@@ -72,11 +73,6 @@ fetch(urlGenres)
               
         }
         lista.innerHTML += contenidoLista;
-
-        
-    
-
-
 
     })
      .catch( function(error){

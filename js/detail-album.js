@@ -1,3 +1,4 @@
+
 /*FORMULARIO*/
 let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search')
@@ -16,8 +17,8 @@ formulario.addEventListener('submit', function(event){
 
 })
 
-campoBuscar.addEventListener('input', function(){
-    closeIcon.style.display = 'none';
+  campoBuscar.addEventListener('input', function(){
+  closeIcon.style.display = 'none';
 })
 
 /*ALBUM*/
@@ -49,6 +50,10 @@ fetch(url)
     /*ALBUM ARTIST*/
     let artist = document.querySelector('.detalles-album')
     artist.innerHTML =  `<a href="detail-artist.html?id=${data.artist.id}">${data.artist.name} </a>`  
+
+    /*TITLE DE PESTAÑA*/
+    let title = document.querySelector('title')
+    title.innerText = data.title
 
     /*ALBUM IMAGEN*/
     let img = document.querySelector('.fotoalbum')
