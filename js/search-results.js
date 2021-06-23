@@ -6,7 +6,7 @@ window.addEventListener('load', function(){
     
 })
 
-
+/*SEARCH*/
 
 let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString);
