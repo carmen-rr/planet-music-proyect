@@ -21,6 +21,8 @@ formulario.addEventListener('submit', function(event){
 
   campoBuscar.addEventListener('input', function(){
   closeIcon.style.display = 'none';
+  document.querySelector('.probando').style.display = 'none'
+
 })
 
 /*ALBUM*/

@@ -1,7 +1,7 @@
 
 /*FORMULARIO*/
 let formulario = document.querySelector('form')
-let campoBuscar = document.querySelector('[name=search')
+let campoBuscar = document.querySelector('[name=search]')
 let closeIcon = document.querySelector('.closeIcon')
 
 formulario.addEventListener('submit', function(event){
@@ -21,6 +21,7 @@ formulario.addEventListener('submit', function(event){
 
     campoBuscar.addEventListener('input', function(){
     closeIcon.style.display = 'none';
+    document.querySelector('.probando').style.display = 'none';
 })
 
 //PLAYLIST
@@ -38,9 +39,20 @@ if (favoritos.length>0 || recuperoDatosStorage.favoritos != undefined){
    
     
 }else{
-    playlist.innerHTML = '<p>Your Playlist is Empty</p><p> <a href="index.html"><i class="fas fa-plus-circle"></i>Explore Songs</a></p>'
-    //playlist.innerHTML.style.color = 'red'
+    playlist.innerHTML = '<p class="empty-playlist">Your Playlist is Empty</p><p class="explore-songs"> <a href="index.html"><i class="fas fa-plus-circle"></i>Explore Songs</a></p>'
+    let p1 = document.querySelector('.empty-playlist')
+    p1.style.fontSize = '30px';
+    p1.style.color = 'rgba(255, 255, 255, 0.6)';
+    p1.style.fontWeight = '200';
+
+    let p2 = document.querySelector('.explore-songs')
+    p2.style.fontSize = '30px';
+    p2.style.marginLeft = '50px';
+    p2.style.color = 'rgba(255, 255, 255, 0.6)';
+    p2.style.fontWeight = '200';
     
+    let icon = document.querySelector('.fa-plus-circle')
+    icon.style.marginRight = '5px'
 }
 
 
@@ -53,8 +65,6 @@ fetch(url)
     })
     .then( function(data){
         console.log(data)
-       //let info = data.data;
-       //let resultados = '';
        playlist.innerHTML +=   ` <li>
                                    <img src="${data.album.cover_big}" alt="Image of ${data.title} Song">
                                    <div>

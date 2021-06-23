@@ -590,6 +590,9 @@ footer {
 .result-albums li div h4{
     font-size: 20px;
 }
+.playlist-search{
+    justify-content: flex-start;
+}
 
 .result-playlist{
     width: 100%;

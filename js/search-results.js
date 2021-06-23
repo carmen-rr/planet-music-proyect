@@ -8,7 +8,7 @@ window.addEventListener('load', function(){
 })
 //FORMULARIO 
 let formulario = document.querySelector('form')
-let campoBuscar = document.querySelector('[name=search')
+let campoBuscar = document.querySelector('[name=search]')
 let closeIcon = document.querySelector('.closeIcon')
 
 formulario.addEventListener('submit', function(event){
@@ -28,6 +28,7 @@ formulario.addEventListener('submit', function(event){
 
     campoBuscar.addEventListener('input', function(){
     closeIcon.style.display = 'none';
+    document.querySelector('.probando').style.display = 'none';
 })
 
 //SEARCH-RESULTS
@@ -37,8 +38,7 @@ let queryStringToObject = new URLSearchParams(queryString);
 let search = queryStringToObject.get('search')
 
 let palabraBuscada = document.querySelector('h2')
-
-let hola = palabraBuscada.innerText += ` '${search}'`;
+let comentario = palabraBuscada.innerText += ` '${search}'`;
 
 //Resultados Artistas:
 let urlArtist = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${search}`
@@ -143,7 +143,7 @@ fetch (urlAlbum)
     console.log(error);
   })
 
-let playlistBuscada = document.querySelector('.playlist')
+let playlistBuscada = document.querySelector('.playlist-search')
 let hola1 = playlistBuscada.innerText += ` '${search}'...`;
 
 
