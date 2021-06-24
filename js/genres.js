@@ -10,11 +10,11 @@ formulario.addEventListener('submit', function(event){
     event.preventDefault(); 
 
     if (campoBuscar.value == ""){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta1.style.display = 'flex';
     }
     else if (campoBuscar.value.length < 3){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta2.style.display = 'flex';
     }
     else {this.submit()}
@@ -24,7 +24,7 @@ formulario.addEventListener('submit', function(event){
    campoBuscar.addEventListener('input', function(){
    closeIcon.style.display = 'none';
    alerta1.style.display = 'none';
-  alerta2.style.display = 'none'
+   alerta2.style.display = 'none'
 })
 
 /*GENRES*/
