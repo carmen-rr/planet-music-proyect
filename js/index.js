@@ -3,6 +3,7 @@
 let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search]')
 let closeIcon = document.querySelector('.closeIcon')
+let alerta = document.querySelector('.probando')
 
 formulario.addEventListener('submit', function(event){
     event.preventDefault(); 
@@ -15,6 +16,9 @@ formulario.addEventListener('submit', function(event){
     else if (campoBuscar.value.length < 3){
         closeIcon.style.display = 'inline';
         document.querySelector('.probando').innerText = "You should enter at least three characters"
+        //let alerta = document.querySelector('.probando')
+        //alerta.innerText = "You should enter at least three characters";
+        //alerta.style.display = 'flex';
     }
     else {this.submit()}
 
@@ -22,7 +26,9 @@ formulario.addEventListener('submit', function(event){
 
     campoBuscar.addEventListener('input', function(){
     closeIcon.style.display = 'none';
-    document.querySelector('.probando').style.display = 'none';
+   // document.querySelector('.probando').style.display = 'none';
+    //document.querySelector('.probando').style.display = 'none';
+ //alerta.style.display = 
 })
 
 /*INDEX*/
