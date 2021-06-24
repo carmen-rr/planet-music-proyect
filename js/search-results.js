@@ -210,5 +210,7 @@ fetch (urlPlaylist)
     noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
     noResults1.style.fontWeight = '200';
     noResults1.style.padding = '10px';
+    noResults1.style.width = '100%';
+    noResults1.style.textAlign = 'center'
 
 }
