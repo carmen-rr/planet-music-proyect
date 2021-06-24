@@ -1,5 +1,5 @@
 
-/*FORMULARIO*/
+//FORMULARIO
 let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search]')
 let closeIcon = document.querySelector('.closeIcon')
@@ -10,11 +10,11 @@ formulario.addEventListener('submit', function(event){
     event.preventDefault(); 
 
     if (campoBuscar.value == ""){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta1.style.display = 'flex';
     }
     else if (campoBuscar.value.length < 3){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta2.style.display = 'flex';
     }
     else {this.submit()}
@@ -24,10 +24,10 @@ formulario.addEventListener('submit', function(event){
    campoBuscar.addEventListener('input', function(){
    closeIcon.style.display = 'none';
    alerta1.style.display = 'none';
-  alerta2.style.display = 'none'
+   alerta2.style.display = 'none'
 })
 
-/*GENRES*/
+//GENRES
 
 let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre`; 
 
@@ -46,7 +46,7 @@ fetch(url)
        for(let i=1; i<10; i++){
          
         contenidoLista += 
-      /*IMAGENES DE CARPETA IMG + TITULO DE CADA GENERO QUE LLEVA A SU DETAIL GENRES */
+      //IMAGENES DE CARPETA IMG + TITULO DE CADA GENERO QUE LLEVA A SU DETAIL GENRES 
           `<li>          
 
                   <a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="img/generos/img${i}.png" alt="Genre'"></a>

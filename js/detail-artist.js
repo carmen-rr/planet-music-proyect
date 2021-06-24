@@ -1,4 +1,4 @@
-/*FORMULARIO*/
+//FORMULARIO
 let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search]')
 let closeIcon = document.querySelector('.closeIcon')
@@ -9,11 +9,11 @@ formulario.addEventListener('submit', function(event){
     event.preventDefault(); 
 
     if (campoBuscar.value == ""){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta1.style.display = 'flex';
     }
     else if (campoBuscar.value.length < 3){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta2.style.display = 'flex';
     }
     else {this.submit()}
@@ -46,6 +46,10 @@ fetch(url)
         let banner = document.querySelector('.banner-detail-artist')
         banner.innerHTML = `<img class="banner-artist" src="${data.picture_xl}" >
                             <img class="banner-artist-responsive" src="${data.picture_xl}" >`
+
+        //genre title en pestaña
+       let title = document.querySelector('title')
+       title.innerText = data.name
 
         //nombre artista
         let artist = document.querySelectorAll('h1')

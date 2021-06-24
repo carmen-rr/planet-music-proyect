@@ -1,5 +1,5 @@
 
-/*FORMULARIO*/
+//FORMULARIO
 let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search]')
 let closeIcon = document.querySelector('.closeIcon')
@@ -10,11 +10,11 @@ formulario.addEventListener('submit', function(event){
     event.preventDefault(); 
 
     if (campoBuscar.value == ""){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta1.style.display = 'flex';
     }
     else if (campoBuscar.value.length < 3){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta2.style.display = 'flex';
     }
     else {this.submit()}
@@ -28,7 +28,7 @@ formulario.addEventListener('submit', function(event){
 
 })
 
-/*ALBUM*/
+//ALBUM
 
 let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString);
@@ -50,23 +50,23 @@ fetch(url)
         banner.innerHTML = `<img class="banner-album" src="${data.cover_xl}" >
                             <img class="banner-album-responsive" src="${data.cover_xl}" >`
 
-    /*ALBUM TITLE*/
+    //ALBUM TITLE
     let album = document.querySelector('h1')
     album.innerHTML =  `<a href="detail-artist.html?id=${data.artist.id}">${data.title} </a>`
    
-    /*ALBUM ARTIST*/
+    //ALBUM ARTIST
     let artist = document.querySelector('.detalles-album')
     artist.innerHTML =  `<a href="detail-artist.html?id=${data.artist.id}">${data.artist.name} </a>`  
 
-    /*TITLE DE PESTAÑA*/
+    //TITLE DE PESTAÑA
     let title = document.querySelector('title')
     title.innerText = data.title
 
-    /*ALBUM IMAGEN*/
+    //ALBUM IMAGEN
     let img = document.querySelector('.fotoalbum')
     img.src = data.cover_big
 
-    /*SONGS*/
+    //SONGS
     fetch (urlSongsAlbum)
      .then( function(response){
       return response.json();
@@ -87,11 +87,11 @@ fetch(url)
       console.log(error);
     })
 
-    /*DATE*/
+    //DATE
     let date = document.querySelector('h6')
     date.innerText = data.release_date
 
-    /*GENRE*/
+    //GENRE
     let arrayInfo = data.genres.data
     let genres = document.querySelector('.genres-album');
     let contenidoLista =''; 
