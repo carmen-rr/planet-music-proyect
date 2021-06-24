@@ -31,14 +31,22 @@ formulario.addEventListener('submit', function(event){
     document.querySelector('.probando').style.display = 'none';
 })
 
+
+
 //SEARCH-RESULTS
 
 let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString);
 let search = queryStringToObject.get('search')
 
+
+
+
+
 let palabraBuscada = document.querySelector('h2')
 let comentario = palabraBuscada.innerText += ` '${search}'`;
+
+
 
 //Resultados Artistas:
 let urlArtist = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${search}`
@@ -67,18 +75,18 @@ fetch (urlArtist)
     }else{
         let noHayResultadosArtist = document.querySelector('.result-artist')
         noHayResultadosArtist.innerHTML= `<h4 class="no-results">There isn't any artist for '${search}'</h4>`;
-        
-        let noResults1 = document.querySelector('.no-results')
-        noResults1.style.fontSize = '25px';
-        noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
-        noResults1.style.fontWeight = '200';
-        noResults1.style.padding = '10px';
+
+        let noResults = decoracionTextosNoResults();
         
     }
 })
 .catch( function(error){
     console.log(error);
   })
+
+
+
+
 
 
 //Resultados Tracks:
@@ -109,16 +117,15 @@ fetch (urlTrack)
         let noHayResultadosSong = document.querySelector('.result-songs')
         noHayResultadosSong.innerHTML= `<h4 class="no-results">There isn't any song for '${search}'</h4>`;
 
-        let noResults1 = document.querySelector('.no-results')
-        noResults1.style.fontSize = '25px';
-        noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
-        noResults1.style.fontWeight = '200';
-        noResults1.style.padding = '10px';
+        let noResults = decoracionTextosNoResults();
     }
 })
 .catch( function(error){
     console.log(error);
   })
+
+
+
 
 
 //Resultados Album:
@@ -149,11 +156,7 @@ fetch (urlAlbum)
         let noHayResultadosAlbum = document.querySelector('.result-albums')
         noHayResultadosAlbum.innerHTML= `<h4 class="no-results">There isn't any album for '${search}'</h4>`;
 
-        let noResults1 = document.querySelector('.no-results')
-        noResults1.style.fontSize = '25px';
-        noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
-        noResults1.style.fontWeight = '200';
-        noResults1.style.padding = '10px';
+        let noResults = decoracionTextosNoResults();
     }
 })
 .catch( function(error){
@@ -162,6 +165,9 @@ fetch (urlAlbum)
 
 let playlistBuscada = document.querySelector('.playlist-search')
 let hola1 = playlistBuscada.innerText += ` '${search}'...`;
+
+
+
 
 
 //Resultados Playlist:
@@ -188,15 +194,22 @@ fetch (urlPlaylist)
         let noHayResultadosPlaylist = document.querySelector('.result-playlist')
         noHayResultadosPlaylist.innerHTML= `<h4 class="no-results">There isn't any playlist for '${search}'</h4>`;
 
-        let noResults1 = document.querySelector('.no-results')
-        noResults1.style.fontSize = '25px';
-        noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
-        noResults1.style.fontWeight = '200';
-        noResults1.style.padding = '10px';
-        
+        let noResults = decoracionTextosNoResults();
+        console.log(noResults)
     
     }
 })
 .catch( function(error){
     console.log(error);
   })
+
+
+
+  function decoracionTextosNoResults(){
+    let noResults1 = document.querySelector('.no-results')
+    noResults1.style.fontSize = '25px';
+    noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
+    noResults1.style.fontWeight = '200';
+    noResults1.style.padding = '10px';
+
+}
