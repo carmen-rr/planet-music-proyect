@@ -204,7 +204,7 @@ fetch (urlPlaylist)
 
 
 
-  function decoracionTextosNoResults(){
+ let funcion = function decoracionTextosNoResults(){
     let noResults1 = document.querySelector('.no-results')
     noResults1.style.fontSize = '25px';
     noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
