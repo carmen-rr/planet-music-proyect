@@ -801,6 +801,29 @@ footer {
     width: 100%;
     display: flex;
 }
+.banner-detail-genre{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.banner-detail-genre::before{
+    position: absolute;
+    height: 250px;
+    background: linear-gradient(to top, rgb(3, 3, 3, 0.99), rgba(0, 0, 0, 0.18));
+    content: "";
+    width: 100%;
+}
+
+.banner-genre-responsive{
+    display: none;
+}
+.banner-genre {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .detail-genre-title{
     display: flex;
     text-align: center;
@@ -808,6 +831,7 @@ footer {
     flex-direction: row;
     font-size: 50px;
     margin: 30px;
+    margin-top: 60px;
     line-height: 0;
     border-radius: 25px;
     background-color: rgba(82, 75, 75, 0.5);
@@ -1394,6 +1418,20 @@ height:auto
      
      
       /*DETAIL-GENRES*/
+
+      .banner-detail-genre{
+        height: 150px;
+    }
+    .banner-detail-genre::before{
+        height: 150px;
+    }
+    .banner-genre{
+        display: none;
+    }
+    .banner-genre-responsive{
+        display: flex;
+        width: 100%;
+    }
     .main-detail-genre{
     display: flex;
     flex-wrap: wrap;

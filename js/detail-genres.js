@@ -41,6 +41,11 @@ fetch(urlGenres)
     .then( function(data){
         console.log(data)
 
+        //banner
+        let banner = document.querySelector('.banner-detail-genre')
+        banner.innerHTML = `<img class="banner-genre" src="${data.picture_xl}" >
+                            <img class="banner-artist-genre" src="${data.picture_xl}" >`
+
         /*GENRE NAME*/
        let genre = document.querySelector('h1')
        genre.innerText =  data.name
