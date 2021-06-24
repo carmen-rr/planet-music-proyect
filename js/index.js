@@ -20,9 +20,6 @@ formulario.addEventListener('submit', function(event){
         closeIcon.style.display = 'inline';
         alerta2.style.display = 'flex';
         //document.querySelector('.probando').innerText = "You should enter at least three characters"
-        //let alerta = document.querySelector('.probando')
-        //alerta.innerText = "You should enter at least three characters";
-        //alerta.style.display = 'flex';
     }
     else {this.submit()}
 
@@ -33,8 +30,6 @@ formulario.addEventListener('submit', function(event){
     alerta1.style.display = 'none';
     alerta2.style.display = 'none';
    //document.querySelector('.probando').style.display = 'none';
-    //document.querySelector('.probando').style.display = 'none';
-   //alerta.style.display = 
 })
 
 /*INDEX*/
@@ -67,41 +62,6 @@ fetch(urlTrack)
        }
 
       lista.innerHTML += contenidoLista;
-
-
-/*let favoritos = [];
-
-let recuperoDatosStorage = localStorage.getItem('favoritos');
-
-if(recuperoDatosStorage != null){
-    favoritos = JSON.parse(recuperoDatosStorage);
-}
-if(favoritos.includes(idParaFavoritos)){
-    let texto = document.querySelector('.fa-plus-circle');
-    texto.innerHTML = '<i class="fas fa-times-circle"></i>';
-}
-
-let fav = document.querySelector('.fa-plus-circle')
-
-fav.addEventListener ('click', function(){
-    if(favoritos.includes(id)){
-        let quitoId = favoritos.indexOf(id);
-        favoritos.splice(quitoId, 1);
-        let textoAgregar = document.querySelector('.fa-plus-circle');
-        textoAgregar.innerHTML = '<i class="fas fa-plus-circle"></i>'
-    }else{
-        favoritos.push(id)
-
-        let textoSacar = document.querySelector('.fa-plus-circle');
-        textoSacar.innerHTML = '<i class="fas fa-times-circle"></i>'
-    
-    }
-  
-    let favParaStorage = JSON.stringify(favoritos)
-    localStorage.setItem ('favoritos', favParaStorage);
-    console.log(localStorage)
-})*/
-
 
     })
     .catch( function(error){
