@@ -1,5 +1,5 @@
 
-/*FORMULARIO*/
+//FORMULARIO
 let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search]')
 let closeIcon = document.querySelector('.closeIcon')
@@ -10,11 +10,11 @@ formulario.addEventListener('submit', function(event){
     event.preventDefault(); 
 
     if (campoBuscar.value == ""){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta1.style.display = 'flex';
     }
     else if (campoBuscar.value.length < 3){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta2.style.display = 'flex';
     }
     else {this.submit()}
@@ -27,7 +27,7 @@ formulario.addEventListener('submit', function(event){
   alerta2.style.display = 'none';
  })
 
-/*DETAIL-GENRES*/
+//DETAIL-GENRES
 
 let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString);
@@ -44,16 +44,16 @@ fetch(urlGenres)
     .then( function(data){
         console.log(data)
 
-        //banner
+        //BANNER
         let banner = document.querySelector('.banner-detail-genre')
         banner.innerHTML = `<img class="banner-genre" src="${data.picture_xl}" >
                             <img class="banner-artist-genre" src="${data.picture_xl}" >`
 
-        /*GENRE NAME*/
+        //GENRE NAME
        let genre = document.querySelector('h1')
        genre.innerText =  data.name
 
-        /*GENRE TITLE EN PESTAÑA*/
+        //GENRE TITLE EN PESTAÑA
        let title = document.querySelector('title')
        title.innerText = data.name
     })
@@ -61,7 +61,7 @@ fetch(urlGenres)
             console.log(error);
     })
 
-    fetch(url) /*ARTISTAS*/
+    fetch(url) //ARTISTAS
     .then( function(response){
         return response.json();
     })
