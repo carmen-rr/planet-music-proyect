@@ -195,7 +195,6 @@ fetch (urlPlaylist)
         noHayResultadosPlaylist.innerHTML= `<h4 class="no-results">There isn't any playlist for '${search}'</h4>`;
 
         let noResults = decoracionTextosNoResults();
-        console.log(noResults)
     
     }
 })
