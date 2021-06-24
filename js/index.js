@@ -4,18 +4,22 @@ let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search]')
 let closeIcon = document.querySelector('.closeIcon')
 let alerta = document.querySelector('.probando')
+let alerta1 = document.querySelector('.probando1')
+let alerta2 = document.querySelector('.probando2')
 
 formulario.addEventListener('submit', function(event){
     event.preventDefault(); 
 
     if (campoBuscar.value == ""){
         closeIcon.style.display = 'inline';
-        document.querySelector('.probando').innerText = "The field can't be empty"
+        alerta1.style.display = 'flex';
+        //document.querySelector('.probando').innerText = "The field can't be empty"
         
     }
     else if (campoBuscar.value.length < 3){
         closeIcon.style.display = 'inline';
-        document.querySelector('.probando').innerText = "You should enter at least three characters"
+        alerta2.style.display = 'flex';
+        //document.querySelector('.probando').innerText = "You should enter at least three characters"
         //let alerta = document.querySelector('.probando')
         //alerta.innerText = "You should enter at least three characters";
         //alerta.style.display = 'flex';
@@ -26,6 +30,8 @@ formulario.addEventListener('submit', function(event){
 
     campoBuscar.addEventListener('input', function(){
     closeIcon.style.display = 'none';
+    alerta1.style.display = 'none';
+  alerta2.style.display = 'none';
    //document.querySelector('.probando').style.display = 'none';
     //document.querySelector('.probando').style.display = 'none';
  //alerta.style.display = 
