@@ -1,5 +1,5 @@
 
-/*FORMULARIO*/
+//FORMULARIO
 let formulario = document.querySelector('form')
 let campoBuscar = document.querySelector('[name=search]')
 let closeIcon = document.querySelector('.closeIcon')
@@ -11,13 +11,13 @@ formulario.addEventListener('submit', function(event){
     event.preventDefault(); 
 
     if (campoBuscar.value == ""){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta1.style.display = 'flex';
         //document.querySelector('.probando').innerText = "The field can't be empty"
         
     }
     else if (campoBuscar.value.length < 3){
-        closeIcon.style.display = 'inline';
+        closeIcon.style.display = 'inline-block';
         alerta2.style.display = 'flex';
         //document.querySelector('.probando').innerText = "You should enter at least three characters"
         //let alerta = document.querySelector('.probando')
@@ -37,7 +37,7 @@ formulario.addEventListener('submit', function(event){
    //alerta.style.display = 
 })
 
-/*INDEX*/
+//INDEX
 
 let urlTrack = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks'
 
