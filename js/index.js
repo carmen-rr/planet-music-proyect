@@ -31,10 +31,10 @@ formulario.addEventListener('submit', function(event){
     campoBuscar.addEventListener('input', function(){
     closeIcon.style.display = 'none';
     alerta1.style.display = 'none';
-  alerta2.style.display = 'none';
+    alerta2.style.display = 'none';
    //document.querySelector('.probando').style.display = 'none';
     //document.querySelector('.probando').style.display = 'none';
- //alerta.style.display = 
+   //alerta.style.display = 
 })
 
 /*INDEX*/

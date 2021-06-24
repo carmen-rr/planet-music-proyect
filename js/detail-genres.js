@@ -12,12 +12,10 @@ formulario.addEventListener('submit', function(event){
     if (campoBuscar.value == ""){
         closeIcon.style.display = 'inline';
         alerta1.style.display = 'flex';
-        //document.querySelector('.probando').innerText = "The field can't be empty"
     }
     else if (campoBuscar.value.length < 3){
         closeIcon.style.display = 'inline';
         alerta2.style.display = 'flex';
-        //document.querySelector('.probando').innerText = "You should enter at least three characters"
     }
     else {this.submit()}
 
@@ -27,8 +25,7 @@ formulario.addEventListener('submit', function(event){
  closeIcon.style.display = 'none';
  alerta1.style.display = 'none';
   alerta2.style.display = 'none';
- //document.querySelector('.probando').style.display = 'none';
-})
+ })
 
 /*DETAIL-GENRES*/
 
