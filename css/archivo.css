@@ -440,8 +440,11 @@ footer {
 }
 
  /* SEARCH-RESULTS.HTML*/
+ .body-search-results{
+     display: none;
+ }
  .main-results {
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }

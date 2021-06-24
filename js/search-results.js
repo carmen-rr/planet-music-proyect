@@ -2,8 +2,8 @@
 window.addEventListener('load', function(){
       let loader = document.querySelector('.gif')
       loader.style.display = 'none';
-      let body = document.querySelector('.main-results')
-      body.style.display = 'flex';
+      let body = document.querySelector('.body-search-results')
+      body.style.display = 'block';
     
 })
 //FORMULARIO 
