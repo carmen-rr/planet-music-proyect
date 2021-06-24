@@ -82,7 +82,7 @@ fetch (urlArtist)
         let noHayResultadosArtist = document.querySelector('.result-artist')
         noHayResultadosArtist.innerHTML= `<h4 class="no-results">There isn't any artist for '${search}'</h4>`;
 
-        let noResults = decoracionTextosNoResults();
+        decoracionTextosNoResults();
         
     }
 })
@@ -123,7 +123,7 @@ fetch (urlTrack)
         let noHayResultadosSong = document.querySelector('.result-songs')
         noHayResultadosSong.innerHTML= `<h4 class="no-results">There isn't any song for '${search}'</h4>`;
 
-        let noResults = decoracionTextosNoResults();
+        decoracionTextosNoResults();
     }
 })
 .catch( function(error){
@@ -162,7 +162,7 @@ fetch (urlAlbum)
         let noHayResultadosAlbum = document.querySelector('.result-albums')
         noHayResultadosAlbum.innerHTML= `<h4 class="no-results">There isn't any album for '${search}'</h4>`;
 
-        let noResults = decoracionTextosNoResults();
+        decoracionTextosNoResults();
     }
 })
 .catch( function(error){
@@ -200,7 +200,7 @@ fetch (urlPlaylist)
         let noHayResultadosPlaylist = document.querySelector('.result-playlist')
         noHayResultadosPlaylist.innerHTML= `<h4 class="no-results">There isn't any playlist for '${search}'</h4>`;
 
-        let noResults = decoracionTextosNoResults();
+        decoracionTextosNoResults();
     
     }
 })
@@ -211,12 +211,12 @@ fetch (urlPlaylist)
 
 
     function decoracionTextosNoResults(){
-    let noResults1 = document.querySelector('.no-results')
-    noResults1.style.fontSize = '25px';
-    noResults1.style.color = 'rgba(255, 255, 255, 0.6)'; 
-    noResults1.style.fontWeight = '200';
-    noResults1.style.padding = '10px';
-    noResults1.style.width = '100%';
-    noResults1.style.textAlign = 'center'
+    let noResults = document.querySelector('.no-results')
+    noResults.style.fontSize = '25px';
+    noResults.style.color = 'rgba(255, 255, 255, 0.6)'; 
+    noResults.style.fontWeight = '200';
+    noResults.style.padding = '10px';
+    noResults.style.width = '100%';
+    noResults.style.textAlign = 'center'
 
 }
