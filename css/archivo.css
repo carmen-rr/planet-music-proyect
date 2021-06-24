@@ -1229,6 +1229,7 @@ width: auto;
     }
     .result-artist li{
         width: 90%;
+        margin: 5px;
     }
     .result-artist img{
         width: 20%;
@@ -1526,10 +1527,8 @@ height:auto
    
     .player p{
         width: 90%;
-        
         flex-wrap: wrap;
         display: flex;
-        justify-content: center;
         flex-direction: row;
         align-content: center;
         box-sizing: initial;
