@@ -63,7 +63,7 @@ fetch(url)
 
         //portada cancion
         let imagen = document.querySelector ('.img-dua')
-        imagen.src = data.album.cover_bi
+        imagen.src = data.album.cover_big
         imagen.alt = `Image of ${data.title} Song`
 
         //player 
