@@ -64,9 +64,10 @@ fetch (urlArtist)
         console.log(data)
         let arrayInfo = data.data;
 
+        let searchArtist = document.querySelector('.result-artist');
+
     if(arrayInfo.length>0){
 
-        let searchArtist = document.querySelector('.result-artist');
         let resultArtist = '';
         for (let i=0; i<3; i++){
            resultArtist += `<li>
@@ -76,8 +77,7 @@ fetch (urlArtist)
         }
         searchArtist.innerHTML += resultArtist;
     }else{
-        let noHayResultadosArtist = document.querySelector('.result-artist')
-        noHayResultadosArtist.innerHTML= `<h4 class="no-results">There isn't any artist for '${search}'</h4>`;
+       searchArtist.innerHTML= `<h4 class="no-results">There isn't any artist for '${search}'</h4>`;
 
         decoracionTextosNoResults();
         
