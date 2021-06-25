@@ -49,7 +49,7 @@ fetch(url)
       //IMAGENES DE CARPETA IMG + TITULO DE CADA GENERO QUE LLEVA A SU DETAIL GENRES 
           `<li>          
 
-                  <a href="./detail-genres.html?id=${arrayInfo[i].id}"><img src="img/generos/img${i}.png" alt="Genre'"></a>
+                  <a href="detail-genres.html?id=${arrayInfo[i].id}"><img src="img/generos/img${i}.png" alt="Genre'"></a>
                    <div>
                     <h5><a href="detail-genres.html?id=${arrayInfo[i].id}">${arrayInfo[i].name}</a></h5> 
                    </div>
